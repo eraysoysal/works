@@ -1,9 +1,9 @@
-body{background: url(../img/bg.png) center center fixed;}
+body{background: #ddd;}
 .menu{
 	background-color: #fff;
+	opacity: 0.8;
 	width: 75%;
 	height: 65px;
-	opacity: 0.8;
 	border-radius: 10px;
 	margin-left: 10%;
 }
@@ -27,12 +27,13 @@ body{background: url(../img/bg.png) center center fixed;}
 }
 .content{
 	background-color: #fff;
+	opacity: 0.8;
 	width: 75%;
 	height: 500px;
-	opacity: 0.9;
 	border-radius: 10px;
 	margin-left: 10%;
 	margin-top: 25px;
+	box-shadow: #000 5px 5px 20px;
 }
 .content p {
 	padding: 50px 20px 20px 20px;
