@@ -50,9 +50,6 @@
 	.content th{
 		font-size: 9pt;	
 	}
-	.menu a {
-		font-size: 8pt;
-	}
 }
 
 @media screen and (max-width: 610px)  {
