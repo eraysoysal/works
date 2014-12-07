@@ -1,0 +1,65 @@
+.content{
+	height: 1100px;
+}
+.cv table{
+	border: 1px solid #ddd;
+	width: 90%;
+	height: 100&;
+	margin: 5%;
+	position: relative;
+	top: 50px;
+	padding: 10px;
+
+}
+
+.cv table th{
+	border-bottom: 1px solid #ddd;
+	height: 30px;
+	width: 50%;
+}
+
+.cv table td{
+	border-bottom: 1px solid #ddd;
+	width: 50%;
+	height: 30px;
+	padding: 10px;
+	font-size: 11pt;
+}
+@media screen and (max-width: 860px)  {
+	.content th{
+		font-size: 10pt;	
+	}
+	.menu a {
+		font-size: 9pt;
+	}
+}
+
+@media screen and (max-width: 770px)  {
+	.content{
+		height: 1350px;
+	}
+	.content th{
+		font-size: 9pt;	
+	}
+	.menu a {
+		font-size: 8pt;
+	}
+}
+
+@media screen and (max-width: 610px)  {
+	.content{
+		height: 1550px;
+	}
+	.content th{
+		font-size: 8pt;	
+	}
+}
+
+@media screen and (max-width: 500px)  {
+	.content{
+		height: 1650px;
+	}
+	.content th{
+		font-size: 7pt;	
+	}
+}
