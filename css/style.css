@@ -132,13 +132,13 @@
 	font-weight: normal;
 }
 
-.about-me h1{
+.about-me h1, .contact h1{
 	float: left;
 	color: #13698c;
 	font-size: 50px;
 	position: relative;
 	top: 90px;
-	left: 40%;
+	left: 39%;
 }
 
 .about-me .about-me-content{
@@ -165,12 +165,48 @@
 	width: 100%;
 	height: 750px;
 	margin: 0 auto;
-	box-shadow: 10px #000;
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
 }
-
+.projects h1{
+	float: left;
+	color: #fff;
+	font-size: 50px;
+	position: relative;
+	top: 90px;
+	left: 39%;
+}
 .contact{
 	background: url(../img/bg-gray.png) top center;
 	width: 100%;
 	height: 750px;
 	margin: 0 auto;
+	font-size: 25px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
+	color: #13698c;
+}
+
+.contact h1{
+	left: 42%;
+}
+
+.contact div.info{
+	float: left;
+	position: relative;
+	left: 21%;
+	top: 220px;
+}
+.contact div.social-media{
+	position: relative;
+	top: 400px;
+	left: -12%;
+	float: left;
+}
+.contact div.social-media a{
+	margin: 0 15px 0 15px;
+}
+.contact p {
+	text-align: center;
 }
