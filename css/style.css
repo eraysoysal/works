@@ -24,8 +24,12 @@
 }
 
 .main-page .wrap .navbar{
+	width: 100%;
 	height: 75px;
 	box-shadow : 0px 1px 0 rgba(255, 255, 255, 0.2);
+	position: fixed;
+	background: url(../img/bg-blue.png) top center;
+	z-index: 1000;
 }
 .nb-left{
 	float: left;
@@ -60,7 +64,7 @@
 	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.main-page .wrap .navbar .nb-center ul li a{
+.main-page .wrap .navbar a{
 	text-decoration: none;
 	color: #fff;
 }
@@ -106,7 +110,7 @@
 }
 .main-page .wrap .content .badge-wrap img.badge{
 	float: left; 
-	top: 100px;
+	top: 150px;
 	position: relative;
 	left: 39%;
 }
@@ -122,9 +126,40 @@
 	background: url(../img/bg-gray.png) top center;
 	width: 100%;
 	height: 750px;
-	margin: 0 auto
+	margin: 0 auto;
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
 }
 
+.about-me h1{
+	float: left;
+	color: #13698c;
+	font-size: 70px;
+	position: relative;
+	top: 90px;
+	left: 35%;
+}
+
+.about-me .about-me-content{
+	float: left;
+	margin-top: 90px;
+	text-align: inherit;
+	padding: 15px;
+	line-height: 1.8;
+	color: #13698c;
+}
+
+.about-me .about-me-content p{
+	padding: 0 20px 0 20px;
+}
+.about-me .about-me-content span{
+	float: right;
+	font-weight: bold;
+	font-style: italic;
+	padding: 0px;
+	margin: 25px 50px;
+}
 .career{
 	background: url(../img/bg-blue.png) top center;
 	width: 100%;

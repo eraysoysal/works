@@ -5,21 +5,22 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+	<script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="container">	
-		<div class="main-page">
+		<div id="main-page" class="main-page">
 			<div class="wrap">
 				<div class="navbar">
 					<div class="nb-left">
-						<h1>ERAY SOYSAL</h1>
+						<h1><a href="#main-page">ERAY SOYSAL</a></h1>
 					</div>
 					<div class="nb-center">
 						<ul>
-							<li><a href="">HAKKIMDA</a></li>
-							<li><a href="">KARİYERİM</a></li>
-							<li><a href="">İLETİŞİM</a></li>
+							<li><a href="#about-me">HAKKIMDA</a></li>
+							<li><a href="#career">KARİYERİM</a></li>
+							<li><a href="#contact">İLETİŞİM</a></li>
 						</ul>
 					</div>
 					<div class="nb-right">
@@ -40,9 +41,26 @@
 				
 			</div>
 		</div>
-		<div class="about-me"></div>
-		<div class="career"></div>
-		<div class="contact"></div>
+		<div id="about-me" class="about-me">
+			<h1>HAKKIMDA</h1>
+			<div class="about-me-content">
+				<p>Merhaba;</p>
+				<p>1989 yılında İstanbul 'da doğdum. İlkokul, ortaokul ve lise eğitimimi İstanbul Bahçelievlerde tamamladım.</p>
+				<p>2008 yılında İstanbul Aydın Üniversitesinde E-ticaret bölümünde ön lisans eğitimim başladı.</p>
+				<p> 2010 Haziran ayı itibariyle ön lisans eğitimimi tamamladım. E-ticaret bölümü içerisinde tasarım, yazılım, pazarlama gibi başlıca eğitimler aldım.</p>
+				<p>2010 Temmuz ayında Evmanya.com 'da E-ticaret Kategori Yöneticisi pozisyonuyla çalışmaya başladım.</p>
+				<p>Evmanya.com 'da 3 yıllık bir kariyerim oldu. E-ticaret sistemi içerisindeki bütün departmanların süreçleri hakkında bilgi ve tecrübe edindim.</p>
+				<p>2013 Ekim ayında Bilge Adam 'da başlayan ve 6 ay süren web development eğitimim başladı. Eğitimim içerisinde;</p>
+				<p><b><i>HTML, CSS, C#, MSSQL, MVC ve Mesleki İngilizce</i></b>&nbsp;eğitimi aldım.</p>
+				<p>2014 Nisan ayında Foreks Bilgi İletişim Hizmetleri A.Ş. 'de Web Software Developer olarak çalışmaya başladım.</p>
+				<p>Foreks A.Ş. 'de 6 aylık bir kariyerim oldu. Burada&nbsp;<b><i>Java, JSON, JSP, HTML, CSS, Responsive Design, Cross-Browser, Javascript, Jquery, HighChart, GIT, Stash, Confluence, Scrum,  Deployment</i></b>&nbsp;konularında bilgi ve tecrübe edindim.</p>
+				<p>Kariyerimin devamında da severek ve heyecanla uğraştığım web development üzerinde kendimi geliştererek ilerleyeceğim...</p>
+				<p></p>
+				<span>Eray Soysal</span>
+			</div>
+		</div>
+		<div id="career" class="career"></div>
+		<div id="contact" class="contact"></div>
 	</div>
 </body>
 </html>
