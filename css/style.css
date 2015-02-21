@@ -17,15 +17,15 @@
 }
 .main-page{
 	background: url(../img/bg1.jpg) top center no-repeat;
-	float: left;
-	width: 100%;
+	width: 75%;
 	height: 735px;
-	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 }
 .main-page .wrap{
-	width: 76%;
+	width: 100%;
 	margin: 0 auto;
 }
 .main-page .wrap .navbar{
@@ -35,15 +35,36 @@
 	box-shadow : 0px 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-.nb-left, .nb-right{
+.nb-left{
 	float: left;
 	width: 30%;
 	height: 75px;
 }
+.nb-left h1{
+	color: #fff;
+	padding: 15px 10px 10px 10px;
+}
+
 .nb-center{
 	float: left;
 	width: 40%;
 	height: 75px;
+}
+.main-page .wrap .content .title-wrap{
+	float: left;
+	width: 100%;
+	height: 75px;
+}
+.main-page .wrap .content .title-wrap h1{
+	color: #18aade;
+	padding: 10px;
+	width: 400px;
+	position: absolute;
+	left: 35%;
+	right: 35%;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
 }
 
 .main-page .wrap .navbar .nb-center ul{
@@ -51,19 +72,35 @@
 	position: absolute;
 	top: 30px;
 }
+.main-page .wrap .navbar .nb-right {
+	margin: 0 auto;
+	width: 25%;
+	height: 75px;
+	float: right;
+}
+.main-page .wrap .navbar .nb-right img{
+	position: relative;
+	top: 20px;
+	left: 10%;
+	margin: 0 10px 0 10px;
+}
 
 .main-page .wrap .content{
 	width: 100%;
 	height: 660px;
 	margin: 0 auto;
 }
-
-.main-page .wrap .content img.badge{
+.main-page .wrap .content .badge-wrap{
 	float: left;
+	width: 100%;
+	height: 450px;
+}
+.main-page .wrap .content .badge-wrap img.badge{
+	float: left; 
 	position: relative;
 	left: 37%;
 	right: 37%;
-	top: 50px;
+	top: 100px;
 }
 
 .main-page .wrap .navbar .nb-center ul li{
@@ -83,21 +120,21 @@
 
 .about-me{
 	background: url(../img/bg2.jpg) top center no-repeat;
-	float: left;
-	width: 100%;
+	width: 75%;
 	height: 750px;
+	margin: 0 auto
 }
 
 .career{
 	background: url(../img/bg1.jpg) top center no-repeat;
-	float: left;
-	width: 100%;
-	height: 735px;
+	width: 75%;
+	height: 750px;
+	margin: 0 auto
 }
 
 .contact{
 	background: url(../img/bg2.jpg) top center no-repeat;
-	float: left;
-	width: 100%;
-	height: 650px;
+	width: 75%;
+	height: 750px;
+	margin: 0 auto
 }
