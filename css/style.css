@@ -112,14 +112,14 @@
 	float: left; 
 	top: 150px;
 	position: relative;
-	left: 39%;
+	left: 40%;
 }
 
 .main-page .wrap .content .title-wrap{
 	float: left;
 	height: 75px;
 	position: relative;
-	left: 34%;
+	left: 35%;
 }
 
 .about-me{
@@ -135,10 +135,10 @@
 .about-me h1{
 	float: left;
 	color: #13698c;
-	font-size: 70px;
+	font-size: 50px;
 	position: relative;
 	top: 90px;
-	left: 35%;
+	left: 40%;
 }
 
 .about-me .about-me-content{
@@ -160,16 +160,17 @@
 	padding: 0px;
 	margin: 25px 50px;
 }
-.career{
+.projects{
 	background: url(../img/bg-blue.png) top center;
 	width: 100%;
 	height: 750px;
-	margin: 0 auto
+	margin: 0 auto;
+	box-shadow: 10px #000;
 }
 
 .contact{
 	background: url(../img/bg-gray.png) top center;
 	width: 100%;
 	height: 750px;
-	margin: 0 auto
+	margin: 0 auto;
 }
