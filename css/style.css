@@ -194,15 +194,13 @@
 
 .contact div.info{
 	float: left;
-	position: relative;
-	left: 21%;
-	top: 220px;
+	width: 100%;
+	padding: 10% 2% 5% 0;
 }
 .contact div.social-media{
-	position: relative;
-	top: 400px;
-	left: -12%;
 	float: left;
+	width: 100%;
+	padding: 0 25% 0 29%;
 }
 .contact div.social-media a{
 	margin: 0 15px 0 15px;
