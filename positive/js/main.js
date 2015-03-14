@@ -20,19 +20,12 @@ $(document).ready(function(){
 });
 
 $(".mainlist li").click(function() {
-  $(".sublist").show( "slow" );
-  $('.mainlist li').removeClass();
-  $(this).addClass("selected");
+	$('.mainlist li .sublist').removeClass('selected');
+	$(this).children('.sublist').addClass("selected");
+	$(this).children('.sublist').slideToggle();
 });
 
 $('.menu-icon').click(function() {
-	var display = $('.menulist').css( "display" );
-	console.log(display)
-	if (display == 'none') {
-		$('.menulist').css("display", "block");
-	}
-	else{
-		$('.menulist').css("display", "none");
-	}
+	$('.menulist').slideToggle('slow');
 });
 
