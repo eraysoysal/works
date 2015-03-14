@@ -1,0 +1,53 @@
+{
+  "cities": [
+      "Ankara",
+      "İstanbul"
+  ],
+  "branches": [
+      {
+        "id": 1,
+        "title": "Çelik Dizel Otomotiv",
+        "city": "Ankara",
+        "address": "Dinkçiler Mah. Göçmen Konutları Mimar Sinan Sk. No:2/1",
+        "phone": "0312 255 55 55",
+        "latitude": "39.85700",
+        "longitude": "32.85403"
+      },
+      {
+        "id": 2,
+        "title": "Kardeşler Otomotiv",
+        "city": "İstanbul",
+        "address": "Gaziosmanpaşa Mah.Yakup Şevki Paşa Cad. No 55",
+        "phone": "0212 333 15 15",
+        "latitude": "41.04350",
+        "longitude": "29.00476"
+      },
+      {
+        "id": 3,
+        "title": "Saraçlar Otomotiv",
+        "city": "Ankara",
+        "address": "Gümüşçeşme Mah. Kepsut Yolu 1. Km 206. Sok No :23",
+        "phone": "0312 255 55 55",
+        "latitude": "39.89314",
+        "longitude": "32.87796"
+      },
+      {
+        "id": 4,
+        "title": "Taylan Otomotiv",
+        "city": "Ankara",
+        "address": "Hasan Basri Çantay Mahallesi- Çam Sokak- No:9",
+        "phone": "0312 111 22 22",
+        "latitude": "39.93916",
+        "longitude": "32.79307"
+      },
+      {
+        "id": 5,
+        "title": "Kamil Otomotiv",
+        "city": "İstanbul",
+        "address": "Bahçelievler Mah.Metmetcik Cad.No:37",
+        "phone": "0212 777 44 33",
+        "latitude": "41.05133",
+        "longitude": "29.03129"
+      }
+    ]
+}
