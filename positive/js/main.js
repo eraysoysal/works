@@ -25,3 +25,14 @@ $(".mainlist li").click(function() {
   $(this).addClass("selected");
 });
 
+$('.menu-icon').click(function() {
+	var display = $('.menulist').css( "display" );
+	console.log(display)
+	if (display == 'none') {
+		$('.menulist').css("display", "block");
+	}
+	else{
+		$('.menulist').css("display", "none");
+	}
+});
+
