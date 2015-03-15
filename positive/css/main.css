@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif; overflow-x: hidden;
 }
 
 .wrapper {
@@ -157,7 +157,22 @@ nav a:hover {
 
 .navbar{float: left; width: 100%;}
 .navbar .logo{float: left; margin: 25px 0 22px 12px; cursor: pointer;}
-.navbar .menu-icon{float: right; margin: 40px 7px 32px 0; cursor: pointer;}
+.navbar .menu-icon{
+    float: right; 
+    width: 60px;
+    height: 30px;
+    margin: 40px 7px 32px 0; 
+    cursor: pointer;
+    background: url(../img/menu-icon.png) top center no-repeat;
+}
+
+.navbar i.selected {
+    background: url(../img/menu-icon-close.png) top center no-repeat;
+    width: 60px;
+    height: 42px;
+    margin: 29px 7px 32px 0;  
+}
+
 .navbar .menu .menulist{
     display: none;
     position: absolute;
@@ -223,11 +238,10 @@ nav a:hover {
     font-size: 15px;
 }
 
-#slider {float: left; width: 100%; z-index: 10;}
+#slider {float: left; width: 100%; z-index: 10; margin-bottom: 25px;}
 #slider .item{text-align: center;}
-#slider .item img{cursor: pointer;}
+#slider .item img{cursor: pointer; width: 100%;}
 #slider .item a {text-decoration: none;}
-#slider .item h3 {}
 #slider .item h3 a { text-align: center; color: #393939; font-size: 36px; font-weight: bold; line-height: 1.2; 
   letter-spacing: -2px;}
 #slider .item h4 { margin-bottom: 15px; }
@@ -235,6 +249,44 @@ nav a:hover {
 #slider .item .button {background-color: #ff3f49; border-radius: 20px; color:#ebebeb; padding:10px 15px; display: inline-block;
   text-align: center;}
 #slider .owl-buttons {display: none;}
+
+#small-slider { float: left; width: 100%; margin-top: 25px;}
+#small-slider .item h4{ 
+    float: left; 
+    width: 100%; 
+    position: relative; 
+    top: -105px; 
+    left: 20px; 
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+}
+#small-slider .item h3{ 
+    float: left; 
+    width: 100%; 
+    position: relative; 
+    top: -95px; 
+    left: 20px; 
+    font-size: 13px;
+    margin: 0;
+}
+#small-slider .item{
+    float: left;
+    width: 100%;
+    height: 230px;
+    display: inline-block;
+}
+#small-slider img{
+    display: inline-block;
+    text-align: center;
+}
+
+#small-slider .item a {
+    float: left;
+    text-decoration: none; 
+    color: #fff;
+}
 
 
 

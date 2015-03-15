@@ -20,12 +20,27 @@ $(document).ready(function(){
 });
 
 $(".mainlist li").click(function() {
-	$('.mainlist li .sublist').removeClass('selected');
+	var thisclass = $(this).children('.sublist').attr("class");
 	$(this).children('.sublist').addClass("selected");
-	$(this).children('.sublist').slideToggle();
+	if (thisclass == "sublist selected"){
+		$(this).children('.sublist').slideToggle();
+		$('.mainlist li .sublist').removeClass('selected');
+	}
+	else{
+		$('.mainlist li .selected').slideToggle();
+		$('.mainlist li .sublist').removeClass('selected');	
+		$(this).children('.sublist').addClass("selected");
+		
+	}
 });
 
 $('.menu-icon').click(function() {
 	$('.menulist').slideToggle('slow');
+	var iconSelection = $('.menu-icon').attr("class");
+	if (iconSelection == "menu-icon selected"){
+		$(this).removeClass("selected");
+	}
+	else{
+		$(this).addClass("selected");
+	}
 });
-
