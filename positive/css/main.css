@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif; overflow-x: hidden;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
@@ -253,7 +253,7 @@ nav a:hover {
 #small-slider { float: left; width: 100%; margin-top: 25px;}
 #small-slider .item h4{ 
     float: left; 
-    width: 100%; 
+    width: 280px;
     position: relative; 
     top: -105px; 
     left: 20px; 
@@ -264,7 +264,6 @@ nav a:hover {
 }
 #small-slider .item h3{ 
     float: left; 
-    width: 100%; 
     position: relative; 
     top: -95px; 
     left: 20px; 
@@ -274,12 +273,12 @@ nav a:hover {
 #small-slider .item{
     float: left;
     width: 100%;
-    height: 230px;
-    display: inline-block;
+    height: 218px;
 }
 #small-slider img{
     display: inline-block;
     text-align: center;
+    width: 100%;
 }
 
 #small-slider .item a {
