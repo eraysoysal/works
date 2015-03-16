@@ -18,7 +18,7 @@ $(document).ready(function(){
         transitionStyle : "fade"
       });
       
-    $("#selectbox").select2([multiple: true]);
+    $("#selectbox").select2();
 });
 
 $(".mainlist li").click(function() {
