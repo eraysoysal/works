@@ -289,10 +289,18 @@ nav a:hover {
 
 
 
-
-
-
-
+#selectbox{
+    float: left; 
+    width: 100%; 
+    height: 40px; 
+    margin: 45px 0 25px 0;
+    padding-left: 15px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border-color: #ddd;
+}
+#selectbox option {font-size: 13px; color:#323232; height: 40px;}
+#selectbox .defaultText {display: none; color: #787878;}
 
 /* ==========================================================================
    Media Queries

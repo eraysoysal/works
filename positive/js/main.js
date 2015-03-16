@@ -17,6 +17,8 @@ $(document).ready(function(){
         singleItem : true,
         transitionStyle : "fade"
       });
+      
+    $("#selectbox").select2([multiple: true]);
 });
 
 $(".mainlist li").click(function() {
