@@ -299,7 +299,17 @@ nav a:hover {
     border-color: #ddd;
 }
 
+
 .selectbox .sbox {float: left; width: 100%;}
+    .selectbox .sbox .defaultOption {display: none;}
+
+#gmap {float: left; width: 303px; height: 375px; margin-top: 15px;}
+
+.footer {float: left; width: 100%;}
+ .footer h4 { text-align: center; font-size: 12px; font-weight: normal; margin-top: -5px;}
+ .footer img {margin: 0 auto; display: table; padding-top: 25px;}
+
+
 
 /* ==========================================================================
    Media Queries

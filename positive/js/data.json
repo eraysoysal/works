@@ -10,8 +10,8 @@
         "city": "Ankara",
         "address": "Dinkçiler Mah. Göçmen Konutları Mimar Sinan Sk. No:2/1",
         "phone": "0312 255 55 55",
-        "latitude": "39.85700",
-        "longitude": "32.85403"
+        "lat": "39.85700",
+        "lon": "32.85403"
       },
       {
         "id": 2,
@@ -19,8 +19,8 @@
         "city": "İstanbul",
         "address": "Gaziosmanpaşa Mah.Yakup Şevki Paşa Cad. No 55",
         "phone": "0212 333 15 15",
-        "latitude": "41.04350",
-        "longitude": "29.00476"
+        "lat": "41.04350",
+        "lon": "29.00476"
       },
       {
         "id": 3,
@@ -28,8 +28,8 @@
         "city": "Ankara",
         "address": "Gümüşçeşme Mah. Kepsut Yolu 1. Km 206. Sok No :23",
         "phone": "0312 255 55 55",
-        "latitude": "39.89314",
-        "longitude": "32.87796"
+        "lat": "39.89314",
+        "lon": "32.87796"
       },
       {
         "id": 4,
@@ -37,8 +37,8 @@
         "city": "Ankara",
         "address": "Hasan Basri Çantay Mahallesi- Çam Sokak- No:9",
         "phone": "0312 111 22 22",
-        "latitude": "39.93916",
-        "longitude": "32.79307"
+        "lat": "39.93916",
+        "lon": "32.79307"
       },
       {
         "id": 5,

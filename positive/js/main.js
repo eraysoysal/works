@@ -1,13 +1,23 @@
 $(document).ready(function(){
 	$.getJSON( "js/data.json", function( data ) {
 		var cities = data.cities;
+		console.log(cities);
 		var branches = data.branches;
+		console.log(branches[0]);
 		$.each( cities, function( key, city ) {
-		  $(".sample").append(city);
+		  $(".sbox").append($('<option>', { value : city }).text(city)); 
 		});
-		$(".sample").append("<br><br>");
+		
 		$.each( branches, function( key, branch ) {
 		  $(".sample").append(branch.address+"<br>");
+		});
+
+
+		$(function() {
+		    new Maplace({
+		        locations: [branches[0]],
+		        controls_on_map: false
+		    }).Load();
 		});
 	});
 
@@ -20,6 +30,8 @@ $(document).ready(function(){
 
     $("#selectbox").select2();
     $('.select2-chosen').text("Şehir Seçiniz");
+
+    
 });
 
 $(".mainlist li").click(function() {
