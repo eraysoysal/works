@@ -17,8 +17,9 @@ $(document).ready(function(){
         singleItem : true,
         transitionStyle : "fade"
       });
-		$("#selectbox").select2();
-		$('.select2-chosen').text("Şehir Seçiniz");
+
+    $("#selectbox").select2();
+    $('.select2-chosen').text("Şehir Seçiniz");
 });
 
 $(".mainlist li").click(function() {
