@@ -5,13 +5,15 @@ $(document).ready(function(){
 		var locationA = [];
 		var locationI = [];
 
-		var maplace = new Maplace();
-
 		$.each( cities, function( key, city ) {
 		  $(".sbox").append($('<option>', { value : city }).text(city)); 
 		});
 		
 		$.each( branches, function( key, branch ) {
+			branch['html'] = branch.title + '<br>' 
+				+ branch.address + '<br>'
+				+ 'Telefon' + '<br>'
+				+ branch.phone;
 		 	if (branch.city =="Ankara") {
 		 		locationA.push(branch);
 		 	};
@@ -19,8 +21,13 @@ $(document).ready(function(){
 		 		locationI.push(branch);
 		 	};
 		});
-		maplace.SetLocations(locationI);
-		maplace.Load();
+		var maplace = new Maplace({
+		    locations: branches,
+		    map_div: '#gmap',
+		    controls_div: '#controls-tabs',
+		    controls_type: 'list',
+		    controls_on_map: false
+		}).Load();
 
 		$('.selectbox').change(function(){
 			var value = $( ".selectbox option:selected" ).val();
@@ -30,6 +37,9 @@ $(document).ready(function(){
 			}
 			if(value == "İstanbul"){
 				location = locationI;
+			}
+			if(value == "allcities"){
+				location = branches;
 			}
 			maplace.SetLocations(location);
 			maplace.Load();
