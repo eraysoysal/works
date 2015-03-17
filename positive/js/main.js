@@ -10,10 +10,11 @@ $(document).ready(function(){
 		});
 		
 		$.each( branches, function( key, branch ) {
-			branch['html'] = branch.title + '<br>' 
-				+ branch.address + '<br>'
-				+ 'Telefon' + '<br>'
-				+ branch.phone;
+			branch['html'] = '<div class="customTooltip"><span class="title">' + branch.title + '</span>' 
+				+ '<span class="address">' + branch.address + '</span>'
+				+ '<span> Telefon' + '</span>'
+				+ '<span class="phone">' + branch.phone + '</span>';
+			branch['icon'] = '../img/marker.png';
 		 	if (branch.city =="Ankara") {
 		 		locationA.push(branch);
 		 	};

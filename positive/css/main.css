@@ -305,8 +305,33 @@ nav a:hover {
 
 #controls-tabs {display: none;}
 #gmap {float: left; width: 320px; height: 375px; margin-top: 15px;}
-.gm-style-iw {width: 240px; height: 220px; position: relative; left: 50px; }
+.gm-style-iw {width: 200px; height: 220px; }
+.customTooltip .title{ 
+    float: left; 
+    font-size: 20px; 
+    font-weight: normal; 
+    color: #505050; 
+    padding: 15px 0 15px 15px;
+    line-height: 1;
+}
+.customTooltip { overflow: hidden; padding-top: 15px; }
+.customTooltip span { padding-left: 15px; }
 
+.customTooltip .address { 
+    float: left; 
+    font-size: 13px; 
+    font-weight: normal; 
+    color: #505050; 
+    padding: 10px 0 15px 15px;
+}
+
+.customTooltip .phone { 
+    float: left; 
+    width: 100%; 
+    font-size: 13px; 
+    font-weight: bold; 
+    color: #505050; 
+}
 .footer {float: left; width: 100%;}
  .footer h4 { text-align: center; font-size: 12px; font-weight: normal; margin-top: -5px;}
  .footer img {margin: 0 auto; display: table; padding-top: 25px;}
