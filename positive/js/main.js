@@ -1,25 +1,41 @@
 $(document).ready(function(){
 	$.getJSON( "js/data.json", function( data ) {
 		var cities = data.cities;
-		console.log(cities);
 		var branches = data.branches;
-		console.log(branches[0]);
+		var locationA = [];
+		var locationI = [];
+
+		var maplace = new Maplace();
+
 		$.each( cities, function( key, city ) {
 		  $(".sbox").append($('<option>', { value : city }).text(city)); 
 		});
 		
 		$.each( branches, function( key, branch ) {
-		  $(".sample").append(branch.address+"<br>");
+		 	if (branch.city =="Ankara") {
+		 		locationA.push(branch);
+		 	};
+		 	if (branch.city =="İstanbul") {
+		 		locationI.push(branch);
+		 	};
 		});
+		maplace.SetLocations(locationI);
+		maplace.Load();
 
-
-		$(function() {
-		    new Maplace({
-		        locations: [branches[0]],
-		        controls_on_map: false
-		    }).Load();
+		$('.selectbox').change(function(){
+			var value = $( ".selectbox option:selected" ).val();
+			var location;
+			if(value == "Ankara"){
+				location = locationA;
+			}
+			if(value == "İstanbul"){
+				location = locationI;
+			}
+			maplace.SetLocations(location);
+			maplace.Load();
 		});
 	});
+		
 
 	var owl = $("#slider");
       owl.owlCarousel({
@@ -30,8 +46,6 @@ $(document).ready(function(){
 
     $("#selectbox").select2();
     $('.select2-chosen').text("Şehir Seçiniz");
-
-    
 });
 
 $(".mainlist li").click(function() {

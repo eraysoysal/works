@@ -303,7 +303,7 @@ nav a:hover {
 .selectbox .sbox {float: left; width: 100%;}
     .selectbox .sbox .defaultOption {display: none;}
 
-#gmap {float: left; width: 303px; height: 375px; margin-top: 15px;}
+#gmap {float: left; width: 320px; height: 375px; margin-top: 15px;}
 
 .footer {float: left; width: 100%;}
  .footer h4 { text-align: center; font-size: 12px; font-weight: normal; margin-top: -5px;}
