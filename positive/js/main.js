@@ -14,7 +14,6 @@ $(document).ready(function(){
 				+ '<span class="address">' + branch.address + '</span>'
 				+ '<span> Telefon' + '</span>'
 				+ '<span class="phone">' + branch.phone + '</span>';
-			branch['icon'] = '../img/marker.png';
 		 	if (branch.city =="Ankara") {
 		 		locationA.push(branch);
 		 	};
