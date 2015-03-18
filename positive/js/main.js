@@ -58,20 +58,37 @@ $(document).ready(function(){
     $('.select2-chosen').text("Şehir Seçiniz");
 });
 
-$(".mainlist li").click(function() {
-	var thisclass = $(this).children('.sublist').attr("class");
-	$(this).children('.sublist').addClass("selected");
-	if (thisclass == "sublist selected"){
-		$(this).children('.sublist').slideToggle();
-		$('.mainlist li .sublist').removeClass('selected');
-	}
-	else{
-		$('.mainlist li .selected').slideToggle();
-		$('.mainlist li .sublist').removeClass('selected');	
+/*Sublist Açılımları*/
+
+var width = $(document).width();
+if (width <= 640) {
+	$(".mainlist li").click(function() {
+		var thisclass = $(this).children('.sublist').attr("class");
 		$(this).children('.sublist').addClass("selected");
-		
-	}
-});
+		if (thisclass == "sublist selected"){
+			$(this).children('.sublist').slideToggle();
+			$('.mainlist li .sublist').removeClass('selected');
+		}
+		else{
+			$('.mainlist li .selected').slideToggle();
+			$('.mainlist li .sublist').removeClass('selected');	
+			$(this).children('.sublist').addClass("selected");
+		}
+	});
+}
+else {
+	$(".mainlist li").hover(
+		function() {
+		   $(this).children('.sublist').css("display", "block");
+		   $(this).addClass("selected");
+		}, function() {
+		   $(this).children('.sublist').css("display", "none");
+		   $(this).removeClass("selected");
+		}
+	);
+}
+
+/*Sublist Açılımları Sonu*/
 
 $('.menu-icon').click(function() {
 	$('.menulist').slideToggle('slow');

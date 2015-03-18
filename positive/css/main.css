@@ -195,7 +195,6 @@ nav a:hover {
     right: 10px;
 }
 
-
 .navbar .menu .menulist ul{
     list-style: none;
     padding-left: 0;
@@ -224,8 +223,7 @@ nav a:hover {
     display: none;
 }
 
-.navbar .menu .menulist .mainlist .sublist ul{
-}
+
 .navbar .menu .menulist .mainlist .sublist ul li{
     background-color: #393939;
     float: left;
@@ -370,9 +368,37 @@ nav a:hover {
         background-color: transparent;
     }
     .navbar .nb-center .menu .menulist i {display: none;}
-    .navbar .nb-center .menu .menulist ul li {width: 20%; border:none; text-align: center;}
-    .navbar .menu .menulist ul li a {padding: 20px;}
     .navbar .nb-center .menu .menulist ul {padding-left: 0;}
+    .navbar .nb-center .menu .menulist ul li {width: 20%; border:none; text-align: center;}
+    .navbar .nb-center .menu .menulist ul .selected a {color:#ff3f49;} 
+    .navbar .nb-center .menu .menulist ul li a {padding: 20px;}
+    .navbar .menu .menulist  ul li {
+        text-align: left;
+        width: 100%;
+    }
+    .navbar .menu .menulist .mainlist .sublist {
+        border: 1px solid rgb(221, 221, 221);
+        position: relative;
+        border-radius: 5px;
+        left: 30px;
+        height: 260px;
+        width: 235px;
+        background-color: #fff;
+    }
+    .navbar .menu .menulist .mainlist .sublist i {
+        display: block;
+        float: left;
+        left: 15px;
+    }
+    .navbar .menu .menulist .mainlist .sublist ul {width: 235px; background-color: #fff;}
+    .navbar .menu .menulist .mainlist .sublist ul li {
+       background-color: transparent;
+       text-align: left;
+    }
+    .navbar .menu .menulist .mainlist .sublist ul li:hover{
+        background-color: #f3f3f3;
+    }
+    .navbar .menu .menulist .mainlist .sublist ul li a {padding-top: 15px;}
     .navbar .nb-right {float: left; width: 20%;}
     #slider .item h3 {
         position: absolute;
