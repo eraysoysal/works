@@ -57,7 +57,7 @@ $(document).ready(function(){
     var smallCarousel = $("#small-slider");
       smallCarousel.owlCarousel({
 	    itemsDesktop : [2000, 0],
-	    itemsTablet: [980,2],
+	    itemsTablet: [770,2],
 	    itemsMobile : [320,0]
       });
 
@@ -68,7 +68,7 @@ $(document).ready(function(){
 /*Sublist Açılımları*/
 
 var width = $(document).width();
-if (width <= 640) {
+if (width <= 770) {
 	$(".mainlist li").click(function() {
 		var thisclass = $(this).children('.sublist').attr("class");
 		$(this).children('.sublist').addClass("selected");

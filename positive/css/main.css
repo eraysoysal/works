@@ -290,6 +290,8 @@ nav a:hover {
     color: #fff;
 }
 
+#small-slider .owl-item {width: 320px !important;}
+
 .select2-container {width: 100%; padding: 1px;}
 
 #selectbox{
@@ -349,7 +351,9 @@ nav a:hover {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
+@media only screen and (min-width: 320px){
+    #small-slider {width: 640px !important;}
+}
 @media only screen and (min-width: 770px){
     
     .navbar .nb-left {float: left; width: 20%;}
@@ -449,6 +453,8 @@ nav a:hover {
 
     .smallslider-container #small-slider {  width: 960px; margin: 0 auto;}
     #small-slider .item {float: left;}
+
+
 
     .select2-container--default .select2-selection--single {height: 40px;}
     .select2-container--default .select2-selection--single .select2-selection__arrow {top: 8px;}
