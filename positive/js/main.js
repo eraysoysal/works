@@ -100,3 +100,8 @@ $('.menu-icon').click(function() {
 		$(this).addClass("selected");
 	}
 });
+
+$('.nb-right a').click(function() {
+	$('.nb-right a').removeClass('selected');
+	$(this).addClass('selected');
+});
