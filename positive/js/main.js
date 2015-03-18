@@ -54,6 +54,13 @@ $(document).ready(function(){
         transitionStyle : "fade"
       });
 
+    var smallCarousel = $("#small-slider");
+      smallCarousel.owlCarousel({
+	    itemsDesktop : [2000, 0],
+	    itemsTablet: [980,2],
+	    itemsMobile : [320,0]
+      });
+
     $("#selectbox").select2();
     $('.select2-chosen').text("Şehir Seçiniz");
 });
@@ -77,6 +84,7 @@ if (width <= 640) {
 	});
 }
 else {
+	$('.selectbox select').attr("id", "selectbox");
 	$(".mainlist li").hover(
 		function() {
 		   $(this).children('.sublist').css("display", "block");
