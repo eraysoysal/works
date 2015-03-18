@@ -68,7 +68,8 @@ $(document).ready(function(){
 /*Sublist Açılımları*/
 
 var width = $(document).width();
-if (width <= 770) {
+if (width <= 1024) {
+	$
 	$(".mainlist li").click(function() {
 		var thisclass = $(this).children('.sublist').attr("class");
 		$(this).children('.sublist').addClass("selected");

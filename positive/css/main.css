@@ -451,7 +451,7 @@ nav a:hover {
       left: 9%;  
     }      
 
-    .smallslider-container #small-slider {  width: 960px; margin: 0 auto;}
+    .smallslider-container #small-slider {  width: 960px !important; margin: 0 auto;}
     #small-slider .item {float: left;}
 
 
