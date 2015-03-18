@@ -353,6 +353,8 @@ nav a:hover {
    ========================================================================== */
 @media only screen and (min-width: 320px){
     #small-slider {width: 640px !important;}
+    #slider .item h3 { top: 25% !important; }
+    #slider .item h4 { top: 45% !important; }
 }
 @media only screen and (min-width: 770px){
     

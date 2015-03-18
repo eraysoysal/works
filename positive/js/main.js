@@ -69,8 +69,7 @@ $(document).ready(function(){
 
 var width = $(document).width();
 if (width <= 1024) {
-	$
-	$(".mainlist li").click(function() {
+	$(".mainlist .peer-child").click(function() {
 		var thisclass = $(this).children('.sublist').attr("class");
 		$(this).children('.sublist').addClass("selected");
 		if (thisclass == "sublist selected"){
