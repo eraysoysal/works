@@ -390,7 +390,7 @@ nav a:hover {
 @media only screen and (max-width: 321px){
 	.nb-left{width: 75%; font-size: 15px;}
 	.nb-center {
-		width: 25%;
+		width: 22%;
 		padding: 5px 5px 10px 0;
 	}
 	.nb-center ul {display: none !important;}
@@ -407,7 +407,7 @@ nav a:hover {
     	font-size: 16px;
     	letter-spacing: 1.2px;
     }
-    div.container h1 {font-size: 30px;}
+    div.container h1 {font-size: 30px;   margin: 0;}
     div.about-me .about-me-content span {float: none;}
     div.contact {font-size: 18px;}
     div.contact .contact-title {top: 50px}
