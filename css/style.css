@@ -388,7 +388,7 @@ div.container p {margin: 0; padding: 0 !important;}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 415px){
 	.nb-left{width: 75%; font-size: 15px;}
 	.nb-center {
 		width: 22%;
@@ -416,6 +416,38 @@ div.container p {margin: 0; padding: 0 !important;}
     div.contact div.social-media a img{width: 30%;}
     div.contact div.info {margin-top: 100px;}
 
+}
+@media only screen and (min-width: 416px) and (max-width: 550px){
+    .nb-left{width: 40%; font-size: 12px;}
+    .nb-center {
+        width: 60%;
+    }
+    .nb-center ul {float: right;  padding:0;}
+    .nb-center ul li{font-size: 12px; margin:0 3px !important;}
+    .nb-center ul:last-child {margin-right: 10px;}
+    .nb-right{display: none;}
+}
+
+@media only screen and (min-width: 551px) and (max-width: 770px){
+    .nb-left{width: 35%; font-size: 14px;}
+    .nb-center {
+        width: 65%;
+    }
+    .nb-center ul {float: right;  padding:0;}
+    .nb-center ul li{font-size: 15px; margin:0 15px !important;}
+    .nb-center ul:last-child {margin-right: 10px;}
+    .nb-right{display: none;}
+}
+
+@media only screen and (min-width: 771px) and (max-width: 960px){
+    .nb-left{width: 35%; font-size: 17px;}
+    .nb-center {
+        width: 65%;
+    }
+    .nb-center ul {float: right;  padding:0;}
+    .nb-center ul li{font-size: 17px; margin:0 20px !important;}
+    .nb-center ul:last-child {margin-right: 10px;}
+    .nb-right{display: none;}
 }
 
 
