@@ -429,9 +429,9 @@ div.container p {margin: 0; padding: 0 !important;}
 }
 
 @media only screen and (min-width: 551px) and (max-width: 770px){
-    .nb-left{width: 35%; font-size: 14px;}
+    .nb-left{width: 40%; font-size: 14px;}
     .nb-center {
-        width: 65%;
+        width: 60%;
     }
     .nb-center ul {float: right;  padding:0;}
     .nb-center ul li{font-size: 15px; margin:0 15px !important;}
