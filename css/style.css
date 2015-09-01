@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+* {margin: 0; padding: 0;}
 html {
     color: #222;
     font-size: 1em;
@@ -91,25 +91,9 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
+ul {list-style: none;}
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
+a {text-decoration: none;}
 
 nav a:hover,
 nav a:visited {
@@ -154,302 +138,66 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-.container{
-	float: left;
-	width: 100%;
-}
+.container {float: left; width: 100%; }
 div.container h1 {margin: 0;}
 div.container p {margin: 0; padding: 0 !important;}
 
-.main-page{
-	background: url(../img/bg-blue.png) top center;
-	float: left;
-	width: 100%;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-}
+.main-page {background: url(../img/bg-blue.png) top center; float: left; width: 100%; font-size: 18px; font-weight: normal; }
+.main-page .wrap .navbar {width: 100%; height: 75px; box-shadow : 0px 1px 0 rgba(255, 255, 255, 0.2); position: fixed; background: url(../img/bg-blue.png) top center; z-index: 1000; text-align: center; }
 
-.main-page .wrap .navbar{
-	width: 100%;
-	height: 75px;
-	box-shadow : 0px 1px 0 rgba(255, 255, 255, 0.2);
-	position: fixed;
-	background: url(../img/bg-blue.png) top center;
-	z-index: 1000;
-	text-align: center;
-}
-.nb-left{
-	float: left;
-	width: 25%;
-	height: 75px;
-	text-align: left;
-}
-.nb-left h1{
-	color: #fff;
-	padding: 15px 0 10px 10px;
-}
+.main-page .wrap .navbar .nb-left {position: absolute; top: 0; left: -250px; transition: 2s all ease;}
+.main-page .wrap .navbar .nb-left.animated {left: 10px;}
+.main-page .wrap .navbar .nb-left h1 {color: #fff; padding: 10px; box-sizing: border-box;}
+.main-page .wrap .navbar .nb-left a {text-decoration: none; color: #fff; font-size: 24px;}
 
-.nb-center{
-	float: left;
-	width: 50%;
-	height: 75px;
-	text-align: center;
-}
+.main-page .wrap .navbar .nb-center { width: 405px; height: 35px; margin: 20px auto; transition: 4s all ease; opacity: 0;}
+.main-page .wrap .navbar .nb-center.animated {opacity: 1;}
+.main-page .wrap .navbar .nb-center .mobil-icon { display: none; }
+.main-page .wrap .navbar .nb-center ul { float: left; width: 100%; height: 100%; padding-top: 5px; box-sizing: border-box; }
+.main-page .wrap .navbar .nb-center ul li { float: left; margin: 0 20px 0 20px; }
+.main-page .wrap .navbar .nb-center ul li a {color: #fff; }
+.main-page .wrap .navbar .nb-center ul li:hover{ border-bottom: 1px solid rgba(255, 255, 255, 0.4);}
 
-.nb-center .mobil-icon{
-	display: none;
-}
+.main-page .wrap .navbar .nb-right {position: absolute; top: 0; right: -260px; height: 100%; width: 220px; transition: 2s all ease;}
+.main-page .wrap .navbar .nb-right.animated {right: 0;}
+.main-page .wrap .navbar .nb-right a {float: right; position: relative; top: 20px; margin: 0 15px 0 15px; }
 
-.main-page .wrap .navbar .nb-center ul{
-	list-style: none;
-	position: relative;
-	top: 10px;
-	display: inline-block;
-}
+.main-page .wrap { float: left; width: 100%; margin: 0 auto; }
+.main-page .wrap .content { width: 100%; height: 660px; margin: 0 auto; }
+.main-page .wrap .content .badge-wrap {float: left; width: 100%; height: 450px; text-align: center; }
+.main-page .wrap .content .badge-wrap img.badge {position: relative; top: 150px; transform:scale(0); transition: 2s all ease;}
+.main-page .wrap .content .badge-wrap img.badge.animated {transform: scale(1);}
+.main-page .wrap .content .title-wrap {float: left; width: 100%;}
+.main-page .wrap .content .title-wrap h1 {color: #18aade; width: 355px; display: block; margin: 0 auto; }
 
-.main-page .wrap .navbar .nb-center ul li{
-	float: left;
-	margin: 0 20px 0 20px;
+.about-me {background: url(../img/bg-gray.png) top center; float: left; width: 100%; margin: 0 auto; font-size: 18px; font-weight: normal; text-align: center; }
+.about-me .aboutme-title {position: relative; top: 100px; }
+.about-me h1, .contact h1 {color: #13698c; font-size: 50px;}
+.about-me .about-me-content {float: left; margin-top: 90px; text-align: inherit; padding: 15px; line-height: 1.8; color: #13698c; }
+.about-me .about-me-content p {text-align: left; width: 100%; padding: 0 20px 0 20px; }
+.about-me .about-me-content span {float: right; font-weight: bold; font-style: italic; padding: 0px; margin: 25px 50px;}
 
-}
+.projects {float: left; background: url(../img/bg-blue.png) top center; width: 100%; height: 750px; margin: 0 auto; font-size: 18px;}
+.projects .project-title {width: 100%; text-align: center; position: relative; top: 100px;}
+.projects h1 {color: #fff; font-size: 50px;}
 
-.main-page .wrap .navbar .nb-center ul li:hover{
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.main-page .wrap .navbar a{
-	text-decoration: none;
-	color: #fff;
-}
-
-.main-page .wrap .navbar .nb-right {
-	margin: 0 auto;
-	width: 25%;
-	height: 75px;
-	float: right;
-}
-.main-page .wrap .navbar .nb-right a{
-	float: right;
-	position: relative;
-	top: 20px;
-	margin: 0 15px 0 15px;
-}
-
-
-.main-page .wrap{
-	float: left;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.main-page .wrap .content{
-	width: 100%;
-	height: 660px;
-	margin: 0 auto;
-}
-.main-page .wrap .content .badge-wrap{
-	float: left;
-	width: 100%;
-	height: 450px;
-	text-align: center;
-}
-.main-page .wrap .content .badge-wrap img.badge{
-	position: relative;
-	top: 150px;
-}
-
-.main-page .wrap .content .title-wrap{
-	float: left;
-	width: 100%;
-	height: 75px;
-	position: relative;
-	text-align: center;
-}
-
-.main-page .wrap .content .title-wrap h1{
-	color: #18aade;
-	width: 100%;
-	font-family: 'Trebuchet MS', Arial, sans-serif;
-	font-weight: bold;
-	font-style: italic;
-	display: inline-block;
-}
-
-.about-me{
-	background: url(../img/bg-gray.png) top center;
-	float: left;
-	width: 100%;
-	margin: 0 auto;
-	font-size: 18px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: normal;
-	text-align: center;
-}
-.about-me .aboutme-title{
-	position: relative;
-	top: 100px;
-}
-.about-me h1, .contact h1{
-	color: #13698c;
-	font-size: 50px;
-}
-
-.about-me .about-me-content{
-	float: left;
-	margin-top: 90px;
-	text-align: inherit;
-	padding: 15px;
-	line-height: 1.8;
-	color: #13698c;
-}
-
-.about-me .about-me-content p{
-	text-align: left;
-	width: 100%;
-	padding: 0 20px 0 20px;
-}
-.about-me .about-me-content span{
-	float: right;
-	font-weight: bold;
-	font-style: italic;
-	padding: 0px;
-	margin: 25px 50px;
-}
-.projects{
-	float: left;
-	background: url(../img/bg-blue.png) top center;
-	width: 100%;
-	height: 750px;
-	margin: 0 auto;
-	font-size: 18px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: normal;
-}
-.projects .project-title{
-	width: 100%;
-	text-align: center;
-	position: relative;
-	top: 100px;
-}
-.projects h1{
-	color: #fff;
-	font-size: 50px;
-}
-.contact{
-	float: left;
-	background: url(../img/bg-gray.png) top center;
-	width: 100%;
-	margin: 0 auto;
-	font-size: 25px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: normal;
-	color: #13698c;
-}
-.contact .contact-title{
-	 float: left;
-	 width: 100%;
-	 position: relative;
-	 top: 100px;
-	 text-align: center;
-}
-
-.contact div.info{
-	float: left;
-	width: 100%;
-	margin-top: 200px;
-}
-.contact div.social-media{
-	float: left;
-	width: 100%;
-	margin-top: 100px;
-	text-align: center;
-}
-.contact div.social-media a{
-	margin: 0 15px 0 15px;
-}
-.contact p {
-	text-align: center;
-}
-.contact h5{
-	float: left;
-	width: 100%;
-	text-align: center;
-	font-size: 11px;
-	margin: 0 0 10px 0;
-}
-.contact h5.design{
-	margin-top: 70px;
-}
-
-
+.contact {float: left; background: url(../img/bg-gray.png) top center; width: 100%; margin: 0 auto; font-size: 25px; font-weight: normal; color: #13698c;}
+.contact .contact-title {float: left; width: 100%; padding-top: 100px; box-sizing: border-box;}
+.contact .contact-title h1 {width: 200px; margin: 0 auto;}
+.contact div.info {float: left; width: 100%; margin-top: 40px;}
+.contact div.social-media {float: left; width: 100%; margin-top: 55px; text-align: center;}
+.contact div.social-media a {margin: 0 15px 0 15px;}
+.contact p {text-align: center;}
+.contact h5 {float: left; width: 100%; text-align: center; font-size: 11px; margin: 0 0 10px 0;}
+.contact h5.design {margin-top: 70px;}
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 415px){
-	.nb-left{width: 75%; font-size: 15px;}
-	.nb-center {
-		width: 22%;
-		padding: 5px 5px 10px 0;
-	}
-	.nb-center ul {display: none !important;}
-	.nb-right {display: none;}
-    .nb-center .mobil-icon{
-    	float: right;
-    	width: 64px;
-    	display: block;
-    }
-    div.about-me .about-me-content p {
-    	text-align: center;
-    	padding: 0 10px 0 5px;
-    	font-size: 16px;
-    	letter-spacing: 1.2px;
-    }
-    div.container h1 {font-size: 30px;}
-    div.about-me .about-me-content span {float: none;}
-    div.contact {font-size: 18px;}
-    div.contact .contact-title {top: 50px}
-    div.contact div.social-media {margin-top: 50px;}
-    div.contact div.social-media a {margin:0;}
-    div.contact div.social-media a img{width: 30%;}
-    div.contact div.info {margin-top: 100px;}
+@media only screen and (max-width: 960px;){
 
 }
-@media only screen and (min-width: 416px) and (max-width: 550px){
-    .nb-left{width: 40%; font-size: 12px;}
-    .nb-center {
-        width: 60%;
-    }
-    .nb-center ul {float: right;  padding:0;}
-    .nb-center ul li{font-size: 12px; margin:0 3px !important;}
-    .nb-center ul:last-child {margin-right: 10px;}
-    .nb-right{display: none;}
-}
-
-@media only screen and (min-width: 551px) and (max-width: 770px){
-    .nb-left{width: 40%; font-size: 14px;}
-    .nb-center {
-        width: 60%;
-    }
-    .nb-center ul {float: right;  padding:0;}
-    .nb-center ul li{font-size: 15px; margin:0 15px !important;}
-    .nb-center ul:last-child {margin-right: 10px;}
-    .nb-right{display: none;}
-}
-
-@media only screen and (min-width: 771px) and (max-width: 960px){
-    .nb-left{width: 35%; font-size: 17px;}
-    .nb-center {
-        width: 65%;
-    }
-    .nb-center ul {float: right;  padding:0;}
-    .nb-center ul li{font-size: 17px; margin:0 20px !important;}
-    .nb-center ul:last-child {margin-right: 10px;}
-    .nb-right{display: none;}
-}
-
 
 /* ==========================================================================
    Helper classes
