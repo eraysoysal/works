@@ -128,19 +128,19 @@ header .wrapper {
   box-sizing: border-box;
 }
 .main-nav li:nth-of-type(1) {
-  background: url(../img/nav-1.png) no-repeat 50% / cover;
+  background: url(../img/nav-1.jpg) no-repeat 50% / cover;
 }
 .main-nav li:nth-of-type(2) {
-  background: url(../img/nav-2.png) no-repeat 50% / cover;
+  background: url(../img/nav-2.jpg) no-repeat 50% / cover;
 }
 .main-nav li:nth-of-type(3) {
-  background: url(../img/nav-3.png) no-repeat 50% / cover;
+  background: url(../img/nav-3.jpg) no-repeat 50% / cover;
 }
 .main-nav li:nth-of-type(4) {
-  background: url(../img/nav-4.png) no-repeat 50% / cover;
+  background: url(../img/nav-4.jpg) no-repeat 50% / cover;
 }
 .main-nav li:nth-of-type(5) {
-  background: url(../img/nav-5.png) no-repeat 50% / cover;
+  background: url(../img/nav-5.jpg) no-repeat 50% / cover;
 }
 .main-nav li:nth-of-type(6) {
   background-color: #552775;
