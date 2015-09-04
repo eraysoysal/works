@@ -358,6 +358,7 @@ footer{
 	padding: 30px 0;
 	.form{
 		padding: 0 20px;
+		margin-bottom: 75px;
 		box-sizing:border-box;
 		.tBoxWrap{
 			li{
@@ -411,9 +412,10 @@ footer{
 			}
 			ul{
 				display: none;
-				width: 500px;
-				min-width: 500px;
 				margin: 20px auto 0;
+				position: absolute;
+			    left: 50%;
+			    transform: translateX(-50%);
 				li{
 					float: left;
 					min-width: 80px;
@@ -432,13 +434,19 @@ footer{
 		margin: 20px 0;
 		padding: 0 50px;
 		box-sizing:border-box;
-		ul{
-			li{
+		> ul{
+			> li{
 				width: 100%;
 				min-height: 50px;
 				border-radius: 2px;
+				&:after{
+					.clear;
+				}
 				&:hover{
 					background-color: rgba(21,189,195,0.4) !important;
+				}
+				div{
+					float: left;
 				}
 				a{
 					width: 100%;
@@ -446,10 +454,78 @@ footer{
 					min-height: 50px;
 					display: inline-block;
 				}
+				.imgWrap{
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					overflow: hidden;
+					margin: 10px;
+				}
+				.job-detail{
+					width: 44%;
+					padding: 25px 0 0 15px;
+					box-sizing:border-box;
+					.work-title{
+						color: #424242;
+					}
+					.company{
+						color: #676767;
+					}
+				}
+				.tags{
+					width: 45%;
+					height: 80px;
+					padding-top: 25px;
+					box-sizing:border-box;
+					span{
+						margin-right: 20px;
+						color: #a1a1a1;
+						font-family: Arial, Helvetica, sans-serif;
+					}
+					ul{
+						height: 100%;
+						&:after{
+							.clear;
+						}
+					}
+					li{
+						float: left;
+						width: 33%;
+						height: 100%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					li:nth-last-of-type(1){
+						width: auto;
+						span{
+							margin-right: 0;
+
+						}
+					}
+					i.fa-map-marker{
+						color: #13afbc;
+					}
+					i.fa-clock-o.full-time-icon{
+						color: #81d42a;
+					}
+					i.fa-clock-o.part-time-icon{
+						color: #f96a04;
+					}
+					i.fa-clock-o.freelance-icon{
+						color: #7ed2f7;
+					}
+					i.fa-clock-o.intership-icon{
+						color: #482782;
+					}
+					i.fa-clock-o.contract-icon{
+						color: #ff0059;
+					}
+				}
 			}
-			li:nth-of-type(odd){
+			> li:nth-of-type(odd){
 				background-color: #f2f2f2;
 			}
+
 		}
 	}
 }
