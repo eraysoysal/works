@@ -11,6 +11,17 @@ function advancedSearchShow(){
 	});
 }
 
+function selectBoxInıt(){
+	$('.notice-count select').select2({
+		minimumResultsForSearch: -1
+	});
+	$('.tBoxWrap select').select2({
+		minimumResultsForSearch: -1,
+		placeholder: "placeholder"
+	});
+}
+
 $(document).ready(function(){
 	advancedSearchShow();
+	selectBoxInıt();
 });
