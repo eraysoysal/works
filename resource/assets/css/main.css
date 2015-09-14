@@ -505,8 +505,8 @@ footer .wrapper:after {
 }
 .list-container .wrap .form .checkWrap ul {
   display: none;
-  width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 .list-container .wrap .form .checkWrap ul li {
   display: inline-block;
@@ -725,6 +725,7 @@ footer .wrapper:after {
   top: 0;
   left: 0;
   box-sizing: border-box;
+  text-align: left;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
