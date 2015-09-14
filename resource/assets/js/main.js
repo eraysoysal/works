@@ -34,7 +34,6 @@ function tboxTitleAnimate(){
 
 function validation(){
 	$("form").validate({
-		ignore: [],
 		rules: {
 			username: {
 				required: true,
@@ -47,12 +46,12 @@ function validation(){
 		},
 		messages: {
 			username: {
-				required: firstNameRequired,
-				minlength: firstNameMinLength
+				required: 'Lütfen kullanıcı adınızı giriniz',
+				minlength: 'Kullanıcı adınız en az 2 karakterden oluşmalıdır'
 			},
 			password: {
-				required: lastNameRequired,
-				minlength: lastNameMinLength
+				required: 'Lütfen şifrenizi giriniz',
+				minlength: 'Şifreniz en az 2 karakterden oluşmalıdır'
 			}
 		}
 	});
