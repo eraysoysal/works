@@ -974,3 +974,115 @@ footer .wrapper:after {
   clear: both;
   overflow: hidden;
 }
+.login {
+  padding-bottom: 30px;
+}
+.login .login-desc p {
+  width: 640px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+.login .form {
+  width: 300px;
+  margin: 50px auto 20px;
+}
+.login .form ul:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+.login .form ul li {
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.login .form ul li input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 0 none;
+  border: 1px solid #ddd;
+  padding: 5px 20px 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #7f9ec2;
+  font-weight: 700;
+}
+.login .form ul li span {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  color: #a1a1a1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.login .form ul .login-submit {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  background-color: #43A1CD;
+  border: 1px solid #43A1CD;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.login .form ul .login-submit:hover,
+.login .form ul .login-submit:active,
+.login .form ul .login-submit:focus {
+  background-color: transparent;
+  color: #43A1CD;
+}
+.login .form ul li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.login .form ul .forgot-password {
+  height: auto;
+}
+.login .form ul .forgot-password a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login .form ul .error {
+  margin: 2px 0 5px 0 ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: red;
+  padding: 0 5px;
+  display: inline-block;
+}
+.login .form ul .chaptcha:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+.login .form ul .chaptcha img {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.login .form ul .chaptcha input {
+  float: left;
+  width: 50%;
+}
