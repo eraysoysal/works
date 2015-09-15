@@ -17,7 +17,7 @@ function selectBoxInıt(){
 	});
 	$('.tBoxWrap select').select2({
 		minimumResultsForSearch: -1,
-		placeholder: "placeholder"
+		placeholder: "Select Industry" /*Bu satırda değişiklik mevcut.*/
 	});
 }
 
@@ -53,7 +53,11 @@ function validation(){
 				required: 'Lütfen şifrenizi giriniz',
 				minlength: 'Şifreniz en az 2 karakterden oluşmalıdır'
 			}
-		}
+		},
+		submitHandler: function(form) {
+			/*Yeni Eklendi 16.09.2015*/
+            form.submit();
+        }
 	});
 }
 

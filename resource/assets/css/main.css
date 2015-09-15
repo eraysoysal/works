@@ -401,6 +401,30 @@ footer .wrapper:after {
   color: #B9BFBA;
   font-size: 24px;
 }
+.list-container .location {
+  position: relative;
+}
+.list-container .location .sublist {
+  position: absolute;
+  background-color: #ffF;
+  z-index: 9;
+}
+.list-container .location .sublist li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 16px;
+  width: 100%;
+  text-align: left;
+}
+.list-container .location .sublist li a {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #B9BFBA;
+}
+.list-container .location .sublist li:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
 .list-container .wrap {
   width: 980px;
   margin: 0 auto;
@@ -622,7 +646,7 @@ footer .wrapper:after {
   background-color: #f2f2f2;
 }
 .tags {
-  float: right;
+  float: right !important;
   width: 45%;
   height: 80px;
   padding-top: 25px;
