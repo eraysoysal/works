@@ -10,371 +10,371 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/select2.min.css">
+        <link rel="stylesheet" href="assets/css/jquery.mmenu.all.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/select2.js"></script>
         <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/jquery.mmenu.min.all.js"></script>
         <script src="assets/js/main.js"></script>
     </head>
     <body>
-        <header>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="assets/img/logo.png" alt="resource logo" />
-                </div>
-                <div class="header-links">
-                    <div class="social">
-                        <a target="_blank" href="http://www.facebook.com/RESOURCEMN"><i class="fa fa-facebook-square"></i></a>
-                        <a target="_blank" href="http://www.linkedin.com/company/528155"><i class="fa fa-linkedin-square"></i></a>
-                        <a target="_blank" href="http://www.twitter.com/RESOURCEMN"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                    <div class="contact">
-                        <a href="http://www.resource-mn.org/job-openings/">Work at RESOURCE</a>
-                        <a href="http://www.resource-mn.org/contact-resource/">Contact</a>
-                    </div>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="http://www.resource-mn.org/about-resource/">ABOUT US</a></li>
-                        <li><a href="http://www.resource-mn.org/media-page/">NEWSROOM</a></li>
-                        <li><a class="jobs" href="http://www.resource-mn.org/job-openings/">JOBS AT RESOURCE</a></li>
-                        <li><a href="http://www.resource-mn.org/calendar/">CALENDAR</a></li>
-                        <li><a href="http://www.resource-mn.org/contact-resource/">CONTACT US</a></li>
-                        <li><a href="http://www.resource-mn.org/donate/">DONATE</a></li>
-                        <li><a href="http://www.resource-mn.org/volunteer/">VOLUNTEER</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-
-        <div class="list-container">
-            <div class="wrap">
-                <h1 class="page-title">JOB LIST</h1>
-                <div class="form">
-                    <form>
-                        <ul class="tBoxWrap">
-                            <li>
-                                <input class="tBox" name="keywords" type="text" placeholder="Keywords"/>
-                            </li>
-                            <!--Location elementinde revizeler yapıldı-->
-                            <li class="location">
-                                <input class="tBox" name="location" type="text" placeholder="Location"/>
-                                <ul class="sublist">
-                                    <li><a href="javasript:;">New York City</a></li>
-                                    <li><a href="javasript:;">Los Angeles</a></li>
-                                    <li><a href="javasript:;">San Francisco</a></li>
-                                    <li><a href="javasript:;">Boston</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <select>
-                                    <option></option>
-                                    <option>Industry</option>
-                                    <option>Industry</option>
-                                    <option>Industry</option>
-                                    <option>Industry</option>
-                                    <option>Industry</option>
-                                    <option>Industry</option>
-                                </select>
-                            </li>
-                            <li><a href="javascript:;" class="list-submit">Search</a></li>
-                        </ul>
-                        <div class="checkWrap">
-                            <div class="link">
-                                <a href="javascript:;">Advanced Search</a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="check01" id="check01" value="0"/>
-                                    <label for="check01">
-                                        <span></span>All
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="check02" id="check02" value="1" checked/>
-                                    <label for="check02">
-                                        <span></span>Full Time
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="check03" id="check03" value="2"/>
-                                    <label for="check03">
-                                        <span></span>Part Time
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="check04" id="check04" value="3"/>
-                                    <label for="check04">
-                                        <span></span>Internship
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="check05" id="check05" value="4"/>
-                                    <label for="check05">
-                                        <span></span>Contract
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="check05" id="check05" value="4"/>
-                                    <label for="check05">
-                                        <span></span>Volunteer
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="notice-count">
-                            <p class="info-search">Showing all <strong>"investigator"</strong> Jobs</p>
-                            <p class="select">
-                                Sayfada
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                </select>
-                                Kayıt Göster
-                            </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="imgWrap">
-                                    <img src="assets/img/sample/job1.jpg" alt=""/>
-                                </div>
-                                <div class="job-detail">
-                                    <h3 class="work-title">WEB DESIGNER</h3>
-                                    <p class="company">Amazon Inc.</p>
-                                </div>
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="location">New York City</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-clock-o full-time-icon"></i>
-                                            <span class="working-time">Full Time</span>    
-                                        </li>
-                                        <li>
-                                            <span class="notice-time">35 mins ago</span>   
-                                        </li>
-                                    </ul>                                
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="imgWrap">
-                                    <img src="assets/img/sample/job2.jpg" alt=""/>
-                                </div>
-                                <div class="job-detail">
-                                    <h3 class="work-title">SENIOR WEB DEVELOPER</h3>
-                                    <p class="company">Dropbox Inc.</p>
-                                </div>
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="location">Los Angeles</span>   
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-clock-o part-time-icon"></i>
-                                            <span class="working-time">Part Time</span>    
-                                        </li>
-                                        <li>
-                                            <span class="notice-time">35 mins ago</span>   
-                                        </li>
-                                    </ul>                                
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="imgWrap">
-                                    <img src="assets/img/sample/job3.jpg" alt=""/>
-                                </div>
-                                <div class="job-detail">
-                                    <h3 class="work-title">PROJECT MANAGER</h3>
-                                    <p class="company">Apple Inc.</p>
-                                </div>
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="location">San Francisco</span>    
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-clock-o freelance-icon"></i>
-                                            <span class="working-time">Freelance</span>    
-                                        </li>
-                                        <li>
-                                            <span class="notice-time">35 mins ago</span>                                     
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="imgWrap">
-                                    <img src="assets/img/sample/job4.jpg" alt=""/>
-                                </div>
-                                <div class="job-detail">
-                                    <h3 class="work-title">KEY ACCOUNT MANAGER</h3>
-                                    <p class="company">Dell Inc.</p>
-                                </div>
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="location">Boston</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-clock-o intership-icon"></i>
-                                            <span class="working-time">intership</span>
-                                        </li>
-                                        <li>
-                                            <span class="notice-time">35 mins ago</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="imgWrap">
-                                    <img src="assets/img/sample/job5.jpg" alt=""/>
-                                </div>
-                                <div class="job-detail">
-                                    <h3 class="work-title">WEB DESIGNER</h3>
-                                    <p class="company">Amazon Inc.</p>
-                                </div>
-                                <div class="tags">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="location">New York City</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-clock-o contract-icon"></i>
-                                            <span class="working-time">Contract</span>
-                                        </li>
-                                        <li>
-                                            <span class="notice-time">35 mins ago</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <li><a class="page-button prev" href="javascript:;"></a></li>
-                        <li><a class="page-button first-page" href="javascript:;">1</a></li>
-                        <li class="dot"><a class="page-button middle">...</a></li>
-                        <li><a class="page-button" href="javascript:;">2</a></li>
-                        <li><a class="page-button" href="javascript:;">3</a></li>
-                        <li><a class="page-button prev-page" href="javascript:;">4</a></li>
-                        <li><a class="page-button selected" href="javascript:;">5</a></li>
-                        <li><a class="page-button next-page" href="javascript:;">6</a></li>
-                        <li><a class="page-button" href="javascript:;">7</a></li>
-                        <li><a class="page-button" href="javascript:;">8</a></li>
-                        <li class="dot"><a class="page-button">...</a></li>
-                        <li><a class="page-button last-page" href="javascript:;">9</a></li>
-                        <li><a class="page-button next" href="javascript:;"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <footer>
-            <div class="brandsAndLinksPlace">
+        <div class="container">
+            <header>
                 <div class="wrapper">
-                    <div class="brands">
-                        <a class="brand-logo" href="javascript:;">
-                            <img src="assets/img/footer-icon-1.png" alt=""/>
-                        </a>
-                        <a class="brand-logo" href="javascript:;">
-                            <img src="assets/img/footer-icon-2.png" alt=""/>
-                        </a>
-                        <a class="brand-logo" href="javascript:;">
-                            <img src="assets/img/footer-icon-3.png" alt=""/>
-                        </a>
-                        <a class="brand-logo" href="javascript:;">
-                            <img src="assets/img/footer-icon-4.png" alt=""/>
-                        </a>
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="resource logo" />
                     </div>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="javascript:;">CHEMICAL &amp; MENTAL HEALTH</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">CAREER EDUCATION</a>
-                                <a href="javascript:;">(Minnesota Resource Center)</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">EMPLOYMENT SERVICES</a>
-                                <a href="javascript:;">(Employment Action Center)</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-navigation">
-                <div class="wrapper">
-                    <div class="buttons">
-                        <a href="http://www.resource-mn.org/donate/">VOLUNTEER</a>
-                        <a href="http://www.resource-mn.org/volunteer/">DONATE</a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="javascript:;">Home</a></li>
-                            <li><a href="javascript:;">Career Education</a></li>
-                            <li><a href="javascript:;">Employment Services</a></li>
-                            <li><a href="javascript:;">Chemical &amp; Mental Health</a></li>
-                            <li><a href="javascript:;">About Us</a></li>
-                            <li><a href="javascript:;">Jobs at RESOURCE</a></li>
-                            <li><a href="javascript:;">Calendar</a></li>
-                            <li><a href="javascript:;">Newsroom</a></li>
-                            <li><a href="javascript:;">Contact Us</a></li>
-                            <li><a href="javascript:;">Donate</a></li>
-                            <li><a href="javascript:;">Volunteer</a></li>
-                            <li><a href="javascript:;">HIPAA Privacy Notice</a></li>
-                        </ul>
-                    </nav>
-                    <div class="desc">
-                        <p>RESOURCE, Inc., 1900 Chicago Avenue, Minneapolis, MN 55404<a href="javascript:;">(612) 752-8000</a></p>
-                    </div>
-                    <div class="footerSocialPlace">
-                        <div>
-                            <img src="assets/img/heart.png" alt="heart icon" />
-                        </div>
+                    <div class="header-links">
                         <div class="social">
                             <a target="_blank" href="http://www.facebook.com/RESOURCEMN"><i class="fa fa-facebook-square"></i></a>
                             <a target="_blank" href="http://www.linkedin.com/company/528155"><i class="fa fa-linkedin-square"></i></a>
                             <a target="_blank" href="http://www.twitter.com/RESOURCEMN"><i class="fa fa-twitter-square"></i></a>
                         </div>
+                        <div class="contact">
+                            <a href="http://www.resource-mn.org/job-openings/">Work at RESOURCE</a>
+                            <a href="http://www.resource-mn.org/contact-resource/">Contact</a>
+                        </div>
                     </div>
-                    <div class="copyright">
-                        <p>Copyright © 2014 Resource MN company. All rights reserved.</p>
+                    <!--Nav revision-->
+                    <i class="fa fa-bars"></i>
+                    <nav id="my-menu" class="main-nav">
+                        <ul>
+                            <li><a href="http://www.resource-mn.org/about-resource/">ABOUT US</a></li>
+                            <li><a href="http://www.resource-mn.org/media-page/">NEWSROOM</a></li>
+                            <li><a class="jobs" href="http://www.resource-mn.org/job-openings/">JOBS AT RESOURCE</a></li>
+                            <li><a href="http://www.resource-mn.org/calendar/">CALENDAR</a></li>
+                            <li><a href="http://www.resource-mn.org/contact-resource/">CONTACT US</a></li>
+                            <li><a href="http://www.resource-mn.org/donate/">DONATE</a></li>
+                            <li><a href="http://www.resource-mn.org/volunteer/">VOLUNTEER</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="list-container">
+                <div class="wrap">
+                    <h1 class="page-title">JOB LIST</h1>
+                    <div class="form">
+                        <form>
+                            <ul class="tBoxWrap">
+                                <li>
+                                    <input class="tBox" name="keywords" type="text" placeholder="Keywords"/>
+                                </li>
+                                <!--Location elementinde revizeler yapıldı-->
+                                <li class="location">
+                                    <input class="tBox" name="location" type="text" placeholder="Location"/>
+                                    <ul class="sublist">
+                                        <li><a href="javasript:;">New York City</a></li>
+                                        <li><a href="javasript:;">Los Angeles</a></li>
+                                        <li><a href="javasript:;">San Francisco</a></li>
+                                        <li><a href="javasript:;">Boston</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option></option>
+                                        <option>Industry</option>
+                                        <option>Industry</option>
+                                        <option>Industry</option>
+                                        <option>Industry</option>
+                                        <option>Industry</option>
+                                        <option>Industry</option>
+                                    </select>
+                                </li>
+                                <li><a href="javascript:;" class="list-submit">Search</a></li>
+                            </ul>
+                            <div class="checkWrap">
+                                <div class="link">
+                                    <a href="javascript:;">Advanced Search</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="check01" id="check01" value="0"/>
+                                        <label for="check01">
+                                            <span></span>All
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="check02" id="check02" value="1" checked/>
+                                        <label for="check02">
+                                            <span></span>Full Time
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="check03" id="check03" value="2"/>
+                                        <label for="check03">
+                                            <span></span>Part Time
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="check04" id="check04" value="3"/>
+                                        <label for="check04">
+                                            <span></span>Internship
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="check05" id="check05" value="4"/>
+                                        <label for="check05">
+                                            <span></span>Contract
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="check05" id="check05" value="4"/>
+                                        <label for="check05">
+                                            <span></span>Volunteer
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice-count">
+                                <p class="info-search">Showing all <strong>"investigator"</strong> Jobs</p>
+                                <p class="select">
+                                    Sayfada
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                    Kayıt Göster
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="imgWrap">
+                                        <img src="assets/img/sample/job1.jpg" alt=""/>
+                                    </div>
+                                    <div class="job-detail">
+                                        <h3 class="work-title">WEB DESIGNER</h3>
+                                        <p class="company">Amazon Inc.</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span class="location">New York City</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o full-time-icon"></i>
+                                                <span class="working-time">Full Time</span>    
+                                            </li>
+                                            <li>
+                                                <span class="notice-time">35 mins ago</span>   
+                                            </li>
+                                        </ul>                                
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="imgWrap">
+                                        <img src="assets/img/sample/job2.jpg" alt=""/>
+                                    </div>
+                                    <div class="job-detail">
+                                        <h3 class="work-title">SENIOR WEB DEVELOPER</h3>
+                                        <p class="company">Dropbox Inc.</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span class="location">Los Angeles</span>   
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o part-time-icon"></i>
+                                                <span class="working-time">Part Time</span>    
+                                            </li>
+                                            <li>
+                                                <span class="notice-time">35 mins ago</span>   
+                                            </li>
+                                        </ul>                                
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="imgWrap">
+                                        <img src="assets/img/sample/job3.jpg" alt=""/>
+                                    </div>
+                                    <div class="job-detail">
+                                        <h3 class="work-title">PROJECT MANAGER</h3>
+                                        <p class="company">Apple Inc.</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span class="location">San Francisco</span>    
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o freelance-icon"></i>
+                                                <span class="working-time">Freelance</span>    
+                                            </li>
+                                            <li>
+                                                <span class="notice-time">35 mins ago</span>                                     
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="imgWrap">
+                                        <img src="assets/img/sample/job4.jpg" alt=""/>
+                                    </div>
+                                    <div class="job-detail">
+                                        <h3 class="work-title">KEY ACCOUNT MANAGER</h3>
+                                        <p class="company">Dell Inc.</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span class="location">Boston</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o intership-icon"></i>
+                                                <span class="working-time">intership</span>
+                                            </li>
+                                            <li>
+                                                <span class="notice-time">35 mins ago</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="imgWrap">
+                                        <img src="assets/img/sample/job5.jpg" alt=""/>
+                                    </div>
+                                    <div class="job-detail">
+                                        <h3 class="work-title">WEB DESIGNER</h3>
+                                        <p class="company">Amazon Inc.</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span class="location">New York City</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o contract-icon"></i>
+                                                <span class="working-time">Contract</span>
+                                            </li>
+                                            <li>
+                                                <span class="notice-time">35 mins ago</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li><a class="page-button prev" href="javascript:;"></a></li>
+                            <li><a class="page-button first-page" href="javascript:;">1</a></li>
+                            <li class="dot"><a class="page-button middle">...</a></li>
+                            <li><a class="page-button" href="javascript:;">2</a></li>
+                            <li><a class="page-button" href="javascript:;">3</a></li>
+                            <li><a class="page-button prev-page" href="javascript:;">4</a></li>
+                            <li><a class="page-button selected" href="javascript:;">5</a></li>
+                            <li><a class="page-button next-page" href="javascript:;">6</a></li>
+                            <li><a class="page-button" href="javascript:;">7</a></li>
+                            <li><a class="page-button" href="javascript:;">8</a></li>
+                            <li class="dot"><a class="page-button">...</a></li>
+                            <li><a class="page-button last-page" href="javascript:;">9</a></li>
+                            <li><a class="page-button next" href="javascript:;"></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+            <footer>
+                <div class="brandsAndLinksPlace">
+                    <div class="wrapper">
+                        <div class="brands">
+                            <a class="brand-logo" href="javascript:;">
+                                <img src="assets/img/footer-icon-1.png" alt=""/>
+                            </a>
+                            <a class="brand-logo" href="javascript:;">
+                                <img src="assets/img/footer-icon-2.png" alt=""/>
+                            </a>
+                            <a class="brand-logo" href="javascript:;">
+                                <img src="assets/img/footer-icon-3.png" alt=""/>
+                            </a>
+                            <a class="brand-logo" href="javascript:;">
+                                <img src="assets/img/footer-icon-4.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">CHEMICAL &amp; MENTAL HEALTH</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">CAREER EDUCATION</a>
+                                    <a href="javascript:;">(Minnesota Resource Center)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">EMPLOYMENT SERVICES</a>
+                                    <a href="javascript:;">(Employment Action Center)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-navigation">
+                    <div class="wrapper">
+                        <div class="buttons">
+                            <a href="http://www.resource-mn.org/donate/">VOLUNTEER</a>
+                            <a href="http://www.resource-mn.org/volunteer/">DONATE</a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="javascript:;">Home</a></li>
+                                <li><a href="javascript:;">Career Education</a></li>
+                                <li><a href="javascript:;">Employment Services</a></li>
+                                <li><a href="javascript:;">Chemical &amp; Mental Health</a></li>
+                                <li><a href="javascript:;">About Us</a></li>
+                                <li><a href="javascript:;">Jobs at RESOURCE</a></li>
+                                <li><a href="javascript:;">Calendar</a></li>
+                                <li><a href="javascript:;">Newsroom</a></li>
+                                <li><a href="javascript:;">Contact Us</a></li>
+                                <li><a href="javascript:;">Donate</a></li>
+                                <li><a href="javascript:;">Volunteer</a></li>
+                                <li><a href="javascript:;">HIPAA Privacy Notice</a></li>
+                            </ul>
+                        </nav>
+                        <div class="desc">
+                            <p>RESOURCE, Inc., 1900 Chicago Avenue, Minneapolis, MN 55404<a href="javascript:;">(612) 752-8000</a></p>
+                        </div>
+                        <div class="footerSocialPlace">
+                            <div>
+                                <img src="assets/img/heart.png" alt="heart icon" />
+                            </div>
+                            <div class="social">
+                                <a target="_blank" href="http://www.facebook.com/RESOURCEMN"><i class="fa fa-facebook-square"></i></a>
+                                <a target="_blank" href="http://www.linkedin.com/company/528155"><i class="fa fa-linkedin-square"></i></a>
+                                <a target="_blank" href="http://www.twitter.com/RESOURCEMN"><i class="fa fa-twitter-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright © 2014 Resource MN company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

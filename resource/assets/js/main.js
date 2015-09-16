@@ -61,9 +61,57 @@ function validation(){
 	});
 }
 
+function mobileMenu(){
+	$('#my-menu').mmenu({
+		"offCanvas": {
+            "position": "right"
+        }
+	});
+	mobileMenu = $('#my-menu').data('mmenu');
+	$('body').on('click','.fa-bars:not(.active)', function(){
+		mobileMenu.open();
+	});
+}
+
 $(document).ready(function(){
 	advancedSearchShow();
 	selectBoxInıt();
 	tboxTitleAnimate();
 	validation();
+	mobileMenu();
+
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		all: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
+	if (isMobile.all()) {
+		$('.pagination a').each(function() {
+			if ($(this).css('display') == 'none') {
+				$(this).parent().hide();
+			}
+			if($(this).attr('class') == 'page-button selected'){
+				$(this).parent().show();
+				$(this).css('display', 'inline-block');
+			}
+		});
+	}
+
+	
 });

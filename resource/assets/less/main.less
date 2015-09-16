@@ -412,6 +412,7 @@ footer{
 .list-container .location{
 	position: relative;
 	.sublist{
+		display: none;
 		position: absolute;
 		background-color: #ffF;
 		z-index: 9;
@@ -1055,6 +1056,117 @@ footer{
 				float: left;
 				width: 50%;
 			}
+		}
+	}
+}
+
+.fa-bars {position: absolute; top: 10px; right: 10px; font-size: 42px;}
+
+@media only screen and (max-width: 321px ) {
+	header {
+		height: 75px;
+		.wrapper{
+			width: 100%;
+		}
+		.logo{
+			left: 10px;
+		}
+		.header-links{
+			display: none;
+		}
+	}
+	.list-container{
+		.wrap{
+			width: 100%;
+			.list{
+				padding: 0 10px;
+				>ul >li {
+					.job-detail{
+						width: 100%;
+						padding: 0;
+						text-align: center;
+					}
+					.imgWrap{
+						float: none;
+						margin: 10px auto;
+					}
+
+				}
+				.tags{
+					width: 100%;
+					height: auto;
+					li{
+						float: none;
+						width: 100%;
+					    text-align: center;
+					    height: auto;
+					    font-size: 16px;
+					    padding: 10px;
+					    box-sizing:border-box;
+					}
+					span{
+						margin: 0;
+					}
+				}
+			}
+
+			.form{
+				padding: 0 10px;
+				.tBoxWrap li{
+					width: 100%;
+					margin: 10px 0;
+					&:nth-of-type(3){
+						float:left;
+						width: 50%;
+						.select2-container{
+							width: 100% !important;
+						}
+					}
+					&:nth-of-type(4){
+						float: left;
+						width: 50%;
+						a{
+							float: right;
+							padding: 0 50px;
+							top: 0;
+							line-height: 43px;
+						}
+					}
+				}
+				.checkWrap{
+					ul li{
+						float: left;
+						width: 33%;
+						margin: 0;
+						text-align: left;
+					}
+				}
+				.notice-count{
+					p{
+						text-align: center;
+					    width: 100%;
+					    margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.page-title{
+		width: 300px;
+		padding: 10px 0;
+		margin: 0 10px 20px 10px;
+		text-align: center;
+	}
+
+	.pagination{
+		li{
+			a{
+				display: none;
+			}
+		}
+		.dot{
+			display: none;
 		}
 	}
 }
