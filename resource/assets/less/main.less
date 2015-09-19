@@ -957,6 +957,11 @@ footer{
 
 .login{
 	padding-bottom: 30px;
+	position: relative;
+	background-color: #f4f4f1;
+	.wrap{
+		background-color: #fff;
+	}
 	.login-desc p{
 		width: 640px;
 		margin: 0 auto;
@@ -1062,33 +1067,70 @@ footer{
 
 .fa-bars {position: absolute; top: 10px; right: 10px; font-size: 42px;}
 
-@media only screen and (max-width: 321px ) {
+@media only screen and (max-width: 415px ) {
+	footer{
+		display: none;
+	}
 	header {
-		height: 75px;
+		&:after{
+			.clear;
+		}
 		.wrapper{
-			width: 100%;
+			width: 320px;
 		}
 		.logo{
-			left: 10px;
+			position: static;
+		    height: 80px;
+		    width: 100%;
+		    text-align: center;
+		    padding: 20px 0 20px 0;
+		    box-sizing: border-box;
 		}
 		.header-links{
 			display: none;
 		}
+		.main-nav{
+			display: none;
+		}
+		.mobile-menu{
+			float: left;
+			display: block;
+			width: 320px;
+			height: 60px;
+			background-color: #bec1ba;
+			padding: 15px;
+			box-sizing:border-box;
+			.select2-container{
+				width: 200px !important;
+			}
+			.select2-dropdown{
+				width: 100%;
+			}
+		}
 	}
 	.list-container{
+		position: relative;
+
 		.wrap{
-			width: 100%;
+			width: 320px;
+			padding: 0 10px;
+			box-sizing:border-box;
 			.list{
-				padding: 0 10px;
+				padding: 0;
 				>ul >li {
+					width: 100%;
+					a{
+						padding: 15px 10px;
+						box-sizing:border-box;
+					}
 					.job-detail{
-						width: 100%;
-						padding: 0;
-						text-align: center;
+						width: auto;
+						max-width: 185px;
+						padding: 15px 0 0 0;
+						text-align: left;
 					}
 					.imgWrap{
-						float: none;
-						margin: 10px auto;
+						margin: 0 20px 0 0;
 					}
 
 				}
@@ -1098,7 +1140,6 @@ footer{
 					li{
 						float: none;
 						width: 100%;
-					    text-align: center;
 					    height: auto;
 					    font-size: 16px;
 					    padding: 10px;
@@ -1111,7 +1152,7 @@ footer{
 			}
 
 			.form{
-				padding: 0 10px;
+				padding: 50px 10px 0 10px;
 				.tBoxWrap li{
 					width: 100%;
 					margin: 10px 0;
@@ -1125,9 +1166,13 @@ footer{
 					&:nth-of-type(4){
 						float: left;
 						width: 50%;
+						padding: 0 10px;
+						box-sizing:border-box;
 						a{
 							float: right;
-							padding: 0 50px;
+							width: 100%;
+							padding: 0 40px;
+							box-sizing:border-box;
 							top: 0;
 							line-height: 43px;
 						}
@@ -1154,9 +1199,12 @@ footer{
 
 	.page-title{
 		width: 300px;
-		padding: 10px 0;
-		margin: 0 10px 20px 10px;
-		text-align: center;
+		padding: 10px 0 25px 0;
+		margin: 0 0 20px;
+		text-align: left;
+		position: absolute;
+		top: -30px;
+		background-color: #fff;
 	}
 
 	.pagination{
@@ -1167,6 +1215,63 @@ footer{
 		}
 		.dot{
 			display: none;
+		}
+	}
+	.title{
+		width: 320px;
+		margin: 0 auto;
+		.page-title{
+			width: 300px;
+			margin: 0;
+		}
+	}
+
+	.jobs-detail-wrapper{
+		position: relative;
+		.page-title{
+			margin: 0 10px;
+		}
+		.wrapper{
+			width: 320px;
+			margin: 0 auto;
+			padding: 50px 15px 30px 15px;
+			box-sizing:border-box;
+			p{
+				font-size: 18px;
+			}
+		}
+		.company-detail {
+			.company-logo{
+				width: 100%;
+			}
+			.web-site{
+				width: 100%;
+				padding: 0;
+    			text-align: center;
+			}
+		}
+		.tags li {
+			float: left;
+			width: 60%;
+			margin: 5px 0;
+		}
+	}
+	.login{
+		.wrap{
+			width: 320px;
+			margin: 0 auto;
+			padding: 50px 10px 30px 10px;
+			box-sizing:border-box;
+		}
+		.form{
+			margin: 0;
+		}
+		.login-desc{
+			margin-top: 30px;
+			p{
+				width: 100%;
+				font-size: 18px;
+			}
 		}
 	}
 }

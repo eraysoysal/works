@@ -19,6 +19,10 @@ function selectBoxInıt(){
 		minimumResultsForSearch: -1,
 		placeholder: "Select Industry" /*Bu satırda değişiklik mevcut.*/
 	});
+	$('.mobile-menu select').select2({
+		minimumResultsForSearch: -1,
+		placeholder: "Navigation" /*Bu satırda değişiklik mevcut.*/
+	});
 }
 
 function tboxTitleAnimate(){
@@ -61,24 +65,11 @@ function validation(){
 	});
 }
 
-function mobileMenu(){
-	$('#my-menu').mmenu({
-		"offCanvas": {
-            "position": "right"
-        }
-	});
-	mobileMenu = $('#my-menu').data('mmenu');
-	$('body').on('click','.fa-bars:not(.active)', function(){
-		mobileMenu.open();
-	});
-}
-
 $(document).ready(function(){
 	advancedSearchShow();
 	selectBoxInıt();
 	tboxTitleAnimate();
 	validation();
-	mobileMenu();
 
 	var isMobile = {
 		Android: function() {
