@@ -382,6 +382,7 @@ footer .wrapper:after {
 .list-container {
   width: 100%;
   background-color: #f4f4f1;
+  position: relative;
 }
 .title {
   width: 980px;
@@ -849,6 +850,7 @@ footer .wrapper:after {
 .jobs-detail-wrapper {
   width: 100%;
   background-color: #f4f4f1;
+  position: relative;
 }
 .jobs-detail-wrapper .wrapper {
   width: 980px;
@@ -1125,10 +1127,75 @@ footer .wrapper:after {
 .mobile-menu {
   display: none;
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 959px) {
   footer {
     display: none;
   }
+  header .wrapper {
+    width: 766px;
+  }
+  header .main-nav ul {
+    width: 721px;
+  }
+  header .main-nav li {
+    width: 99px;
+  }
+  header .main-nav li a {
+    width: 100%;
+  }
+  .login .wrap {
+    width: 766px;
+    margin: 0 auto;
+    padding: 110px 10px 30px 10px;
+    box-sizing: border-box;
+  }
+  .login .form {
+    margin: 0 auto;
+  }
+  .login .login-desc {
+    margin-top: 30px;
+  }
+  .login .login-desc p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .title {
+    width: 746px !important;
+    margin: 0 auto;
+  }
+  .title .page-title {
+    width: 440px;
+    margin: 0;
+  }
+  .page-title {
+    width: 746px !important;
+    padding: 10px 0 25px 0;
+    margin: 0 0 20px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    padding-left: 220px;
+    background-color: #fff;
+  }
+  .list-container .wrap {
+    width: 766px;
+    padding-top: 90px;
+  }
+  .list-container .wrap .form .tBoxWrap li {
+    width: 160px;
+  }
+  .jobs-detail-wrapper .wrapper {
+    width: 766px;
+    padding-top: 90px;
+  }
+  .jobs-detail-wrapper .wrapper h2 {
+    width: 100%;
+  }
+  .jobs-detail-wrapper .tags {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
   header:after {
     content: ' ';
     display: block;
@@ -1138,7 +1205,7 @@ footer .wrapper:after {
     overflow: hidden;
   }
   header .wrapper {
-    width: 320px;
+    width: 460px;
   }
   header .logo {
     position: static;
@@ -1157,7 +1224,7 @@ footer .wrapper:after {
   header .mobile-menu {
     float: left;
     display: block;
-    width: 320px;
+    width: 100%;
     height: 60px;
     background-color: #bec1ba;
     padding: 15px;
@@ -1169,38 +1236,76 @@ footer .wrapper:after {
   header .mobile-menu .select2-dropdown {
     width: 100%;
   }
-  .list-container {
-    position: relative;
-  }
   .list-container .wrap {
-    width: 320px;
+    width: 460px;
     padding: 0 10px;
     box-sizing: border-box;
   }
-  .list-container .wrap .list {
-    padding: 0;
+  .list-container .form {
+    padding: 50px 10px 0 10px !important;
   }
-  .list-container .wrap .list > ul > li {
+  .list-container .form .tBoxWrap li {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .list-container .form .tBoxWrap li:nth-of-type(3) {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  .list-container .form .tBoxWrap li:nth-of-type(3) .select2-container {
+    width: 100% !important;
+  }
+  .list-container .form .tBoxWrap li:nth-of-type(4) {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .list-container .form .tBoxWrap li:nth-of-type(4) a {
+    float: right;
+    width: 100%;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+    top: 0 !important;
+    line-height: 43px;
+  }
+  .list-container .form .checkWrap ul li {
+    float: left;
+    width: 33%;
+    margin: 0;
+    text-align: left;
+  }
+  .list-container .form .notice-count p {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .list-container .list {
+    padding: 0 !important;
+  }
+  .list-container .list > ul > li {
     width: 100%;
   }
-  .list-container .wrap .list > ul > li a {
+  .list-container .list > ul > li a {
     padding: 15px 10px;
     box-sizing: border-box;
   }
-  .list-container .wrap .list > ul > li .job-detail {
+  .list-container .list > ul > li .job-detail {
     width: auto;
     max-width: 185px;
     padding: 15px 0 0 0;
     text-align: left;
   }
-  .list-container .wrap .list > ul > li .imgWrap {
+  .list-container .list > ul > li .imgWrap {
     margin: 0 20px 0 0;
   }
-  .list-container .wrap .list .tags {
+  .list-container .list .tags {
     width: 100%;
     height: auto;
   }
-  .list-container .wrap .list .tags li {
+  .list-container .list .tags li {
     float: none;
     width: 100%;
     height: auto;
@@ -1208,50 +1313,35 @@ footer .wrapper:after {
     padding: 10px;
     box-sizing: border-box;
   }
-  .list-container .wrap .list .tags span {
+  .list-container .list .tags span {
     margin: 0;
   }
-  .list-container .wrap .form {
-    padding: 50px 10px 0 10px;
-  }
-  .list-container .wrap .form .tBoxWrap li {
-    width: 100%;
-    margin: 10px 0;
-  }
-  .list-container .wrap .form .tBoxWrap li:nth-of-type(3) {
-    float: left;
-    width: 50%;
-  }
-  .list-container .wrap .form .tBoxWrap li:nth-of-type(3) .select2-container {
-    width: 100% !important;
-  }
-  .list-container .wrap .form .tBoxWrap li:nth-of-type(4) {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
+  .login .wrap {
+    width: 460px;
+    margin: 0 auto;
+    padding: 50px 10px 30px 10px;
     box-sizing: border-box;
   }
-  .list-container .wrap .form .tBoxWrap li:nth-of-type(4) a {
-    float: right;
-    width: 100%;
-    padding: 0 40px;
-    box-sizing: border-box;
-    top: 0;
-    line-height: 43px;
+  .login .form {
+    margin: 0 auto;
   }
-  .list-container .wrap .form .checkWrap ul li {
-    float: left;
-    width: 33%;
+  .login .login-desc {
+    margin-top: 30px;
+  }
+  .login .login-desc p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .title {
+    width: 440px !important;
+    margin: 0 auto;
+  }
+  .title .page-title {
+    width: 440px !important;
     margin: 0;
-    text-align: left;
-  }
-  .list-container .wrap .form .notice-count p {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
   }
   .page-title {
-    width: 300px;
+    width: 440px !important;
     padding: 10px 0 25px 0;
     margin: 0 0 20px;
     text-align: left;
@@ -1265,24 +1355,10 @@ footer .wrapper:after {
   .pagination .dot {
     display: none;
   }
-  .title {
-    width: 320px;
-    margin: 0 auto;
-  }
-  .title .page-title {
-    width: 300px;
-    margin: 0;
-  }
-  .jobs-detail-wrapper {
-    position: relative;
-  }
-  .jobs-detail-wrapper .page-title {
-    margin: 0 10px;
-  }
   .jobs-detail-wrapper .wrapper {
-    width: 320px;
+    width: 460px;
     margin: 0 auto;
-    padding: 50px 15px 30px 15px;
+    padding: 50px 25px 30px 25px;
     box-sizing: border-box;
   }
   .jobs-detail-wrapper .wrapper p {
@@ -1301,20 +1377,32 @@ footer .wrapper:after {
     width: 60%;
     margin: 5px 0;
   }
-  .login .wrap {
+}
+@media only screen and (max-width: 480px) {
+  header .wrapper {
     width: 320px;
-    margin: 0 auto;
-    padding: 50px 10px 30px 10px;
+  }
+  .list-container .wrap {
+    width: 320px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
-  .login .form {
-    margin: 0;
+  .title {
+    width: 320px;
+    margin: 0 auto;
   }
-  .login .login-desc {
-    margin-top: 30px;
+  .title .page-title {
+    width: 300px;
+    margin: 0 10px !important;
   }
-  .login .login-desc p {
-    width: 100%;
-    font-size: 18px;
+  .login .wrap {
+    width: 320px !important;
+  }
+  .page-title {
+    width: 300px;
+  }
+  .jobs-detail-wrapper .wrapper {
+    padding: 50px 15px 30px 15px;
+    width: 320px;
   }
 }
