@@ -1122,6 +1122,9 @@ footer .wrapper:after {
   right: 10px;
   font-size: 42px;
 }
+.mobile-menu {
+  display: none;
+}
 @media only screen and (max-width: 415px) {
   footer {
     display: none;
