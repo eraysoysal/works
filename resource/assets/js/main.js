@@ -65,6 +65,18 @@ function validation(){
 	});
 }
 
+function paginationDisplay(){
+	$('.pagination a').each(function() {
+		if ($(this).css('display') == 'none') {
+			$(this).parent().hide();
+		}
+		if($(this).attr('class') == 'page-button selected'){
+			$(this).parent().show();
+			$(this).css('display', 'inline-block');
+		}
+	});
+}
+
 $(document).ready(function(){
 	advancedSearchShow();
 	selectBoxInıt();
@@ -93,16 +105,15 @@ $(document).ready(function(){
 	};
 
 	if (isMobile.all()) {
-		$('.pagination a').each(function() {
-			if ($(this).css('display') == 'none') {
-				$(this).parent().hide();
-			}
-			if($(this).attr('class') == 'page-button selected'){
-				$(this).parent().show();
-				$(this).css('display', 'inline-block');
-			}
-		});
+		paginationDisplay();
 	}
 
-	
+
+});
+
+$(window).resize(function(){
+	var wWidth = $(window).width();
+	if (wWidth < 767) {
+		paginationDisplay();
+	}
 });

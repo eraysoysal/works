@@ -662,6 +662,9 @@ footer{
 
 		}
 	}
+	i{
+		margin-left: 5px;
+	}
 	i.fa-map-marker{
 		color: #13afbc;
 	}
@@ -849,6 +852,7 @@ footer{
 	}
 	h2{
 		display: inline-block;
+		width: 100%;
 		font-size: 20px;
 		color: #424242;
 		margin: 20px 0;
@@ -924,6 +928,7 @@ footer{
 		}
 		.company-name{
 			float: left;
+			width: auto;
 			margin: 25px 15px 25px 0;
 			&:after{
 				display:none;
@@ -1093,6 +1098,22 @@ footer{
 			}
 		}
 	}
+
+	.job-detail{
+		width: 35% !important;
+	}
+
+	.tags {
+		width: 50%;
+		li {
+			width: 120px;
+			span{
+				margin-right: 10px; 
+			}
+		}
+	}
+
+
 
 	.login{
 		.wrap{
@@ -1381,10 +1402,10 @@ footer{
 	}
 	
 	.title{
-		width: 320px;
+		width: 320px !important;
 		margin: 0 auto;
 		.page-title{
-			width: 300px;
+			width: 300px !important;
 			margin: 0 10px !important;
 		}
 	}
@@ -1397,7 +1418,7 @@ footer{
 	}
 
 	.page-title{
-		width: 300px;
+		width: 300px !important;
 	}
 
 	.jobs-detail-wrapper{
@@ -1405,5 +1426,9 @@ footer{
 			padding: 50px 15px 30px 15px;
 			width: 320px;
 		}
+		h2{
+			width: auto !important;
+		}
 	}
-}	
+
+}
