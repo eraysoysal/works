@@ -1,6 +1,7 @@
 body {
   font-family: 'Telefon Black', 'Century Gothic', CenturyGothic, AppleGothic, Arial;
   font-size: 14px;
+  background-color: #f4f4f1;
 }
 body ::-webkit-input-placeholder {
   color: #B3B2B2;
