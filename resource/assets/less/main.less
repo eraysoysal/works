@@ -215,6 +215,7 @@ footer{
 .brandsAndLinksPlace{
 	height: 55px;
 	border-top: 3px solid #828a7f;
+	background-color: #fff;
 	box-sizing:border-box;
 	.brands{
 		float: left;
@@ -238,6 +239,7 @@ footer{
 			float: left;
 			width: 33%;
 			height: 100%;
+			box-sizing:border-box;
 			a{
 				display: inline-block;
 				width: 100%;
@@ -359,6 +361,7 @@ footer{
 	}
 
 	.copyright{
+		float: left;
 		color: #fff;
 	    font-family: Arial, Helvetica, sans-serif;
 		font-size: 11px;
@@ -908,7 +911,7 @@ footer{
 	.desc{
 		margin-bottom: 20px;
 	}
-	.apply-button{
+	.apply-button a{
 		display: inline-block;
 		color: #fff;
 		background-color: #43a1cd;
@@ -949,9 +952,26 @@ footer{
 			.clear;
 		}
 	}
+	.print-out{
+		float: right;
+	    width: 90px;
+	    padding: 25px 0;
+	    box-sizing: border-box;
+	    i{
+			color: #000;
+			margin-right: 5px;
+		}
+		a {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #000;
+			&:hover{
+				color: #ea764b;
+			}
+		}
+	}
 	.web-site{
 		float: right;
-		width: 50%;
+		width: 150px;
 		height: 100%;
 		text-align: right;
 		padding: 25px 0;
@@ -974,11 +994,12 @@ footer{
 }
 
 .login{
-	padding-bottom: 30px;
 	position: relative;
 	background-color: #f4f4f1;
 	.wrap{
 		background-color: #fff;
+		padding-bottom: 30px;
+		box-sizing:border-box;
 	}
 	.login-desc p{
 		width: 640px;
@@ -1116,10 +1137,6 @@ footer{
 }
 
 @media only screen and (max-width: 959px ) {
-	footer{
-		display: none;
-	}
-
 	header{
 		.wrapper{
 			width: 766px;
@@ -1132,6 +1149,66 @@ footer{
 				width: 99px;
 				a{
 					width: 100%;
+				}
+			}
+		}
+	}
+
+	footer{
+		.brandsAndLinksPlace{
+			height: 110px;
+			.wrapper{
+				width: 748px;
+				.links{
+					width: 420px;
+					padding-top: 0;
+					li{
+						width: auto;
+						padding: 10px 40px 10px 8px;
+						a{
+							display: inherit;
+						}
+					}
+				}
+				.brands{
+					width: 250px;
+					.brand-logo{
+						margin-right: 20px;
+					}
+					.brand-logo:nth-of-type(1){
+						margin-left: 0;
+					}
+
+				}
+			}
+		}
+		.footer-navigation{
+			.wrapper{
+				width: 748px;
+				.buttons{
+					width: 250px;
+					margin-right: 0;
+					a:nth-of-type(1){
+						margin:0;
+						margin-right: 20px;
+					}
+				}
+				nav{
+					width: 488px;
+				}
+				.desc{
+					width: 488px;
+					p{
+						line-height: 1.2;
+					}
+				}
+				.footerSocialPlace{
+					width: 488px;
+					height: 75px;
+					div{
+						width: auto;
+						margin-right: 30px;
+					}
 				}
 			}
 		}
@@ -1167,7 +1244,8 @@ footer{
 			margin-top: 30px;
 			p{
 				width: 100%;
-				font-size: 18px;
+				padding: 0 20px;
+				box-sizing:border-box;
 			}
 		}
 	}
@@ -1220,7 +1298,9 @@ footer{
 }
 
 @media only screen and (max-width: 767px ) {
-	
+	.print-out{
+		display: none;
+	}
 
 	header {
 		&:after{
@@ -1269,6 +1349,42 @@ footer{
 				appearance: none;
 				-webkit-appearance: none;
 				-ms-appearance: none;
+			}
+		}
+	}
+
+	footer{
+		.brandsAndLinksPlace{
+			height: 190px;
+			.wrapper{
+				width: 420px;
+				.brands{
+					height: auto;
+				}
+				.links{
+					height: auto;
+					li{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.footer-navigation{
+			height: auto;
+			.wrapper{
+				width: 420px;
+				.buttons{
+					width: 100%;
+				}
+				nav{
+					width: 100%;
+				}
+				.desc{
+					width: 100%;
+				}
+				.footerSocialPlace{
+					width: 420px;
+				}
 			}
 		}
 	}
@@ -1370,7 +1486,6 @@ footer{
 			margin-top: 30px;
 			p{
 				width: 100%;
-				font-size: 18px;
 			}
 		}
 	}
@@ -1436,6 +1551,27 @@ footer{
 			width: 320px;
 		}
 	}
+
+	footer{
+		.brandsAndLinksPlace{
+			.wrapper{
+				width: 300px;
+				.links{
+					width: 100%;
+				}
+			}
+		}
+		.footer-navigation{
+			.wrapper{
+				width: 300px;
+				.footerSocialPlace {
+					width: 100%;
+				}
+			}
+
+		}
+	}
+
 	.list-container{
 		.wrap{
 			width: 320px;
@@ -1489,5 +1625,11 @@ footer{
 			}
 		}
 	}
+}
 
+@media print{
+	header {display: none;}
+	footer {display: none;}
+	.apply-button{display: none;}
+	.print-out{display: none;}
 }

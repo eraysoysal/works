@@ -208,6 +208,7 @@ footer .wrapper:after {
 .brandsAndLinksPlace {
   height: 55px;
   border-top: 3px solid #828a7f;
+  background-color: #fff;
   box-sizing: border-box;
 }
 .brandsAndLinksPlace .brands {
@@ -232,6 +233,7 @@ footer .wrapper:after {
   float: left;
   width: 33%;
   height: 100%;
+  box-sizing: border-box;
 }
 .brandsAndLinksPlace .links li a {
   display: inline-block;
@@ -357,6 +359,7 @@ footer .wrapper:after {
   color: #cbcfd6;
 }
 .footer-navigation .copyright {
+  float: left;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
@@ -942,7 +945,7 @@ footer .wrapper:after {
 .jobs-detail-wrapper .desc {
   margin-bottom: 20px;
 }
-.jobs-detail-wrapper .apply-button {
+.jobs-detail-wrapper .apply-button a {
   display: inline-block;
   color: #fff;
   background-color: #43a1cd;
@@ -952,12 +955,12 @@ footer .wrapper:after {
   border-radius: 5px;
   cursor: pointer;
 }
-.jobs-detail-wrapper .apply-button .fa-chevron-left {
+.jobs-detail-wrapper .apply-button a .fa-chevron-left {
   margin-right: 10px;
 }
-.jobs-detail-wrapper .apply-button:hover,
-.jobs-detail-wrapper .apply-button:focus,
-.jobs-detail-wrapper .apply-button:active {
+.jobs-detail-wrapper .apply-button a:hover,
+.jobs-detail-wrapper .apply-button a:focus,
+.jobs-detail-wrapper .apply-button a:active {
   background-color: rgba(67, 161, 205, 0.8);
 }
 .company-detail {
@@ -991,9 +994,26 @@ footer .wrapper:after {
   clear: both;
   overflow: hidden;
 }
+.company-detail .print-out {
+  float: right;
+  width: 90px;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+.company-detail .print-out i {
+  color: #000;
+  margin-right: 5px;
+}
+.company-detail .print-out a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.company-detail .print-out a:hover {
+  color: #ea764b;
+}
 .company-detail .web-site {
   float: right;
-  width: 50%;
+  width: 150px;
   height: 100%;
   text-align: right;
   padding: 25px 0;
@@ -1019,12 +1039,13 @@ footer .wrapper:after {
   overflow: hidden;
 }
 .login {
-  padding-bottom: 30px;
   position: relative;
   background-color: #f4f4f1;
 }
 .login .wrap {
   background-color: #fff;
+  padding-bottom: 30px;
+  box-sizing: border-box;
 }
 .login .login-desc p {
   width: 640px;
@@ -1172,9 +1193,6 @@ footer .wrapper:after {
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 959px) {
-  footer {
-    display: none;
-  }
   header .wrapper {
     width: 766px;
   }
@@ -1186,6 +1204,60 @@ footer .wrapper:after {
   }
   header .main-nav li a {
     width: 100%;
+  }
+  footer .brandsAndLinksPlace {
+    height: 110px;
+  }
+  footer .brandsAndLinksPlace .wrapper {
+    width: 748px;
+  }
+  footer .brandsAndLinksPlace .wrapper .links {
+    width: 420px;
+    padding-top: 0;
+  }
+  footer .brandsAndLinksPlace .wrapper .links li {
+    width: auto;
+    padding: 10px 40px 10px 8px;
+  }
+  footer .brandsAndLinksPlace .wrapper .links li a {
+    display: inherit;
+  }
+  footer .brandsAndLinksPlace .wrapper .brands {
+    width: 250px;
+  }
+  footer .brandsAndLinksPlace .wrapper .brands .brand-logo {
+    margin-right: 20px;
+  }
+  footer .brandsAndLinksPlace .wrapper .brands .brand-logo:nth-of-type(1) {
+    margin-left: 0;
+  }
+  footer .footer-navigation .wrapper {
+    width: 748px;
+  }
+  footer .footer-navigation .wrapper .buttons {
+    width: 250px;
+    margin-right: 0;
+  }
+  footer .footer-navigation .wrapper .buttons a:nth-of-type(1) {
+    margin: 0;
+    margin-right: 20px;
+  }
+  footer .footer-navigation .wrapper nav {
+    width: 488px;
+  }
+  footer .footer-navigation .wrapper .desc {
+    width: 488px;
+  }
+  footer .footer-navigation .wrapper .desc p {
+    line-height: 1.2;
+  }
+  footer .footer-navigation .wrapper .footerSocialPlace {
+    width: 488px;
+    height: 75px;
+  }
+  footer .footer-navigation .wrapper .footerSocialPlace div {
+    width: auto;
+    margin-right: 30px;
   }
   .job-detail {
     width: 35% !important;
@@ -1213,7 +1285,8 @@ footer .wrapper:after {
   }
   .login .login-desc p {
     width: 100%;
-    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .title {
     width: 746px !important;
@@ -1252,6 +1325,9 @@ footer .wrapper:after {
   }
 }
 @media only screen and (max-width: 767px) {
+  .print-out {
+    display: none;
+  }
   header:after {
     content: ' ';
     display: block;
@@ -1304,6 +1380,39 @@ footer .wrapper:after {
     appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
+  }
+  footer .brandsAndLinksPlace {
+    height: 190px;
+  }
+  footer .brandsAndLinksPlace .wrapper {
+    width: 420px;
+  }
+  footer .brandsAndLinksPlace .wrapper .brands {
+    height: auto;
+  }
+  footer .brandsAndLinksPlace .wrapper .links {
+    height: auto;
+  }
+  footer .brandsAndLinksPlace .wrapper .links li {
+    width: 100%;
+  }
+  footer .footer-navigation {
+    height: auto;
+  }
+  footer .footer-navigation .wrapper {
+    width: 420px;
+  }
+  footer .footer-navigation .wrapper .buttons {
+    width: 100%;
+  }
+  footer .footer-navigation .wrapper nav {
+    width: 100%;
+  }
+  footer .footer-navigation .wrapper .desc {
+    width: 100%;
+  }
+  footer .footer-navigation .wrapper .footerSocialPlace {
+    width: 420px;
   }
   .list-container .wrap {
     width: 460px;
@@ -1392,7 +1501,6 @@ footer .wrapper:after {
   }
   .login .login-desc p {
     width: 100%;
-    font-size: 18px;
   }
   .title {
     width: 440px !important;
@@ -1441,6 +1549,18 @@ footer .wrapper:after {
   header .wrapper {
     width: 320px;
   }
+  footer .brandsAndLinksPlace .wrapper {
+    width: 300px;
+  }
+  footer .brandsAndLinksPlace .wrapper .links {
+    width: 100%;
+  }
+  footer .footer-navigation .wrapper {
+    width: 300px;
+  }
+  footer .footer-navigation .wrapper .footerSocialPlace {
+    width: 100%;
+  }
   .list-container .wrap {
     width: 320px;
     padding: 0 10px;
@@ -1474,5 +1594,19 @@ footer .wrapper:after {
   }
   .jobs-detail-wrapper .title .page-title {
     margin: 0 10px !important;
+  }
+}
+@media print {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .apply-button {
+    display: none;
+  }
+  .print-out {
+    display: none;
   }
 }
