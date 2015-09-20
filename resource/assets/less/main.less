@@ -1087,6 +1087,33 @@ footer{
 
 .mobile-menu {display: none;}
 
+#back-top{
+	position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 50;
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/arrow.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    background-color: #ea764b;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    &:hover{
+    	-webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(0, 0, 0, .2);
+	    -moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(0, 0, 0, .2);
+	    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(0, 0, 0, .2);
+    }
+}
 
 @media only screen and (max-width: 959px ) {
 	footer{

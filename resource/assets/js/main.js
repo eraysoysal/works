@@ -77,11 +77,28 @@ function paginationDisplay(){
 	});
 }
 
+function backTop(){
+	$(window).scroll(function(){
+		var windowTop = $(window).scrollTop();
+		if(windowTop > 200){
+			$('#back-top').stop(true,true).fadeIn('slow');
+		}
+		else{
+			$('#back-top').stop(true,true).fadeOut('slow');
+		}
+	});
+	$('#back-top').click(function(e){
+		e.preventDefault();
+		$('html, body').scrollTo(0, 800);
+	});
+}
+
 $(document).ready(function(){
 	advancedSearchShow();
 	selectBoxInıt();
 	tboxTitleAnimate();
 	validation();
+	backTop();
 
 	var isMobile = {
 		Android: function() {
