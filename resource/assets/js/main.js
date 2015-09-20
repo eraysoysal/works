@@ -19,10 +19,10 @@ function selectBoxInıt(){
 		minimumResultsForSearch: -1,
 		placeholder: "Select Industry" /*Bu satırda değişiklik mevcut.*/
 	});
-	$('.mobile-menu select').select2({
+	/**$('.mobile-menu select').select2({
 		minimumResultsForSearch: -1,
-		placeholder: "Navigation" /*Bu satırda değişiklik mevcut.*/
-	});
+		placeholder: "Navigation" 
+	});**/
 }
 
 function tboxTitleAnimate(){

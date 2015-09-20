@@ -617,9 +617,15 @@ footer{
 					box-sizing:border-box;
 					.work-title{
 						color: #424242;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 14px;
+						font-weight: bold;
 					}
 					.company{
 						color: #676767;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 12px;
+						font-weight: bold;
 					}
 				}
 			}
@@ -633,12 +639,11 @@ footer{
 
 .tags{
 	float: right !important;
-	width: 45%;
+	width: 40%;
 	height: 80px;
 	padding-top: 25px;
 	box-sizing:border-box;
 	span{
-		margin-right: 20px;
 		color: #a1a1a1;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -650,7 +655,7 @@ footer{
 	}
 	li{
 		float: left;
-		width: 33%;
+		width: 38%;
 		height: 100%;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -831,8 +836,8 @@ footer{
 		box-sizing:border-box;
 	}
 	.tags{
-		float: none;
-		width: auto;
+		float: left;
+		width: 100%;
 		height: auto;
 		padding-top: 0;
 		ul{
@@ -853,7 +858,9 @@ footer{
 	h2{
 		display: inline-block;
 		width: 100%;
-		font-size: 20px;
+		font-size: 16px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
 		color: #424242;
 		margin: 20px 0;
 		&:after{
@@ -865,8 +872,10 @@ footer{
 			margin-top: 5px;
 		}
 	}
-	.job-name, .company-name{
-		font-size: 28px;
+	.job-name{
+		font-size: 16px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
 	}
 	h3{
 		font-size: 16px;
@@ -1219,6 +1228,19 @@ footer{
 			.select2-dropdown{
 				width: 100%;
 			}
+			select{
+				color: #8f8f8f;
+				padding: 6px 8px;
+				width: 68%;
+				border-color: #ccc;
+				background-color: #fff;
+				background-image: url(../img/nav-bg.png);
+				background-position: right center;
+				background-repeat: no-repeat;
+				appearance: none;
+				-webkit-appearance: none;
+				-ms-appearance: none;
+			}
 		}
 	}
 
@@ -1231,21 +1253,15 @@ footer{
 		.form{
 			padding: 50px 10px 0 10px !important;
 			.tBoxWrap li{
-				width: 100%;
+				width: 300px !important;
 				margin: 10px 0;
+				margin-right: 0 !important;
 				&:nth-of-type(3){
-					float:left;
-					width: 50%;
-					margin: 0;
 					.select2-container{
 						width: 100% !important;
 					}
 				}
 				&:nth-of-type(4){
-					float: left;
-					width: 50%;
-					margin: 0;
-					padding-left: 10px;
 					box-sizing:border-box;
 					a{
 						float: right;
@@ -1295,12 +1311,13 @@ footer{
 			.tags{
 				width: 100%;
 				height: auto;
+				padding-top: 5px;
 				li{
 					float: none;
 					width: 100%;
 				    height: auto;
 				    font-size: 16px;
-				    padding: 10px;
+				    padding: 5px;
 				    box-sizing:border-box;
 				}
 				span{
@@ -1365,9 +1382,6 @@ footer{
 			margin: 0 auto;
 			padding: 50px 25px 30px 25px;
 			box-sizing:border-box;
-			p{
-				font-size: 18px;
-			}
 		}
 		.company-detail {
 			.company-logo{
@@ -1399,6 +1413,14 @@ footer{
 			padding: 0 10px;
 			box-sizing:border-box;
 		}
+		.form{
+			.tBoxWrap{
+				li{
+					width: 260px !important;
+				}
+			}
+		}
+		
 	}
 	
 	.title{
