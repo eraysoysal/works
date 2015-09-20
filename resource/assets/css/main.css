@@ -946,11 +946,14 @@ footer .wrapper:after {
   display: inline-block;
   color: #fff;
   background-color: #43a1cd;
-  padding: 15px 30px;
+  padding: 15px 30px 15px 20px;
   font-size: 16px;
   margin-top: 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+.jobs-detail-wrapper .apply-button .fa-chevron-left {
+  margin-right: 10px;
 }
 .jobs-detail-wrapper .apply-button:hover,
 .jobs-detail-wrapper .apply-button:focus,
