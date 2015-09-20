@@ -1537,7 +1537,8 @@ footer .wrapper:after {
   .jobs-detail-wrapper .company-detail .web-site {
     width: 100%;
     padding: 0;
-    text-align: center;
+    padding-top: 20px;
+    text-align: left;
   }
   .jobs-detail-wrapper .tags li {
     float: left;
