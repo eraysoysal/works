@@ -7,7 +7,17 @@ function menuAnimate(){
 	}
 }
 
+function scrollBarInit(){
+	if ($('.los-altos-menu-wrapper').length) {
+		$('.los-altos-menu-wrapper').mCustomScrollbar({
+			theme: "minimal-dark"
+		});
+	}
+}
+
 $(document).ready(function(){
+	scrollBarInit();
+
 	$('.menu-right .icon-link').click(function(){
 		menuAnimate();
 	});

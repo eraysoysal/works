@@ -10,20 +10,22 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
       <header>
         <div class="menu-left">
-          <a href="/"><img src="img/los-altos-logo.png" alt="los altos logo" /></a>
+          <img src="img/los-altos-logo.png" alt="los altos logo" />
           <nav>
             <ul class="menu">
-                <li><a href="/about.html">ABOUT</a></li>
-                <li><a href="/chefs.html">CHEFS</a></li>
-                <li><a href="/menus.html">MENU</a></li>
+                <li><a href="javascript:;">ABOUT</a></li>
+                <li><a href="javascript:;">CHEFS</a></li>
+                <li><a href="javascript:;">MENU</a></li>
                 <li><a href="javascript:;">GALLERY</a></li>
                 <li><a href="javascript:;">CONTACT US</a></li>
             </ul>
@@ -57,10 +59,14 @@
           </div>
         </div>
       </header>
-      <div id="main-content" class="content">
-          <h1 id="main-content-title">¡BIENVIDA!</h1>
+      <div class="content">
+          <div class="content-left chef-kitchen">
+            <a class="btn-cover" href="javascript:;">THE KITCHEN</a>
+          </div>
+          <div class="content-right chef-bar">
+            <a class="btn-cover" href="javascript:;">THE BAR</a>
+          </div>
       </div>
-      <div id="mainBorderBottom"></footer>
-
+      <div id="mainBorderBottom"></div>
     </body>
 </html>

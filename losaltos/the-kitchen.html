@@ -10,20 +10,22 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
       <header>
         <div class="menu-left">
-          <a href="/"><img src="img/los-altos-logo.png" alt="los altos logo" /></a>
+          <img src="img/los-altos-logo.png" alt="los altos logo" />
           <nav>
             <ul class="menu">
-                <li><a href="/about.html">ABOUT</a></li>
-                <li><a href="/chefs.html">CHEFS</a></li>
-                <li><a href="/menus.html">MENU</a></li>
+                <li><a href="javascript:;">ABOUT</a></li>
+                <li><a href="javascript:;">CHEFS</a></li>
+                <li><a href="javascript:;">MENU</a></li>
                 <li><a href="javascript:;">GALLERY</a></li>
                 <li><a href="javascript:;">CONTACT US</a></li>
             </ul>
@@ -57,10 +59,23 @@
           </div>
         </div>
       </header>
-      <div id="main-content" class="content">
-          <h1 id="main-content-title">¡BIENVIDA!</h1>
+      <div class="content">
+          <div class="content-left about">
+            <div class="cover-text">
+              <a href="javascript:;"><h2 class="active">THE KITCHEN</h2></a>
+              <a href="javascript:;"><h2>THE BAR</h2></a>
+            </div>
+          </div>
+          <div class="content-right">
+            <h1 class="page-title">Deniz Çelikkol</h1>
+            <h3 class="page-sub-title">Kitchen Chef</h3>
+            <div class="chefs-wrapper">
+                <img class="chef-image" src="img/the-kitchen.jpg" alt="chef image" />
+                <p class="content-text">Integer vel tortor felis. Sed rutrum sem ac augue convallis mollis. Aliquam sollicitudin neque ac erat vulputate iaculis. Ut tempus et tortor id lobortis. Cras eu elementum tellus. </p>
+                <p class="content-text">Ut sollicitudin elementum lectus, ac sollicitudin orci cursus sed. Quisque nec ipsum sit amet mauris elementum maximus. Quisque rutrum lectus tincidunt libero varius ornare. Nam euismod neque ut porttitor consectetur. Morbi aliquet odio nulla, eget egestas nibh interdum id.</p>
+            </div>
+          </div>
       </div>
-      <div id="mainBorderBottom"></footer>
-
+      <div id="mainBorderBottom"></div>
     </body>
 </html>
