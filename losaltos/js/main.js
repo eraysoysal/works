@@ -15,8 +15,20 @@ function scrollBarInit(){
 	}
 }
 
+function initMaplace(){
+	var maplace = new Maplace({
+		locations: [{
+	        lat: 41.032193, 
+	        lon: 28.978129,
+	        zoom: 19
+	    }],
+	    map_div: '#gmap'
+	}).Load();
+}
+
 $(document).ready(function(){
 	scrollBarInit();
+	initMaplace();
 
 	$('.menu-right .icon-link').click(function(){
 		menuAnimate();

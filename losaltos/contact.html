@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+        <script src="js/maplace-0.1.3.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -57,10 +59,29 @@
           </div>
         </div>
       </header>
-      <div id="main-content" class="content">
-          <h1 id="main-content-title">¡BIENVIDA!</h1>
+      <div class="content">
+          <div class="content-left about"></div>
+          <div class="content-right">
+            <h1 class="page-title">CONTACT</h1>
+            <div class="contact-wrapper">
+              <table>
+                <tr>
+                  <td><span>A</span></td>
+                  <td><address>TomTom Mah.<br>Yeni Çarşı Cad. No:38 <strong>Beyoğlu IST</strong></address></td>
+                </tr>
+                <tr>
+                  <td><span>T</span></td>
+                  <td><a href="tel:00902122517491">0090 212 251 74 91</a></td>
+                </tr>
+                <tr>
+                  <td><span>E</span></td>
+                  <td class="mail-adress"><a href="mailto:hola@losaltosistanbul.com">hola@losaltosistanbul.com</a></td>
+                </tr>
+              </table>
+              <div id="gmap"></div>
+            </div>
+          </div>
       </div>
-      <div id="mainBorderBottom"></footer>
-
+      <div id="mainBorderBottom"></div>
     </body>
 </html>
