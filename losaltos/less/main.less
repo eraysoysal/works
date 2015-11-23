@@ -88,6 +88,10 @@
 	&.bar-menu{
 		background: url(../img/bar-menu.jpg) no-repeat top center /cover;
 	}
+	&.gallery{
+		width: 100%;
+		padding-right: 0;
+	}
 }
 
 .content-bottom-wrapper{
@@ -426,4 +430,35 @@ table{
 
 
 
+/*Gallery Slider*/
+#losAltosGallery img {
+	width: 100%;
+	height: auto;
+}
 
+.owl-buttons{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.owl-prev, .owl-next{
+	position: absolute;
+	top: 50%;
+	.translateY(-50%);
+	background-color: transparent;
+	width: 25px;
+	height: 25px;
+	opacity: 1 !important;
+}
+
+.owl-prev{
+	left: 110px;
+	background: url(../img/sprite.png) no-repeat -174px -10px !important;
+}
+.owl-next{
+	right: 40px;
+	background: url(../img/sprite.png) no-repeat -140px -10px !important;
+}

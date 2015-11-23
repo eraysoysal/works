@@ -9,12 +9,15 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+        <script src="js/maplace-0.1.3.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -60,11 +63,14 @@
         </div>
       </header>
       <div class="content">
-          <div class="content-left kitchen-menu">
-            <a class="btn-cover" href="/losaltos/kitchen-menu.html">KITCHEN MENU</a>
-          </div>
-          <div class="content-right bar-menu">
-            <a class="btn-cover" href="/losaltos/bar-menu.html">BAR MENU</a>
+          <div class="content-right gallery">
+            <div id="losAltosGallery" class="owl-carousel">
+              <div><img src="img/slider/1.jpg" alt="slider image"/></div>
+              <div><img src="img/slider/2.jpg" alt="slider image"/></div>
+              <div><img src="img/slider/3.jpg" alt="slider image"/></div>
+              <div><img src="img/slider/4.jpg" alt="slider image"/></div>
+              <div><img src="img/slider/5.jpg" alt="slider image"/></div>
+            </div>
           </div>
       </div>
       <div id="mainBorderBottom"></div>
