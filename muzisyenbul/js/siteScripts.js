@@ -92,11 +92,30 @@ function musicianDiscovery(){
     });
 }
 
+function howToWorkDiscovery(elem){
+    if($('#btnDiscovery').hasClass('animated')){
+        elem.removeClass('animated');
+        elem.closest('.container-fluid').siblings('#howToWorkContent').slideUp('slow');
+        elem.find('.glyphicon').removeClass('glyphicon-chevron-up');
+        elem.find('.glyphicon').addClass('glyphicon-chevron-down');
+    }
+    else{
+        elem.addClass('animated');
+        elem.closest('.container-fluid').siblings('#howToWorkContent').slideDown('slow');
+        elem.find('.glyphicon').removeClass('glyphicon-chevron-down');
+        elem.find('.glyphicon').addClass('glyphicon-chevron-up');
+    }
+}
+
 
 $(document).ready(function () {
     filterAccordionInit();
     musicianDiscovery();
-    
+
+    $('#btnDiscovery').click(function(){
+        howToWorkDiscovery($(this));
+    });
+
     $(function () {
         NavMenuArrows();
     });
