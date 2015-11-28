@@ -93,7 +93,7 @@ function musicianDiscovery(){
 }
 
 function howToWorkDiscovery(elem){
-    if($('#btnDiscovery').hasClass('animated')){
+    if($('#howToWork').hasClass('animated')){
         elem.removeClass('animated');
         elem.closest('.container-fluid').siblings('#howToWorkContent').slideUp('slow');
         elem.find('.glyphicon').removeClass('glyphicon-chevron-up');
@@ -112,7 +112,7 @@ $(document).ready(function () {
     filterAccordionInit();
     musicianDiscovery();
 
-    $('#btnDiscovery').click(function(){
+    $('#howToWork').click(function(){
         howToWorkDiscovery($(this));
     });
 
