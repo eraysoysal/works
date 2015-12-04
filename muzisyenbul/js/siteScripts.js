@@ -107,13 +107,26 @@ function howToWorkDiscovery(elem){
     }
 }
 
+function registerFormTabMenu(){
+    $('.links a').click(function(){
+        var contentID = '#' + $(this).attr('data-href');
+        $(contentID).parent().find('.register-content').hide();
+        $(contentID).fadeIn(300);
+    });
+}
 
 $(document).ready(function () {
     filterAccordionInit();
     musicianDiscovery();
+    registerFormTabMenu();
 
     $('#howToWork').click(function(){
         howToWorkDiscovery($(this));
+    });
+
+    $('.register .links a').click(function(){
+        $('.register .links a').removeClass('active');
+        $(this).addClass('active');
     });
 
     $(function () {
