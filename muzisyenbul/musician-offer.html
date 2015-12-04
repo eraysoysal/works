@@ -20,6 +20,7 @@
     <link rel="favicon" href="favicon.ico" type="image/icon" />
     <meta name="msapplication-TileImage" content="favicon.ico" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -37,6 +38,7 @@
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectBoxIt.min.js"></script>
     <script type="text/javascript" src="js/siteScripts.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -149,7 +151,7 @@
                         </ul>
                     </div>
                 </div>
-                <form id="musicianOfferForm">
+                <form id="musicianOfferForm" class="form">
                     <div class="col-md-9">
                         <h2 class="section-desc text-center">Size daha iyi yardımcı olabilmemiz için aşağıdaki bilgileri lütfen doldurunuz</h2>
                             <a class="accordeon-elem active" href="javascript:;">Etkinliğiniz hakkında bilmemiz gerekenler</a>
@@ -161,7 +163,7 @@
                                     </li>
                                     <li class="percentage-fifty">
                                         <h3 class="section-paragraph">Etkinlik Saati</h3>
-                                        <select name="organization_hour">
+                                        <select id="hourSelect" name="organization_hour">
                                             <option value="" disabled selected hidden>Etkinlik Saati?</option>
                                             <option value="12:00 (Öğlen)">12:00 (Öğlen)</option>
                                             <option value="12:30">12:30</option>
@@ -215,8 +217,8 @@
                                         </select>
                                     </li>
                                     <li class="percentage-fifty">
-                                        <h3 class="section-paragraph">Etkinlik Süresi</h3>
-                                        <select name="organization_time">
+                                        <h3 class="section-paragraph">Etkinlik Süresi Seçiniz</h3>
+                                        <select id="timeSelect" name="organization_time">
                                             <option value="" disabled selected hidden>Etkinlik Süresi?</option>
                                             <option value="15 dk">15 dk</option>
                                             <option value="30 dk">30 dk</option>
@@ -248,17 +250,17 @@
                             <div class="column">
                                 <ul class="accordeon-list offer-list clear">
                                     <li>
-                                        <h3 class="section-paragraph">Etkinlik Tarihi</h3>
-                                        <div id="offer-datepicker" class="input-group date">
-                                            <input type="text" name="organization_date" class="form-control" value="">
+                                        <h3 class="section-paragraph">Etkinlik Tarihi Seçiniz</h3>
+                                        <div  class="input-group date">
+                                            <input type="text" id="offer-datepicker" name="organization_date" class="form-control" value="">
                                             <div class="input-group-addon">
                                                 <span class="glyphicon glyphicon-th"></span>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <h3 class="section-paragraph">Davetli Sayısı</h3>
-                                        <select name="number_of_guest" >
+                                        <h3 class="section-paragraph">Davetli Sayısı Seçiniz</h3>
+                                        <select id="guestSelect" name="number_of_guest" >
                                             <option value="" disabled selected hidden>Davetli Sayısı?</option>
                                             <option value="1-2">1-2</option>
                                             <option value="3-5">3-5</option>
@@ -281,8 +283,8 @@
                         <a class="accordeon-elem active" href="javascript:;">Etkinliğin gerçekleşeceği mekan / yer belli mi?</a>
                         <ul class="accordeon-list offer-list-33 clear">
                             <li>
-                                <h3 class="section-paragraph">Mekan Tipi</h3>
-                                <select name="exchange_offer_placetype">
+                                <h3 class="section-paragraph">Mekan Tipi Seçiniz</h3>
+                                <select id="venueSelect" name="exchange_offer_placetype">
                                     <option value="" disabled selected hidden>Mekan Tipi</option>
                                     <option value="Açık Hava">Açık Hava</option>
                                     <option value="Alışveriş Merkezi">Alışveriş Merkezi</option>
@@ -341,8 +343,8 @@
                                 </select>
                             </li>
                             <li>
-                                <h3 class="section-paragraph">İl</h3>
-                                <select name="exchange_offer_province">
+                                <h3 class="section-paragraph">İl Seçiniz</h3>
+                                <select id="citySelect" name="exchange_offer_province">
                                     <option value="" disabled selected hidden>İl</option>
                                     <option value="İSTANBUL">İSTANBUL</option>
                                     <option value="ANKARA">ANKARA</option>
@@ -431,8 +433,8 @@
                                 </select>
                             </li>
                             <li>
-                                <h3 class="section-paragraph">İlçe</h3>
-                                <select>
+                                <h3 class="section-paragraph">İlçe Seçiniz</h3>
+                                <select id="countySelect">
                                     <option value="" disabled selected hidden>İlçe</option>    
                                 </select>
                             </li>
@@ -454,7 +456,7 @@
                                 <textarea class="textArea" name="message" placeholder="Mesajınız"></textarea>
                             </li>
                             <li class="full-line">
-                                <button id="modalButton" class="btn-yellow">Teklif Al</button>
+                                <button id="modalButton" type="submit" class="btn-yellow">Teklif Al</button>
                             </li>
                         </ul>
                     </div>
@@ -533,15 +535,40 @@
         $('#offer-datepicker').datepicker({
             autoclose: true,
             language: "tr",
-            startDate: 'd',
+            startDate: 'd'
         });
 
-        $('#modalButton').magnificPopup({
-            items: {
-                src: $('#successModal'),
-                type: 'inline'
-            }
-        });
+        var selectBoxList = ['#hourSelect', '#timeSelect', '#guestSelect', '#venueSelect', '#citySelect', '#countySelect'];
+        var selectBoxTextList = ['Etkinlik Saati', 'Etkinlik Süresi', 'Davetli Sayısı?', 'Mekan Tipi', 'İl', 'İlçe'];
+        
+        for (var i = 0; i < selectBoxList.length; i++) {
+            $(selectBoxList[i]).selectBoxIt({
+                defaultText: selectBoxTextList[i],
+                showEffect: 'slideDown',
+                hideEffect: 'slideUp',
+                showFirstOption: false,
+                defaultIcon: 'glyphicon glyphicon-chevron-down',
+                downArrowIcon: 'glyphicon glyphicon-chevron-up'
+            });
+
+            $(selectBoxList[i]).bind({
+                "tab-focus": function() {
+                    $(this).next('.selectboxit-container').addClass('elem-focus');
+                },
+                'blur' : function(){
+                    $(this).next('.selectboxit-container').removeClass('elem-focus');   
+                },
+                'enter' : function(){
+                    $(this).next('.selectboxit-container').find('.selectboxit-list').css('display', 'block');
+                }
+            });
+
+            $(selectBoxList[i]).change(function(){
+                if(!$(this).next('.selectboxit-container').find('.selectboxit-text').hasClass('dark')){
+                    $(this).next('.selectboxit-container').find('.selectboxit-text').addClass('dark');
+                }
+            });
+        };
 
         var planRequired = 'Lütfen etkinlik açıklaması giriniz';
         var planMinLength = 'Etkinlik açıklaması en az iki karakterden oluşmalıdır';
@@ -626,8 +653,20 @@
                 else{
                     elem.parent().append(label);
                 }
+            },
+            submitHandler : function(){
+                form.submit();
             }
         });
+
+        /***
+            ** Form success durumunda açılacak popup
+        $('#modalButton').magnificPopup({
+            items: {
+                src: $('#successModal'),
+                type: 'inline'
+            }
+        });*/
 
         $('.masked-phone').mask("(999) 999 9999");
     </script>
