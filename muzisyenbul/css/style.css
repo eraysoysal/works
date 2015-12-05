@@ -429,7 +429,10 @@
 .owl-item .item {
     text-align: center;
 }
-
+#slider{
+    height: 320px;
+    overflow: hidden;
+}
 #slider_fluid {
     margin-bottom: 0px !important;
 }
@@ -584,7 +587,7 @@
 
 
 .step.one .number-wrap{background-color: #FFC600;}
-.step.second .number-wrap{background-color: #50407F; left: initial; right: 0;}
+.step.second .number-wrap{background-color: #50407F; left: initial; left: auto; right: 0 !important;}
 .step.third .number-wrap{background-color: #C90F24;}
 
 .step .number-wrap span{
