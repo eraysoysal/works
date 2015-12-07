@@ -104,6 +104,9 @@ function howToWorkDiscovery(elem){
         elem.closest('.container-fluid').siblings('#howToWorkContent').slideDown('slow');
         elem.find('.glyphicon').removeClass('glyphicon-chevron-down');
         elem.find('.glyphicon').addClass('glyphicon-chevron-up');
+        var targetTop = $('.how-to-work-content').offset().top -85;
+        console.log(targetTop)
+        $(window).scrollTo(targetTop, 750);
     }
 }
 

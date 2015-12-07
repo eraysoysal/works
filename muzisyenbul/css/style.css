@@ -1,158 +1,3 @@
-@media only screen and (max-width: 850px) {
-    .six_section h1, .six_section h2 {
-        font-size: 26px !important;
-    }
-    #btnGonder {
-        float:none !important
-    }
-}
-
-@media only screen and (max-width: 1030px) {
-    #sayac h4 {
-    
-    font-size: 65px !important;
-   
-}
-    #slider2 .item {
-        height: auto;
-        background: #f0f0f0;
-        padding: 20px;
-    }
-
-    .page-title {
-        width: 100%;
-    }
-
-    #hizmet_kategori .container {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 639px) {
-    .six_section h1, .six_section h2 {
-        font-size: 24px !important;
-        top: 45px !important;
-    }
-
-    .text-primary {
-        font-size: 40px !important;
-    }
-}
-
-@media only screen and (max-width: 499px) {
-    #galery .col-sm-4 {
-        width: 100% !important;
-    }
-
-
-    .six_section h1, .six_section h2 {
-        font-weight: 300;
-        font-size: 16px !important;
-    }
-}
-
-
-@media only screen and (max-width: 767px) {
-    .footer_logo {
-        float: none !important;
-        margin: 15px 0px;
-        text-align: center;
-    }
-    #sayac h4 {
-        margin: 0px !important;
-    padding: 0px !important;
-    line-height: 70px !important;
-    }
-    #sayac p {
-            margin-top: -13px !important;
-    margin-bottom: 15px !important;
-    }
-
-
-    .page-title h3 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .social-media {
-        width: 100%;
-        text-align: center;
-    }
-
-        .social-media ul {
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0px !important;
-        }
-
-    .six_section {
-        margin-top: 20px;
-    }
-
-    .footer_menu {
-        float: none !important;
-        display: inline-block;
-    }
-
-    .footer_logo img {
-        float: none !important;
-    }
-
-    .footer_1 .social_media ul {
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0px !important;
-        margin-top: 16px;
-    }
-
-    #hizmet_kategori .container {
-        width: 100% !important;
-    }
-
-    .six_section .cover {
-        display: table !important;
-    }
-
-    .six_section h1, .six_section h2 {
-        top: 0px !important;
-        margin-right: 10px !important;
-    }
-
-    .col1, .col2, .col3, .col4, .col5, .col6 {
-        height: 110px !important;
-    }
-
-    .six_section h1, .six_section h2 {
-        font-family: 'Teko', sans-serif;
-        font-weight: 600;
-        color: #fff;
-        letter-spacing: 0px;
-        font-size: 34px;
-        margin-left: 20px;
-        position: relative;
-        top: 0px;
-    }
-
-        .six_section h1 br, .six_section h2 br {
-            display: none;
-        }
-
-    #hizmet_kategori {
-        position: relative;
-        top: 0px !important;
-    }
-
-    .six_section .social_media {
-        display: none;
-    }
-
-    #bilgi h4 {
-        text-align: center;
-    }
-}
-
 .container-fluid {
     margin-bottom: 30px;
 }
@@ -430,11 +275,17 @@
     text-align: center;
 }
 #slider{
-    height: 320px;
+    height: auto;
+    max-height: 320px;
     overflow: hidden;
 }
 #slider_fluid {
     margin-bottom: 0px !important;
+}
+
+#slider .item img{
+    max-width: 100%;
+    width: auto !important;
 }
 
 .transition-center {
@@ -531,7 +382,6 @@
 
 #howToWorkContent{
     display: none;
-    height: 600px;
     background-color: #e2e2e2;
     position: relative; 
 }
@@ -1893,4 +1743,203 @@ footer a {
 .subleft {
     right: 0px !important;
     left: inherit !important;
+}
+
+@media only screen and (max-width: 850px) {
+    .six_section h1, .six_section h2 {
+        font-size: 26px !important;
+    }
+    #btnGonder {
+        float:none !important
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #sayac h4 {
+    
+    font-size: 65px !important;
+   
+}
+    #slider2 .item {
+        height: auto;
+        background: #f0f0f0;
+        padding: 20px;
+    }
+
+    .page-title {
+        width: 100%;
+    }
+
+    #hizmet_kategori .container {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .six_section h1, .six_section h2 {
+        font-size: 24px !important;
+        top: 45px !important;
+    }
+
+    .text-primary {
+        font-size: 40px !important;
+    }
+
+    .step{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .step.one{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    .main-search-field{
+        width: 100%;
+    }
+
+    .main-search-field input {
+        width: 100%;
+    }
+
+    #howToWork{
+        margin-top: 20px;
+    }
+
+    .step .number-wrap{
+        width: 70px;
+        height: 70px;
+        -webkit-transform: translateY(50%);
+         -moz-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+    }
+
+    .step .number-wrap span{
+        font-size: 44px;
+    }
+
+}
+
+@media only screen and (max-width: 499px) {
+    #galery .col-sm-4 {
+        width: 100% !important;
+    }
+
+    .six_section h1, .six_section h2 {
+        font-weight: 300;
+    }
+
+    .six_section .col-xs-6{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .footer_logo {
+        float: none !important;
+        margin: 15px 0px;
+        text-align: center;
+    }
+    #sayac h4 {
+        margin: 0px !important;
+    padding: 0px !important;
+    line-height: 70px !important;
+    }
+    #sayac p {
+            margin-top: -13px !important;
+    margin-bottom: 15px !important;
+    }
+
+
+    .page-title h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media {
+        width: 100%;
+        text-align: center;
+    }
+
+        .social-media ul {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px !important;
+        }
+
+    .six_section {
+        margin-top: 20px;
+    }
+
+    .footer_menu {
+        float: none !important;
+        display: inline-block;
+    }
+
+    .footer_logo img {
+        float: none !important;
+    }
+
+    .footer_1 .social_media ul {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px !important;
+        margin-top: 16px;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .container-fluid{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .six_section .cover {
+        display: table !important;
+    }
+
+    .six_section h1, .six_section h2 {
+        top: 0px !important;
+        margin-right: 10px !important;
+    }
+
+    .col1, .col2, .col3, .col4, .col5, .col6 {
+        height: 110px !important;
+    }
+
+    .six_section h1, .six_section h2 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0px;
+        font-size: 34px;
+        margin-left: 20px;
+        position: relative;
+        top: 0px;
+    }
+
+        .six_section h1 br, .six_section h2 br {
+            display: none;
+        }
+
+    #hizmet_kategori {
+        position: relative;
+        top: 0px !important;
+    }
+
+    .six_section .social_media {
+        display: none;
+    }
+
+    #bilgi h4 {
+        text-align: center;
+    }
 }
