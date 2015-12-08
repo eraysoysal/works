@@ -105,7 +105,6 @@ function howToWorkDiscovery(elem){
         elem.find('.glyphicon').removeClass('glyphicon-chevron-down');
         elem.find('.glyphicon').addClass('glyphicon-chevron-up');
         var targetTop = $('.how-to-work-content').offset().top -85;
-        console.log(targetTop)
         $(window).scrollTo(targetTop, 750);
     }
 }
@@ -113,15 +112,24 @@ function howToWorkDiscovery(elem){
 function registerFormTabMenu(){
     $('.links a').click(function(){
         var contentID = '#' + $(this).attr('data-href');
-        $(contentID).parent().find('.register-content').hide();
+        $(contentID).parent().parent().find('.register-content').hide();
         $(contentID).fadeIn(300);
     });
 }
 
-$(document).ready(function () {
+function sliderAnimated(){
+    setTimeout(function() {$('#introSlogan').addClass('animated');}, 500);
+    setTimeout(function() {$('#introSlogan h2').addClass('animated');}, 1250);
+    setTimeout(function() {$('#introSlogan h2 strong').addClass('animated');}, 1750);
+    setTimeout(function() {$('#introSlogan h3').addClass('animated');}, 2250);
+    setTimeout(function() {$('#introSlogan h4').addClass('animated');}, 2750);
+}
+
+$(document).ready(function() {
     filterAccordionInit();
     musicianDiscovery();
     registerFormTabMenu();
+    sliderAnimated();
 
     $('#howToWork').click(function(){
         howToWorkDiscovery($(this));

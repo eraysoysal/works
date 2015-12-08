@@ -37,6 +37,7 @@
     <script type="text/javascript" src="js/datepicker_lang.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/jquery.selectBoxIt.min.js"></script>
     <script type="text/javascript" src="js/siteScripts.js"></script>
@@ -151,270 +152,180 @@
                         </ul>
                     </div>
                 </div>
-                <form id="registerForm" class="form">
-                    <div class="col-md-9">
-                        <div id="musicianRegisterLinks" class="links col-md-6">
-                            <a class="active" href="javascript:;" data-href="item-1">Müzisyen / Eğitimci <span class="border"></span></a>
-                            <a href="javascript:;" data-href="item-2">Orkestra <span class="border"></span></a>
-                        </div>
-                        <!--<div class="choose-personel-group col-md-6">
-                            <div class="elem">
-                                <a class="active" href="javascript:;">
-                                    <span>Bireysel</span>
-                                </a>
-                            </div>
-                            <div class="elem">
-                                <a href="javascript:;">
-                                    <span>Grup</span>
-                                </a>
-                            </div>
-                        </div>-->
-                        <div id="item-1" class="col-md-6 register-content">
-                            <ul class="offer-list">
-                                <li>
-                                    <h3 class="section-paragraph">Yaşadığınız il</h3>
-                                    <select id="musicianCitySelect" class="selectbox-radius" name="exchange_offer_province">
-                                        <option value="" disabled selected hidden>İl</option>
-                                        <option value="İSTANBUL">İSTANBUL</option>
-                                        <option value="ANKARA">ANKARA</option>
-                                        <option value="İZMİR">İZMİR</option>
-                                        <option value="ADANA">ADANA</option>
-                                        <option value="ADIYAMAN">ADIYAMAN</option>
-                                        <option value="AFYONKARAHİSAR">AFYONKARAHİSAR</option>
-                                        <option value="AKSARAY">AKSARAY</option>
-                                        <option value="AMASYA">AMASYA</option>
-                                        <option value="ANKARA">ANKARA</option>
-                                        <option value="ANTALYA">ANTALYA</option>
-                                        <option value="ARDAHAN">ARDAHAN</option>
-                                        <option value="ARTVİN">ARTVİN</option>
-                                        <option value="AYDIN">AYDIN</option>
-                                        <option value="AĞRI">AĞRI</option>
-                                        <option value="BALIKESİR">BALIKESİR</option>
-                                        <option value="BARTIN">BARTIN</option>
-                                        <option value="BATMAN">BATMAN</option>
-                                        <option value="BAYBURT">BAYBURT</option>
-                                        <option value="BOLU">BOLU</option>
-                                        <option value="BURDUR">BURDUR</option>
-                                        <option value="BURSA">BURSA</option>
-                                        <option value="BİLECİK">BİLECİK</option>
-                                        <option value="BİNGÖL">BİNGÖL</option>
-                                        <option value="BİTLİS">BİTLİS</option>
-                                        <option value="DENİZLİ">DENİZLİ</option>
-                                        <option value="DÜZCE">DÜZCE</option>
-                                        <option value="DİYARBAKIR">DİYARBAKIR</option>
-                                        <option value="EDİRNE">EDİRNE</option>
-                                        <option value="ELAZIĞ">ELAZIĞ</option>
-                                        <option value="ERZURUM">ERZURUM</option>
-                                        <option value="ERZİNCAN">ERZİNCAN</option>
-                                        <option value="ESKİŞEHİR">ESKİŞEHİR</option>
-                                        <option value="GAZİANTEP">GAZİANTEP</option>
-                                        <option value="GÜMÜŞHANE">GÜMÜŞHANE</option>
-                                        <option value="GİRESUN">GİRESUN</option>
-                                        <option value="HAKKARİ">HAKKARİ</option>
-                                        <option value="HATAY">HATAY</option>
-                                        <option value="ISPARTA">ISPARTA</option>
-                                        <option value="IĞDIR">IĞDIR</option>
-                                        <option value="KAHRAMANMARAŞ">KAHRAMANMARAŞ</option>
-                                        <option value="KARABÜK">KARABÜK</option>
-                                        <option value="KARAMAN">KARAMAN</option>
-                                        <option value="KARS">KARS</option>
-                                        <option value="KASTAMONU">KASTAMONU</option>
-                                        <option value="KAYSERİ">KAYSERİ</option>
-                                        <option value="KIRIKKALE">KIRIKKALE</option>
-                                        <option value="KIRKLARELİ">KIRKLARELİ</option>
-                                        <option value="KIRŞEHİR">KIRŞEHİR</option>
-                                        <option value="KOCAELİ">KOCAELİ</option>
-                                        <option value="KONYA">KONYA</option>
-                                        <option value="KÜTAHYA">KÜTAHYA</option>
-                                        <option value="KİLİS">KİLİS</option>
-                                        <option value="MALATYA">MALATYA</option>
-                                        <option value="MANİSA">MANİSA</option>
-                                        <option value="MARDİN">MARDİN</option>
-                                        <option value="MERSİN">MERSİN</option>
-                                        <option value="MUĞLA">MUĞLA</option>
-                                        <option value="MUŞ">MUŞ</option>
-                                        <option value="NEVŞEHİR">NEVŞEHİR</option>
-                                        <option value="NİĞDE">NİĞDE</option>
-                                        <option value="ORDU">ORDU</option>
-                                        <option value="OSMANİYE">OSMANİYE</option>
-                                        <option value="RİZE">RİZE</option>
-                                        <option value="SAKARYA">SAKARYA</option>
-                                        <option value="SAMSUN">SAMSUN</option>
-                                        <option value="SİNOP">SİNOP</option>
-                                        <option value="SİVAS">SİVAS</option>
-                                        <option value="SİİRT">SİİRT</option>
-                                        <option value="TEKİRDAĞ">TEKİRDAĞ</option>
-                                        <option value="TOKAT">TOKAT</option>
-                                        <option value="TRABZON">TRABZON</option>
-                                        <option value="TUNCELİ">TUNCELİ</option>
-                                        <option value="UŞAK">UŞAK</option>
-                                        <option value="VAN">VAN</option>
-                                        <option value="YALOVA">YALOVA</option>
-                                        <option value="YOZGAT">YOZGAT</option>
-                                        <option value="ZONGULDAK">ZONGULDAK</option>
-                                        <option value="ÇANAKKALE">ÇANAKKALE</option>
-                                        <option value="ÇANKIRI">ÇANKIRI</option>
-                                        <option value="ÇORUM">ÇORUM</option>
-                                        <option value="İSTANBUL">İSTANBUL</option>
-                                        <option value="İZMİR">İZMİR</option>
-                                        <option value="ŞANLIURFA">ŞANLIURFA</option>
-                                        <option value="ŞIRNAK">ŞIRNAK</option>
-                                    </select>
-                                </li>
-                                <li class="choose-musician-educator">
-                                    <div class="radioWrap">
-                                        <input id="registerMusicianRadio1" name="radioRegister" type="radio" value="1" checked /> 
-                                        <label for="registerMusicianRadio1">
-                                            <span></span>Müzisyen
-                                        </label>
-                                        <input id="registerMusicianRadio2" name="radioRegister" type="radio" value="2" /> 
-                                        <label for="registerMusicianRadio2">
-                                            <span></span>Eğitmen
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Uzmanı olduğunuz enstruman</h3>
-                                    <input type="text" name="plan_input" placeholder="Gitar, Keman, Flüt, Davul..."/>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Size ait video linki</h3>
-                                    <input type="text" name="plan_input" placeholder=""/>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Varsa ikinci video linki</h3>
-                                    <input type="text" name="plan_input" placeholder=""/>
-                                </li>
-                                <li class="file">
-                                    <h3 class="section-paragraph">Size ait fotoğraf yükleyiniz</h3>
-                                    <input id="musicianImage" transs="Lütfen cv'nizi yükleyiniz" name="musicianImage" type="file">
-                                    <label for="musicianImage" class="file-label icon-upload">Dosya seç</label>
-                                </li>
-                                <li>
-                                    <button id="musicianSubmitButton" type="submit" class="btn-yellow">Kaydol</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="item-2" class="col-md-6 register-content">
-                            <ul class="offer-list">
-                                <li>
-                                    <h3 class="section-paragraph">Yaşadığınız il</h3>
-                                    <select id="orkestraCitySelect" class="selectbox-radius" name="exchange_offer_province">
-                                        <option value="" disabled selected hidden>İl</option>
-                                        <option value="İSTANBUL">İSTANBUL</option>
-                                        <option value="ANKARA">ANKARA</option>
-                                        <option value="İZMİR">İZMİR</option>
-                                        <option value="ADANA">ADANA</option>
-                                        <option value="ADIYAMAN">ADIYAMAN</option>
-                                        <option value="AFYONKARAHİSAR">AFYONKARAHİSAR</option>
-                                        <option value="AKSARAY">AKSARAY</option>
-                                        <option value="AMASYA">AMASYA</option>
-                                        <option value="ANKARA">ANKARA</option>
-                                        <option value="ANTALYA">ANTALYA</option>
-                                        <option value="ARDAHAN">ARDAHAN</option>
-                                        <option value="ARTVİN">ARTVİN</option>
-                                        <option value="AYDIN">AYDIN</option>
-                                        <option value="AĞRI">AĞRI</option>
-                                        <option value="BALIKESİR">BALIKESİR</option>
-                                        <option value="BARTIN">BARTIN</option>
-                                        <option value="BATMAN">BATMAN</option>
-                                        <option value="BAYBURT">BAYBURT</option>
-                                        <option value="BOLU">BOLU</option>
-                                        <option value="BURDUR">BURDUR</option>
-                                        <option value="BURSA">BURSA</option>
-                                        <option value="BİLECİK">BİLECİK</option>
-                                        <option value="BİNGÖL">BİNGÖL</option>
-                                        <option value="BİTLİS">BİTLİS</option>
-                                        <option value="DENİZLİ">DENİZLİ</option>
-                                        <option value="DÜZCE">DÜZCE</option>
-                                        <option value="DİYARBAKIR">DİYARBAKIR</option>
-                                        <option value="EDİRNE">EDİRNE</option>
-                                        <option value="ELAZIĞ">ELAZIĞ</option>
-                                        <option value="ERZURUM">ERZURUM</option>
-                                        <option value="ERZİNCAN">ERZİNCAN</option>
-                                        <option value="ESKİŞEHİR">ESKİŞEHİR</option>
-                                        <option value="GAZİANTEP">GAZİANTEP</option>
-                                        <option value="GÜMÜŞHANE">GÜMÜŞHANE</option>
-                                        <option value="GİRESUN">GİRESUN</option>
-                                        <option value="HAKKARİ">HAKKARİ</option>
-                                        <option value="HATAY">HATAY</option>
-                                        <option value="ISPARTA">ISPARTA</option>
-                                        <option value="IĞDIR">IĞDIR</option>
-                                        <option value="KAHRAMANMARAŞ">KAHRAMANMARAŞ</option>
-                                        <option value="KARABÜK">KARABÜK</option>
-                                        <option value="KARAMAN">KARAMAN</option>
-                                        <option value="KARS">KARS</option>
-                                        <option value="KASTAMONU">KASTAMONU</option>
-                                        <option value="KAYSERİ">KAYSERİ</option>
-                                        <option value="KIRIKKALE">KIRIKKALE</option>
-                                        <option value="KIRKLARELİ">KIRKLARELİ</option>
-                                        <option value="KIRŞEHİR">KIRŞEHİR</option>
-                                        <option value="KOCAELİ">KOCAELİ</option>
-                                        <option value="KONYA">KONYA</option>
-                                        <option value="KÜTAHYA">KÜTAHYA</option>
-                                        <option value="KİLİS">KİLİS</option>
-                                        <option value="MALATYA">MALATYA</option>
-                                        <option value="MANİSA">MANİSA</option>
-                                        <option value="MARDİN">MARDİN</option>
-                                        <option value="MERSİN">MERSİN</option>
-                                        <option value="MUĞLA">MUĞLA</option>
-                                        <option value="MUŞ">MUŞ</option>
-                                        <option value="NEVŞEHİR">NEVŞEHİR</option>
-                                        <option value="NİĞDE">NİĞDE</option>
-                                        <option value="ORDU">ORDU</option>
-                                        <option value="OSMANİYE">OSMANİYE</option>
-                                        <option value="RİZE">RİZE</option>
-                                        <option value="SAKARYA">SAKARYA</option>
-                                        <option value="SAMSUN">SAMSUN</option>
-                                        <option value="SİNOP">SİNOP</option>
-                                        <option value="SİVAS">SİVAS</option>
-                                        <option value="SİİRT">SİİRT</option>
-                                        <option value="TEKİRDAĞ">TEKİRDAĞ</option>
-                                        <option value="TOKAT">TOKAT</option>
-                                        <option value="TRABZON">TRABZON</option>
-                                        <option value="TUNCELİ">TUNCELİ</option>
-                                        <option value="UŞAK">UŞAK</option>
-                                        <option value="VAN">VAN</option>
-                                        <option value="YALOVA">YALOVA</option>
-                                        <option value="YOZGAT">YOZGAT</option>
-                                        <option value="ZONGULDAK">ZONGULDAK</option>
-                                        <option value="ÇANAKKALE">ÇANAKKALE</option>
-                                        <option value="ÇANKIRI">ÇANKIRI</option>
-                                        <option value="ÇORUM">ÇORUM</option>
-                                        <option value="İSTANBUL">İSTANBUL</option>
-                                        <option value="İZMİR">İZMİR</option>
-                                        <option value="ŞANLIURFA">ŞANLIURFA</option>
-                                        <option value="ŞIRNAK">ŞIRNAK</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Grup ismi</h3>
-                                    <input type="number" name="plan_input" placeholder="..."/>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Gruptaki kişi sayısı</h3>
-                                    <input type="number" name="plan_input" placeholder="2, 5, 7.."/>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Size ait video linki</h3>
-                                    <input type="text" name="plan_input" placeholder=""/>
-                                </li>
-                                <li>
-                                    <h3 class="section-paragraph">Varsa ikinci video linki</h3>
-                                    <input type="text" name="plan_input" placeholder=""/>
-                                </li>
-                                <li class="file">
-                                    <h3 class="section-paragraph">Size ait fotoğraf yükleyiniz</h3>
-                                    <input id="musicianImage" transs="Lütfen cv'nizi yükleyiniz" name="musicianImage" type="file">
-                                    <label for="musicianImage" class="file-label icon-upload">Dosya seç</label>
-                                </li>
-                                <li>
-                                    <button id="orkestraSubmitButton" type="submit" class="btn-yellow">Kaydol</button>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="col-md-10">
+                    <div id="musicianRegisterLinks" class="links">
+                        <a class="active" href="javascript:;" data-href="item-1">Müzisyen / Eğitimci <span class="border"></span></a>
+                        <a href="javascript:;" data-href="item-2">Orkestra <span class="border"></span></a>
                     </div>
-                </form>
+                    <div class="formWrap">
+                        <form id="musicianRegisterForm" class="form">
+                            <div id="item-1" class="register-content">
+                                <div class="col-left col-md-5">
+                                    <ul class="offer-list">
+                                        <li>
+                                            <h3 class="section-paragraph">Adınız Soyadınız</h3>
+                                            <input id="client-name" class="textBox" name="clientNameLastName" type="text" placeholder="">
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">E-mail Adresiniz</h3>
+                                            <input class="textBox" name="email" type="text" placeholder="">
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Cep Telefonunuz</h3>
+                                            <input class="textBox masked-phone" name="mobilePhone" type="text" placeholder="">
+                                        </li>
+                                        <li class="selectWrap">
+                                            <h3 class="section-paragraph">Yaşadığınız il</h3>
+                                            <select id="musicianCitySelect" class="selectbox-radius" name="selectCity">
+                                                <option value="" disabled selected hidden>İl</option>
+                                                <option value="İSTANBUL">İSTANBUL</option>
+                                                <option value="ANKARA">ANKARA</option>
+                                                <option value="İZMİR">İZMİR</option>
+                                            </select>
+                                        </li>
+                                        <li class="checkWrap first">
+                                            <input type="checkbox" name="g1-cBox-1" id="g1-cBox-1" checked>
+                                            <label for="g1-cBox-1">
+                                                <span></span>Performans Müzisyeni
+                                            </label>
+                                        </li>
+                                        <li class="checkWrap">
+                                            <input type="checkbox" name="g1-cBox-2" id="g1-cBox-2">
+                                            <label for="g1-cBox-2">
+                                                <span></span>Eğitmen
+                                            </label>
+                                        </li>
+                                        <li class="checkWrap">
+                                            <input type="checkbox" name="g1-cBox-3" id="g1-cBox-3">
+                                            <label for="g1-cBox-3">
+                                                <span></span>Dj
+                                            </label>
+                                        </li>
+                                        <li class="checkWrap">
+                                            <input type="checkbox" name="g1-cBox-4" id="g1-cBox-4" checked>
+                                            <label for="g1-cBox-4">
+                                                <span></span>Vokalist / Şarkıcı
+                                            </label>
+                                        </li>
+                                        <li class="checkWrap">
+                                            <input type="checkbox" name="g1-cBox-5" id="g1-cBox-5">
+                                            <label for="g1-cBox-5">
+                                                <span></span>Aranjör
+                                            </label>
+                                        </li>
+                                        <li class="checkWrap">
+                                            <input type="checkbox" name="g1-cBox-5" id="g1-cBox-5">
+                                            <label for="g1-cBox-5">
+                                                <span></span>Film / Dizi
+                                            </label>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <div class="col-right col-md-5">
+                                    <ul class="offer-list">
+                                        <li>
+                                            <h3 class="section-paragraph">Uzmanı olduğunuz enstruman</h3>
+                                            <input type="text" name="expertInstrument" placeholder="Gitar, Keman, Flüt, Davul..."/>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Size ait video linki</h3>
+                                            <input type="text" name="videoLinkInput1" placeholder=""/>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Varsa ikinci video linki</h3>
+                                            <input type="text" name="videoLinkInput2" placeholder=""/>
+                                        </li>
+                                        <li class="file">
+                                            <h3 class="section-paragraph">Size ait fotoğraf yükleyiniz</h3>
+                                            <input id="musicianImage" transs="Lütfen cv'nizi yükleyiniz" name="musicianImage" type="file" multiple>
+                                            <label for="musicianImage" class="file-label icon-upload">Dosya seç</label>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Facebook Profil Linkiniz</h3>
+                                            <input type="text" name="facebookLink" placeholder=""/>
+                                        </li>
+                                        <li class="textAreaWrap">
+                                            <h3 class="section-paragraph">Kısa Özgeçmiş</h3>
+                                            <textarea name="musicianBackground" placeholder=""></textarea>
+                                        </li>
+                                        <li>
+                                            <button id="musicianSubmitButton" type="submit" class="btn-yellow">Kaydol</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="orkestraRegisterForm" class="form">
+                            <div id="item-2" class="register-content">
+                                <div class="col-left col-md-5">
+                                    <ul class="offer-list">
+                                        <li>
+                                            <h3 class="section-paragraph">Adınız Soyadınız</h3>
+                                            <input id="client-name" class="textBox" name="clientNameLastName" type="text" placeholder="">
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">E-mail Adresiniz</h3>
+                                            <input class="textBox" name="email" type="text" placeholder="">
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Cep Telefonunuz</h3>
+                                            <input class="textBox masked-phone" name="mobilePhone" type="text" placeholder="">
+                                        </li>
+                                        <li class="selectWrap">
+                                            <h3 class="section-paragraph">Yaşadığınız il</h3>
+                                            <select id="orkestraCitySelect" class="selectbox-radius" name="selectCity">
+                                                <option value="" disabled selected hidden>İl</option>
+                                                <option value="İSTANBUL">İSTANBUL</option>
+                                                <option value="ANKARA">ANKARA</option>
+                                                <option value="İZMİR">İZMİR</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Grup Adınız</h3>
+                                            <input type="text" name="orkestraName" placeholder="Müzisyenbul orkestrası..."/>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Orkestra Tarzınız</h3>
+                                            <input type="text" name="modeOfOrkestra" placeholder="Jazz, Blues, thm..."/>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <div class="col-right col-md-5">
+                                    <ul class="offer-list">
+                                        <li>
+                                            <h3 class="section-paragraph">Uzmanı olduğunuz enstrumanlar</h3>
+                                            <input type="text" name="expertInstrument" placeholder="Gitar, Keman, Flüt, Davul..."/>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Orkestranıza ait ait video linki</h3>
+                                            <input type="text" name="videoLinkInput1" placeholder=""/>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Varsa ikinci video linki</h3>
+                                            <input type="text" name="videoLinkInput2" placeholder=""/>
+                                        </li>
+                                        <li class="file">
+                                            <h3 class="section-paragraph">Orkestranızın fotoğrafını yükleyiniz</h3>
+                                            <input id="musicianImage" transs="Lütfen cv'nizi yükleyiniz" name="musicianImage" type="file" multiple>
+                                            <label for="musicianImage" class="file-label icon-upload">Dosya seç</label>
+                                        </li>
+                                        <li>
+                                            <h3 class="section-paragraph">Facebook Linkiniz</h3>
+                                            <input type="text" name="facebookLink" placeholder=""/>
+                                        </li>
+                                        <li class="textAreaWrap">
+                                            <h3 class="section-paragraph">Kısa Özgeçmiş</h3>
+                                            <textarea name="musicianBackground" placeholder="Orkestranız hakkında..."></textarea>
+                                        </li>
+                                        <li>
+                                            <button id="musicianSubmitButton" type="submit" class="btn-yellow">Kaydol</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -500,7 +411,7 @@
         });
 
         var selectBoxList = ['#musicianCitySelect', '#orkestraCitySelect'];
-        var selectBoxTextList = ['Yaşadığınız İl', 'Yaşadığınız İl'];
+        var selectBoxTextList = ['', ''];
         
         for (var i = 0; i < selectBoxList.length; i++) {
             $(selectBoxList[i]).selectBoxIt({
@@ -531,85 +442,191 @@
             });
         };
 
-        var planRequired = 'Lütfen etkinlik açıklaması giriniz';
-        var planMinLength = 'Etkinlik açıklaması en az iki karakterden oluşmalıdır';
-        var organizationHourRequired = 'Lütfen etkinlik saati seçiniz';
-        var organizationTimeRequired = 'Lütfen etkinlik süresi seçiniz';
-        var organizationDateRequired = 'Lütfen etkinlik tarihini seçiniz';
-        var mailRequired = 'Lütfen bir e-posta adresi giriniz';
-        var mailEmail = 'Lütfen geçerli bir e-posta adresi giriniz';
-        var clientNameRequired = 'Lütfen adınızı giriniz';
-        var phoneRequired = 'Lütfen telefon numaranızı giriniz';
-        var messageRequired = 'Lütfen iletmek istediğiniz mesajı giriniz';
-        var messageMinLength = 'Mesajınız en az on karakterden oluşmalıdır';
-        var numberOfGuestRequired = "Lütfen davetli sayısını seçiniz"
+        var clientNameLastNameRequired = 'Lütfen adınızı soyadınızı giriniz.';
+        var clientNameLastNameMinLength = 'Adınız soyadınız en az iki karakterden oluşmalıdır';
+        var emailRequired = "Lütfen e-mail adresinizi giriniz";
+        var emailEmail = "Lütfen e-mail adresinizi kontrol ediniz";
+        var mobilePhoneRequired = "Lütfen cep telefonunuzu giriniz";
+        var selectCityRequired = "Lütfen yaşadığınız ili seçiniz";
+        var expertInstrumentRequired = "Lütfen uzmanı olduğunuz enstrumanı giriniz";
+        var expertInstrumentMinLength = "Enstruman adı en az iki karakterden oluşmalıdır";
+        var videoLinkInput1Required = "Lütfen size ait video linki giriniz";
+        var musicianImageAccept = "Lütfen sadece resim yükleyiniz";
+        var musicianImageRequired = "Lütfen size ait bir resim yükleyiniz";
+        var musicianBackgroundRequired = "Lütfen kısaca kendinizden bahsediniz";
+        var musicianBackgroundMinLength = "Lütfen birkaç cümle ile kendinizden bahsediniz";
 
-        $("#registerForm").validate({
+
+        $("#musicianRegisterForm").validate({
             ignore: [],
             rules: {
-                plan_input: {
+                clientNameLastName: {
                     required: true,
                     minlength: 2
-                },
-                organization_hour: {
-                    required: true
-                },
-                organization_date: {
-                    required: true
-                },
-                organization_time: {
-                    required: true
                 },
                 email: {
                     required: true,
                     email: true
                 },
-                mobilePhone:"required",
-                clientNameLastName: {
+                mobilePhone: {
                     required: true
                 },
-                message: {
+                selectCity : {
+                    required: true
+                },
+                expertInstrument : {
+                    required: true,
+                    minlength: 2
+                },
+                videoLinkInput1 : {
+                    required: true
+                },
+                musicianImage: {
+                    required: true,
+                    accept: "image/*"
+                },
+                musicianBackground : {
                     required: true,
                     minlength: 10
-                },
-                number_of_guest: {
-                    required: true
                 }
             },
             messages: {
-                plan_input: {
-                    required: planRequired,
-                    minlength: planMinLength
-                },
-                number_of_guest: {
-                    required: numberOfGuestRequired
-                },
-                message: {
-                    required: messageRequired,
-                    minlength: messageMinLength
-                },
-                organization_hour: {
-                    required: organizationHourRequired
-                },
-                organization_date: {
-                    required: organizationDateRequired
-                },
-                organization_time: {
-                    required: organizationTimeRequired
-                },
                 clientNameLastName: {
-                    required: clientNameRequired
+                    required: clientNameLastNameRequired,
+                    minlength: clientNameLastNameMinLength
                 },
                 email: {
-                    required: mailRequired,
-                    email: mailEmail
+                    required: emailRequired,
+                    email: emailEmail
                 },
-                mobilePhone: phoneRequired
+                mobilePhone: mobilePhoneRequired,
+                selectCity : selectCityRequired,
+                expertInstrument : {
+                    required: expertInstrumentRequired,
+                    minlength: expertInstrumentMinLength
+                },
+                videoLinkInput1 : {
+                    required: videoLinkInput1Required
+                },
+                musicianImage:{
+                  required : musicianImageRequired,
+                  accept: musicianImageAccept
+                },
+                musicianBackground : {
+                    required: musicianBackgroundRequired,
+                    minlength: musicianBackgroundMinLength
+                }
             },
             errorPlacement: function(label, elem) {
                 if ($(elem).attr('name') == 'organization_date') {
                     elem.closest('li').append(label);
-                    console.log('asdadasdasd');
+                }
+                else{
+                    elem.parent().append(label);
+                }
+            },
+            submitHandler: function(){
+                form.submit();
+            }
+        });
+
+        var clientNameLastNameRequired = 'Lütfen adınızı soyadınızı giriniz.';
+        var clientNameLastNameMinLength = 'Adınız soyadınız en az iki karakterden oluşmalıdır';
+        var emailRequired = "Lütfen e-mail adresinizi giriniz";
+        var emailEmail = "Lütfen e-mail adresinizi kontrol ediniz";
+        var mobilePhoneRequired = "Lütfen cep telefonunuzu giriniz";
+        var selectCityRequired = "Lütfen yaşadığınız ili seçiniz";
+        var expertInstrumentRequired = "Lütfen uzmanı olduğunuz enstrumanları giriniz";
+        var expertInstrumentMinLength = "Enstruman adı en az iki karakterden oluşmalıdır";
+        var videoLinkInput1Required = "Lütfen size ait video linki giriniz";
+        var musicianImageAccept = "Lütfen sadece resim yükleyiniz";
+        var musicianImageRequired = "Lütfen size ait bir resim yükleyiniz";
+        var musicianBackgroundRequired = "Lütfen kısaca kendinizden bahsediniz";
+        var musicianBackgroundMinLength = "Lütfen birkaç cümle ile kendinizden bahsediniz";
+        var orkestraNameRequired = 'Lütfen orkestra adınızı giriniz.';
+        var orkestraNameMinLength = 'Orkestra adınız en az iki karakterden oluşmalıdır';
+        var modeOfOrkestraRequired = 'Lütfen orkestra tarzınızı giriniz.';
+        var modeOfOrkestraMinLength = 'Orkestra tarzınız en az iki karakterden oluşmalıdır';
+
+        $("#orkestraRegisterForm").validate({
+            ignore: [],
+            rules: {
+                clientNameLastName: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                mobilePhone: {
+                    required: true
+                },
+                selectCity : {
+                    required: true
+                },
+                expertInstrument : {
+                    required: true,
+                    minlength: 2
+                },
+                videoLinkInput1 : {
+                    required: true
+                },
+                musicianImage: {
+                    required: true,
+                    accept: "image/*"
+                },
+                musicianBackground : {
+                    required: true,
+                    minlength: 10
+                },
+                orkestraName: {
+                    required: true,
+                    minlength: 2
+                },
+                modeOfOrkestra: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                clientNameLastName: {
+                    required: clientNameLastNameRequired,
+                    minlength: clientNameLastNameMinLength
+                },
+                email: {
+                    required: emailRequired,
+                    email: emailEmail
+                },
+                mobilePhone: mobilePhoneRequired,
+                selectCity : selectCityRequired,
+                expertInstrument : {
+                    required: expertInstrumentRequired,
+                    minlength: expertInstrumentMinLength
+                },
+                videoLinkInput1 : {
+                    required: videoLinkInput1Required
+                },
+                musicianImage:{
+                  required : musicianImageRequired,
+                  accept: musicianImageAccept
+                },
+                musicianBackground : {
+                    required: musicianBackgroundRequired,
+                    minlength: musicianBackgroundMinLength
+                },
+                modeOfOrkestra: {
+                    required: modeOfOrkestraRequired,
+                    minlength: modeOfOrkestraMinLength
+                },
+                orkestraName: {
+                    required: orkestraNameRequired,
+                    minlength: orkestraNameMinLength
+                }
+            },
+            errorPlacement: function(label, elem) {
+                if ($(elem).attr('name') == 'organization_date') {
+                    elem.closest('li').append(label);
                 }
                 else{
                     elem.parent().append(label);
