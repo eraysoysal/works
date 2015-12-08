@@ -324,18 +324,30 @@
     font-size: 44px;
     opacity: 0;
     transition: 1.5s all ease;
+    -moz-transition: 1.5s all ease;
+    -webkit-transition: 1.5s all ease;
+    -o-transition: 1.5s all ease;
+    -ms-transition: 1.5s all ease;
 }
 #introSlogan h2 strong{
     color: #ffc600;
     opacity: 0;
     transition: 1.5s all ease;
+    -moz-transition: 1.5s all ease;
+    -webkit-transition: 1.5s all ease;
+    -o-transition: 1.5s all ease;
+    -ms-transition: 1.5s all ease;
 }
 
 #introSlogan h3 {   
     top: 80px;
     font-size: 51px;
     opacity: 0;
-    transition: 2s all ease;   
+    transition: 2s all ease;
+    -moz-transition: 2s all ease;
+    -webkit-transition: 2s all ease;
+    -o-transition: 2s all ease;
+    -ms-transition: 2s all ease;
 }
 #introSlogan h4 {    
     top: 130px;
@@ -343,6 +355,10 @@
     color: #ff3f49;
     opacity: 0;
     transition: 2s all ease;
+    -moz-transition: 2s all ease;
+    -webkit-transition: 2s all ease;
+    -o-transition: 2s all ease;
+    -ms-transition: 2s all ease;
 }
 
 #introSlogan h2.animated{
