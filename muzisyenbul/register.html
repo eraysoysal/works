@@ -285,6 +285,10 @@
                                             <input type="text" name="orkestraName" placeholder="Müzisyenbul orkestrası..."/>
                                         </li>
                                         <li>
+                                            <h3 class="section-paragraph">Grubunuzdaki Kişi Sayısı</h3>
+                                            <input type="text" name="orkestraPersonCount" placeholder=""/>
+                                        </li>
+                                        <li>
                                             <h3 class="section-paragraph">Orkestra Tarzınız</h3>
                                             <input type="text" name="modeOfOrkestra" placeholder="Jazz, Blues, thm..."/>
                                         </li>
@@ -547,6 +551,7 @@
         var orkestraNameMinLength = 'Orkestra adınız en az iki karakterden oluşmalıdır';
         var modeOfOrkestraRequired = 'Lütfen orkestra tarzınızı giriniz.';
         var modeOfOrkestraMinLength = 'Orkestra tarzınız en az iki karakterden oluşmalıdır';
+        var orkestraPersonCountRequired = "Lütfen orkestranızdaki kişi sayısını giriniz";
 
         $("#orkestraRegisterForm").validate({
             ignore: [],
@@ -587,6 +592,9 @@
                 modeOfOrkestra: {
                     required: true,
                     minlength: 2
+                },
+                orkestraPersonCount : {
+                    required: true
                 }
             },
             messages: {
@@ -622,6 +630,9 @@
                 orkestraName: {
                     required: orkestraNameRequired,
                     minlength: orkestraNameMinLength
+                },
+                orkestraPersonCount:{
+                    required: orkestraPersonCountRequired
                 }
             },
             errorPlacement: function(label, elem) {
