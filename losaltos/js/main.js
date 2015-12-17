@@ -82,10 +82,10 @@ $(document).ready(function(){
 			menuAnimate();
 			if (isMobile.all()) {
 				if ($('header').hasClass('animated')) {
-					$('body, .content').css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
+					$('body, .content, overlay').css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
 				}
 				else{
-					$('body, .content').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
+					$('body, .content, .overlay').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
 				}
 			}
 		});
