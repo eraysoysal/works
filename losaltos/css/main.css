@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: 'TitanOne';
   src: url('../fonts/TitanOne.eot?#iefix') format('embedded-opentype'),  
@@ -8,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: 'OpenSansLight';
@@ -20,7 +20,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'OpenSansExtraBold';
   src: url('../fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),  
@@ -30,8 +29,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
 
 @font-face {
   font-family: 'GRBook';
@@ -43,7 +40,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: 'GRBold';
@@ -67,7 +63,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'OpenSansExtraBoldItalic';
   src: url('../fonts/OpenSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),  
@@ -78,7 +73,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'OpenSansBold';
   src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),  
@@ -88,9 +82,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
-
 
 html{color:#000;background:#FFF}
 body{overflow: hidden; font-family: 'OpenSansLight'; font-size: 15px;}
