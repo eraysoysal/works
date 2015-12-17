@@ -74,21 +74,22 @@ $(document).ready(function(){
 		$('body').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
 	});
 
-	$('.menu-right .icon-link').click(function(){
-		menuAnimate();
-		if (isMobile.all()) {
-			if ($('header').hasClass('animated')) {
-				$('body').css({'height': '100%', 'overflow':'hidden', 'position':'relative'});
-			}
-			else{
-				$('body').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
-			}
-		}
-	});
-
 	if (isMobile.all()) {
 		var mobileWindowHeight = $(window).height();
 		var mobileWindowWidth = $(window).width();
+		
+		$('.menu-right .icon-link').click(function(){
+			menuAnimate();
+			if (isMobile.all()) {
+				if ($('header').hasClass('animated')) {
+					$('body').css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
+				}
+				else{
+					$('body').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
+				}
+			}
+		});
+
 		if(mobileWindowWidth < 480){
 			$('body').addClass('mobile');
 		}
