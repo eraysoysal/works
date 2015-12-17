@@ -47,6 +47,7 @@ function sliderInit(){
 $(document).ready(function(){
 	initMaplace();
 	sliderInit();
+	menuAnimate();
 
 	var isMobile = {
 		Android: function() {
