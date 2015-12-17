@@ -80,7 +80,7 @@ $(document).ready(function(){
 			}
 			else{
 				$("body, .content:not('#main-content')").css({'height': 'auto', 'overflow':'auto', 'position':'static'});
-				$("#main-content").css({'height': '100vh', 'overflow':'auto', 'position':'static'});
+				$("#main-content").css({'height': mobileWindowHeight, 'overflow':'auto', 'position':'static'});
 			}
 		}
 	});
