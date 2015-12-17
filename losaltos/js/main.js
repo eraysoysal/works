@@ -88,8 +88,17 @@ $(document).ready(function(){
 	});
 
 	if (isMobile.all()) {
-		var mobileWindowHeight = $(window).height() - 30;
-		$('.content.main-content').css('height', mobileWindowHeight);
+		var mobileWindowHeight = $(window).height();
+		var mobileWindowWidth = $(window).width();
+		if(mobileWindowWidth < 480){
+			$('body').addClass('mobile');
+		}
+		else if(mobileWindowWidth < 768){
+			$('body').addClass('tablet');
+		}
+
+		$('.content.main-content').css('height', mobileWindowHeight - 30);
+		$('.menu-left').css('height', mobileWindowHeight);
 	}
 
 });
