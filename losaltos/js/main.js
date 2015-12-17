@@ -79,7 +79,8 @@ $(document).ready(function(){
 				$('body, .content').css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
 			}
 			else{
-				$('body, .content').css({'height': 'auto', 'overflow':'auto', 'position':'static'});
+				$("body, .content:not('#main-content')").css({'height': 'auto', 'overflow':'auto', 'position':'static'});
+				$("#main-content").css({'height': '100vh', 'overflow':'auto', 'position':'static'});
 			}
 		}
 	});
