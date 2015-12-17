@@ -9,8 +9,8 @@ function menuAnimate(){
 
 function scrollBarInit(){
 	if ($('.los-altos-menu-wrapper').length) {
-		$('.los-altos-menu-wrapper').mCustomScrollbar(
-{			theme: "minimal-dark"
+		$('.los-altos-menu-wrapper').mCustomScrollbar({
+			theme: "minimal-dark"
 		});
 	}
 }
@@ -45,7 +45,6 @@ function sliderInit(){
 }
 
 $(document).ready(function(){
-	scrollBarInit();
 	initMaplace();
 	sliderInit();
 
@@ -99,6 +98,9 @@ $(document).ready(function(){
 
 		$('.content.main-content').css('height', mobileWindowHeight - 30);
 		$('.menu-left').css('height', mobileWindowHeight);
+	}
+	else{
+		scrollBarInit();
 	}
 
 });
