@@ -86,8 +86,12 @@ body{
 		.content-left{
 			background: url(../img/kitchen-menu.jpg) no-repeat top right /cover;
 		}
+		.page-title{
+			display: none;
+		}
 		@media @mobile{
 			.page-title{
+				display: block;
 				font-size: 35px;
 			}
 		}
@@ -96,8 +100,12 @@ body{
 		.content-left{
 			background: url(../img/bar-menu.jpg) no-repeat center center /cover;
 		}
+		.page-title{
+			display: none;
+		}
 		@media @mobile{
 			.page-title{
+				display: block;
 				font-size: 35px;
 			}
 		}
@@ -109,6 +117,14 @@ body{
 		height: 100vh;
 	}
 }
+
+#chefTitle, #menusTitle{
+	display: none;
+	@media @tablet{
+		display: block;
+	}
+}
+
 
 /*Content*/
 .content-left{
@@ -137,6 +153,12 @@ body{
 			height: 245px;
 			margin: 30px auto 0;
 		}
+		.page-title{
+			display: none;
+			@media @tablet{
+				display: block;
+			}
+		}
 	}
 
 	&.kitchen-menu{
@@ -145,6 +167,12 @@ body{
 			width: 90%;
 			height: 245px;
 			margin: 30px auto 0;
+		}
+		.page-title{
+			display: none;
+			@media @tablet{
+				display: block;
+			}
 		}
 	}
 }
