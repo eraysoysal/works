@@ -1,0 +1,202 @@
+/*! *******************************************
+	* Cicekev.com
+	*Author : Eray Soysal / erays1907
+	*21-12-2015
+************************************************/
+
+/*===========Mixin===========*/
+
+.translateX(@deger){
+	-ms-transform: translateX(@deger);
+    -webkit-transform: translateX(@deger);
+    transform: translateX(@deger);
+}
+.translateY(@deger){
+	-ms-transform: translateY(@deger);
+    -webkit-transform: translateY(@deger);
+    transform: translateY(@deger);
+}
+
+.translateXY(@degerX, @degerY){
+	-ms-transform: translateX(@degerX) translateY(@degerY);
+    -webkit-transform: translateX(@degerX) translateY(@degerY);
+    transform: translateX(@degerX) translateY(@degerY);
+}
+
+.transition(@delay, @effect){
+	-webkit-transition: all @delay @effect; 
+	transition : all @delay @effect;
+}
+
+.btn-light-red{
+	background-color: @light-red;
+	border-radius: 5px;
+	color: #fff;
+	outline: 0 none;
+	border: 0 none;
+	.bold;
+	&.small{
+		padding: 15px 25px;
+	}
+	&:active, &:hover, &:focus{
+		background-color: @dark-red;
+	}
+}
+
+.clear{
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+.bold{
+	font-family: 'Bold';
+}
+
+.regular{
+	font-family: 'Regular';
+}
+
+/*Colors*/
+@light-red : #f66353;
+@dark-red : #e33f35;
+@blue : #204a65;
+@light-blue : #495c68;
+
+/*Responsive*/
+@tablet: ~"only screen and (max-width: 768px)";
+@mobile: ~"only screen and (max-width: 480px)";
+
+.container{
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.home-icon{
+	display: inline-block;
+	width: 58px;
+	height: 53px;
+	background: url(../img/home-icon.png) no-repeat;
+}
+
+header{
+	width: 100%;
+	height: 135px;
+	padding: 0 80px 0 70px;
+	box-sizing:border-box;
+	position: relative;
+	&:after{
+		.clear;
+	}
+	#cicekEvLogo{
+		margin-top: 25px;
+	}
+	.navbar{
+		float: right;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: 80px;
+		.translateY(-50%);
+		.navbar-list{
+			display: table;
+			width: 585px;
+			text-align: center;
+		}
+		.list-elem{
+			display: table-cell;
+			a{
+				color: @blue;
+				.bold;
+				padding: 15px 20px;
+				border-radius: 5px;
+				&:active, &:hover, &:focus{
+					background-color: @light-red;
+					color: #fff;
+				}
+				&.selected{
+					background-color: @light-red;
+					color: #fff;
+					&:hover,&:active,&:focus{
+						background-color: @dark-red;
+					}
+				}
+			}
+		}
+	}
+}
+
+#slider{
+	border-bottom: 5px solid @blue;
+	box-sizing:border-box;
+	.item{
+		img{
+			display: block;
+		}
+	}
+}
+
+.packets{
+	padding: 140px 0 100px 0;
+	background: url(../img/dotted-bg.png);
+	.packets-list{
+		width: 100%;
+		text-align: center;
+		.packets-box{
+			width: 270px;
+			height: 290px;
+			display: inline-block;
+			margin: 0 14px;
+			background-color: #fff;
+			border-radius: 5px;
+			overflow: hidden;
+			border: 1px solid #e6e6e6;
+			box-sizing:border-box;
+			padding-top: 20px;
+			h3{
+				font-size: 36px;
+				color: @blue;
+				width: 100%;
+				&:after{
+					content: ' ';
+					display: block;
+					width: 108px;
+					height: 2px;
+					display: block;
+					margin: 20px auto;
+					background: url(../img/seperator.png) no-repeat; 
+				}
+			}
+			p{
+				color: @light-blue;
+				margin-bottom: 20px;
+			}
+			.medium{
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.login-section{
+	height: 275px;
+	background-color: #ececec;
+	padding: 40px 55px 45px 55px;
+	.login-title{
+		font-size: 24px;
+		color: #496678;
+		margin-bottom: 20px;
+	}
+	.login-desc{
+		font-family: 'Regular';
+		font-size: 18px;
+		color: @blue;
+		width: 470px;
+		line-height: 1.4;
+	}
+
+}
