@@ -71,6 +71,7 @@ $(document).ready(function(){
 
 	var mobileWindowHeight = $(window).height();
 	var mobileWindowWidth = $(window).width();
+	var mobileBodyHeight = $('body').outerHeight();
 	
 	$('.menu-right .icon-link').click(function(){
 		menuAnimate();
@@ -89,7 +90,7 @@ $(document).ready(function(){
 		if(mobileWindowWidth < 480){
 			$('body').addClass('mobile');
 		}
-		else if(mobileWindowWidth < 768){
+		else if(mobileWindowWidth < 769){
 			$('body').addClass('tablet');
 		}
 
