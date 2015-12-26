@@ -77,11 +77,10 @@ $(document).ready(function(){
 		menuAnimate();
 		if (isMobile.all()) {
 			if ($('header').hasClass('animated')) {
-				$('body, .content').css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
+				$("body, .content:not('#main-content')").css({'height': mobileWindowHeight, 'overflow':'hidden', 'position':'relative'});
 			}
 			else{
 				$("body, .content:not('#main-content')").css({'height': 'auto', 'overflow':'auto', 'position':'static'});
-				$("#main-content").css({'height': mobileWindowHeight, 'overflow':'auto', 'position':'static'});
 			}
 		}
 	});
