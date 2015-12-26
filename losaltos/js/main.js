@@ -45,8 +45,6 @@ function sliderInit(){
 
 $(document).ready(function(){
 	initMaplace();
-	sliderInit();
-
 
 	var isMobile = {
 		Android: function() {
@@ -98,6 +96,7 @@ $(document).ready(function(){
 	}
 	else{
 		scrollBarInit();
+		sliderInit();
 	}
 
 });
