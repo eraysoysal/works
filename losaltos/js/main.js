@@ -107,7 +107,7 @@ $(document).ready(function(){
 			$('body').addClass('tablet');
 		}
 
-		if(480 < mobileWindowWidth < 769){
+		if(480 < mobileWindowWidth && mobileWindowWidth < 769){
 			tabletGalleryPopup();
 		}
 
