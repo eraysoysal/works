@@ -62,6 +62,10 @@ $(document).ready(function(){
 		$('header').removeClass('animated');
 	});
 
+	$('#losAltosGallery .gallery-item').click(function(e){
+		e.preventDefault();
+	});
+
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -117,9 +121,5 @@ $(document).ready(function(){
 	else{
 		scrollBarInit();
 		sliderInit();
-		$('#losAltosGallery .gallery-item').click(function(e){
-			e.preventDefault();
-		});
 	}
-
 });
