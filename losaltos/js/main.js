@@ -43,8 +43,24 @@ function sliderInit(){
 	}
 }
 
+function tabletGalleryPopup(){
+	if($('#losAltosGallery').length){
+		$('#losAltosGallery').magnificPopup({
+			type: 'image',
+			delegate: 'a',
+			gallery:{
+				enabled: true
+			}
+		});
+	}
+}
+
 $(document).ready(function(){
 	initMaplace();
+
+	$('#overlay').click(function(){
+		$('header').removeClass('animated');
+	});
 
 	var isMobile = {
 		Android: function() {
@@ -91,12 +107,19 @@ $(document).ready(function(){
 			$('body').addClass('tablet');
 		}
 
+		if(480 < mobileWindowWidth < 769){
+			tabletGalleryPopup();
+		}
+
 		$('.content.main-content').css('height', mobileWindowHeight - 30);
 		$('.menu-left').css('height', mobileWindowHeight);
 	}
 	else{
 		scrollBarInit();
 		sliderInit();
+		$('#losAltosGallery .gallery-item').click(function(e){
+			e.preventDefault();
+		});
 	}
 
 });

@@ -48,6 +48,15 @@
 	font-family: @fontFamily;
 }
 
+/*Magnific Popup*/
+.mfp-close, .mfp-counter{display: none !important;}
+img.mfp-img {width: 90% !important; padding: 0; border-radius: 10px; border: 1px solid #fff;}
+.mfp-figure:after {box-shadow: none; background: transparent;}
+.mfp-arrow-left {background: url(../img/sprite.png) no-repeat -174px -10px !important; margin-left: 10px;}
+.mfp-arrow-right {background: url(../img/sprite.png) no-repeat -140px -10px !important; margin-right: 10px;}
+.mfp-arrow-left:after, .mfp-arrow-left:before,
+.mfp-arrow-right:after, .mfp-arrow-right:before {display: none;} 
+button.mfp-arrow {width: 25px; height: 25px; margin-top: 0 !important; opacity: 1;}
 /*Helper Classes*/
 .clear{
 	content: ' ';
@@ -62,6 +71,21 @@ body{
 		overflow: auto;
 	}
 }
+
+header + #overlay{
+	width: 100%;
+	display: none;
+}
+
+header.animated + #overlay{
+	display: block;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 /*Content Backgrounds*/
 .content{
 	width: 100%;
