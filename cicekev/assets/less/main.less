@@ -67,7 +67,13 @@ button{
 	font-size: 16px;
 	color: #fff;
 	background-color: #204a65;
+	border: 2px solid #204a65;
+	box-sizing:border-box;
 	border-radius: 10px;
+	&:hover, &:active, &:focus{
+		background-color: transparent;
+		color: #204a65;
+	}
 }
 
 .btn-light-red{
@@ -681,6 +687,12 @@ form{
 				right: -31px;
 				top: 50%;
 				.translateY(-50%); 
+			}
+			&:hover,&:active,&:focus{
+				color: @blue;
+				&:after{
+					background-color: @blue;
+				}
 			}
 		}
 		&.active{
