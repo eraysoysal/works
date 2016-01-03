@@ -50,6 +50,49 @@ button{
 		width: 110px;
 		box-sizing:border-box;
 	}
+	&.large{
+		padding: 10px 0;
+		font-size: 24px;
+		text-align: center;
+		width: 370px;
+		box-sizing:border-box;	
+	}
+}
+
+.fb-sign-up{
+	display: block;
+	margin: 0 auto;
+	width: 260px;
+	padding: 20px 0;
+	padding-left: 35px;
+	border: 2px solid #4e71a8;
+	color: #4e71a8;
+	box-sizing:border-box;
+	.bold;
+	font-size: 14px;
+	position: relative;
+	&:after{
+		content: ' ';
+		display: block;
+		width: 17px;
+		height: 36px;
+		background: url(../img/sprite.png) no-repeat -134px -10px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+	&.medium{
+		width: 230px;
+		font-size: 13px;
+		margin: 25px auto 0;
+		&:after{
+			content: ' ';
+			display: block;
+			width: 16px;
+			height: 32px;
+			background-color: url(../img/sprite.png) no-repeat -158px -10px; 
+		}
+	}
 }
 
 .buttons-wrap{
@@ -1257,7 +1300,7 @@ form{
 }
 
 .membership-wrapper{
-	padding: 20px;
+	padding: 30px 20px;
 	box-sizing:border-box;
 	.membership-box-title{
 		width: 100%;
@@ -1279,7 +1322,7 @@ form{
 	.login-box{
 		float: left;
 		width: 300px;
-		background-color: #fff;
+		background-color: #fafafa;
 	}
 	&:after{
 		.clear;
@@ -1290,6 +1333,7 @@ form{
 	padding: 30px 40px;
 	box-sizing:border-box;
 	ul{
+		margin-bottom: 10px;
 		li{
 			margin-bottom: 25px;
 			input, textarea, select{
@@ -1312,4 +1356,49 @@ form{
 			}
 		}
 	}
+	.btn-light-red.large{
+		opacity: 1;
+		border: 2px solid @light-red;
+		margin: 35px auto 0;
+		display: block;
+		&:active, &:hover, &:focus{
+			background-color: transparent;
+			color: @light-red;
+		}
+	}
+}
+
+#loginForm{
+	padding: 30px 20px;
+	input{
+		&:active, &:focus{
+			background-color: #b7d2e2;
+			color: @blue;
+		}
+	}
+
+	.blue-next-btn{
+		float: none;
+		display: block;
+		margin: 30px auto;
+		color: @blue;
+		background-color: transparent;
+		border: 2px solid @blue;
+		&:active, &:focus, &:hover{
+			color: #fff;
+			background-color: @blue;
+		}
+	}
+	.login-links{
+		border-bottom: 2px dotted #a7b7c2;
+	}
+}
+
+#rememberPassword{
+	display: inline-block;
+	width: 100%;
+	color: @blue;
+	text-decoration: underline;
+	text-align: center;
+	font-style: italic;
 }
