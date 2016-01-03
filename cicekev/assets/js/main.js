@@ -38,9 +38,11 @@ $(document).ready(function(){
 });
 
 $(document.documentElement).keyup(function(event) {
-    if (event.keyCode == 37) {
-        slider.prev();
-    } else if (event.keyCode == 39) {
-        slider.next();
+    if($('#slider').length){
+    	if (event.keyCode == 37) {
+	        slider.prev();
+	    } else if (event.keyCode == 39) {
+	        slider.next();
+	    }
     }
 });
