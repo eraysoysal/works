@@ -695,6 +695,10 @@
     text-decoration: none;
 }
 
+.choose-personel-group a.active i, .choose-personel-group .elem i:hover, .choose-personel-group .elem i:active, .choose-personel-group .elem i:focus{
+    color : #05AD7E;
+}
+
 .choose-personel-group .elem a span:after{
     content: ' ';
     display: block;
