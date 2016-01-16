@@ -656,6 +656,31 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+.choose-personel-group .elem.yellow i{
+    color: #ffc600;
+}
+
+.choose-personel-group .elem.orange i{
+    color: #E84C3D;
+}
+
+.choose-personel-group .elem.yellow span:after{
+    background-color: #ffc600;
+}
+
+.choose-personel-group .elem.orange span:after{
+    background-color: #E84C3D;
+}
+
+.choose-personel-group .elem.yellow i:hover, .choose-personel-group .elem.yellow i:active, .choose-personel-group .elem.yellow i:focus{
+    color: #FFA700;
+}
+
+.choose-personel-group .elem.orange i:hover, .choose-personel-group .elem.orange i:active, .choose-personel-group .elem.orange i:focus{
+    color: #DE3D2D;
+}
+
 .choose-personel-group a{
     text-decoration: none !important;
     color: #424242;
@@ -668,14 +693,6 @@
 
 .choose-personel-group a:hover{
     text-decoration: none;
-}
-
-.choose-personel-group a:hover i {
-    color: #05AD7E;
-}
-
-.choose-personel-group a.active i{
-    color: #05AD7E;
 }
 
 .choose-personel-group .elem a span:after{
@@ -896,9 +913,10 @@ button.btn-yellow:hover, button.btn-yellow:active, button.btn-yellow:focus{
 }
 
 #musicianSlider{
-    width: 100%;
-    height: 430px;
+    width: 80%;
+    height: 300px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 #musicianSlider img{
