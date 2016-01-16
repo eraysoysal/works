@@ -2097,6 +2097,13 @@ footer a {
     .register .links {width: 260px; float: none; margin: 0 auto; clear: left;}
     .register .links a {width: 100%;}
     .register .links a:nth-of-type(1) {margin-bottom: 10px;}
+
+    #musicianSlider {
+        width: 100%;
+        height: auto;
+    }
+
+    .musician-content .col-md-9 {margin: 0 auto;}
 }
 
 
