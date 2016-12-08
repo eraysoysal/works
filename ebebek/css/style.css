@@ -226,6 +226,7 @@ main {
 }
 .section-wrapper {
   width: 58%;
+  min-height: 60vh;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -298,4 +299,26 @@ main {
 .section-wrapper .nbg p,
 .section-wrapper .nbg .title {
   background: none;
+}
+.head {
+  width: 100%;
+}
+.head .section-wrapper {
+  padding-top: 15px;
+  padding-bottom: 8%;
+}
+.head img {
+  width: 28.875%;
+  margin: 0 auto;
+}
+.head .content {
+  background: #fff;
+}
+.head .content h1 {
+  font-weight: 700;
+  font-size: 3.2em;
+}
+.head .content h2 {
+  font-size: 3.5em;
+  font-weight: 300;
 }
