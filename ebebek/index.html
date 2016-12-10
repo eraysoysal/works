@@ -6,7 +6,11 @@
 	<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
 
 	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.fileupload.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
 	<script src="js/main.js"></script>
 
 </head>
@@ -24,15 +28,17 @@
 		</div>
 		<div id="section1" class="section">
 			<div class="section-wrapper left-side-text">
-				<div class="text">
-					<h2 class="title">Nedir Bu <br> Bebekolojik Fikirler</h2>
-					<p><strong>ebebek</strong>, geleceğin ebeveynlerinin fikirlerine<br>
-					değer veriyor ve öğrencilere<br>
-					bünyesinde staj imkanı sunduğu<br>
-					bu yarışmayı düzenliyor: <strong>Bebekolojik Fikirler!</strong></p>
-				</div>
-				<div class="img">
-					<img src="img/section-1.jpg" alt="Nedir Bu Bebekolojik Fikirler İmage">
+				<div class="wrap">
+					<div class="text">
+						<h2 class="title">Nedir Bu <br> Bebekolojik Fikirler</h2>
+						<p><strong>ebebek</strong>, geleceğin ebeveynlerinin fikirlerine<br>
+						değer veriyor ve öğrencilere<br>
+						bünyesinde staj imkanı sunduğu<br>
+						bu yarışmayı düzenliyor: <strong>Bebekolojik Fikirler!</strong></p>
+					</div>
+					<div class="img">
+						<img src="img/section-1.jpg" alt="Nedir Bu Bebekolojik Fikirler İmage">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -73,15 +79,45 @@
 				</div>
 			</div>
 		</div>
-		<div id="section5" class="section">
-			<div class="section-wrapper nbg">
-				<div class="form">
-					<div class="left">
-						
-					</div>
-					<div class="right">
-						
-					</div>
+		<div id="section5" class="section form">
+			<div class="section-wrapper ">
+				<div class="form-wrapper">
+					<h3 class="title"><span>Başvuru Formu</span></h3>
+					<form id="form"	action="">
+						<div class="left">
+							<label class="label">Ad Soyad</label>
+							<div class="form-elem">
+								<input type="text" name="name">
+							</div>
+							<label class="label">Doğum Tarihi</label>
+							<div class="form-elem">
+								<input type="text" name="date">
+							</div>
+							<label class="label">Cep Telefonu</label>
+							<div class="form-elem">
+								<input type="tel" name="tel">
+							</div>
+							<label class="label">E-posta</label>
+							<div class="form-elem">
+								<input type="email" name="email">
+							</div>
+							<label class="label">İl</label>
+							<div class="form-elem">
+								<input type="text" name="city">
+							</div>
+						</div>
+						<div class="right">
+							<div class="file-upload-wrap">
+								<div id="dropzone" class="drop-container">
+									<input id="inputFile" type="hidden" name="file">
+									<img src="img/file-upload.png" alt="file upload icon">
+									<p>Projeni <br> Sürükle <br> Bırak</p>
+								</div>
+								<button class="apply-button" type="submit" name="submitButton">Başvuru Yap</button>
+								<a class="underline" href="javascript:;">Katılım Koşulları</a>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

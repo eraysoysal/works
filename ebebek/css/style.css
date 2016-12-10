@@ -1,4 +1,4 @@
-/*
+/*!
 Author : Eray Soysal
 Project Date : Aralık 2016
 ************************************************/
@@ -42,9 +42,21 @@ body {
   font-weight: 400;
   line-height: 1.2;
   color: #4f4f4f;
-  background: url(../img/bg.png) top / cover;
+  background: url(../img/gradient-bg.jpg) no-repeat top center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  background-color: #f0f1f2;
+}
+body:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  padding-bottom: 4266px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/border-bg.png) no-repeat;
+  background-size: 100%;
 }
 @media only screen and (max-width: 1417px) {
   body {
@@ -211,6 +223,12 @@ main {
   width: 324px;
   height: 84px;
 }
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+}
 .title {
   font-weight: 800;
   display: inline-block;
@@ -225,8 +243,7 @@ main {
   height: 100vh;
 }
 .section-wrapper {
-  width: 58%;
-  min-height: 60vh;
+  width: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -235,32 +252,31 @@ main {
   transform: translateX(-50%) translateY(-50%);
   padding: 2% 0;
   box-sizing: border-box;
-}
-.section-wrapper:before {
-  content: ' ';
-  display: block;
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
   border: 10px solid #00aeef;
-  z-index: -1;
+}
+@media only screen and (max-width: 1417px) {
+  .section-wrapper {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section-wrapper {
+    width: 90%;
+  }
 }
 .section-wrapper p {
   display: inline-block;
   background: #fff;
-  padding: 20px;
+  padding: 20px 10px;
   box-sizing: border-box;
+  font-size: 0.9em;
 }
 .section-wrapper .text {
-  width: 70%;
+  width: 100%;
+  box-sizing: border-box;
 }
 .section-wrapper .img {
-  width: 30%;
+  width: 40%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -269,6 +285,7 @@ main {
   border: 20px solid #fff;
   background: #fff;
   padding-bottom: 29.2%;
+  box-sizing: border-box;
 }
 .section-wrapper .img img {
   position: absolute;
@@ -284,8 +301,12 @@ main {
 .section-wrapper.left-side-text > div {
   float: left;
 }
+.section-wrapper.left-side-text .text {
+  margin-left: -10%;
+  padding-right: 20%;
+}
 .section-wrapper.left-side-text .img {
-  right: 0;
+  right: -10%;
 }
 .section-wrapper.right-side-text {
   text-align: right;
@@ -293,11 +314,15 @@ main {
 .section-wrapper.right-side-text > div {
   float: right;
 }
-.section-wrapper.right-side-text .img {
-  left: 0;
+.section-wrapper.right-side-text .text {
+  margin-right: -10%;
+  padding-left: 20%;
 }
-.section-wrapper .nbg p,
-.section-wrapper .nbg .title {
+.section-wrapper.right-side-text .img {
+  left: -10%;
+}
+.section-wrapper.nbg p,
+.section-wrapper.nbg .title {
   background: none;
 }
 .head {
@@ -308,17 +333,134 @@ main {
   padding-bottom: 8%;
 }
 .head img {
-  width: 28.875%;
+  width: 351px;
   margin: 0 auto;
 }
 .head .content {
   background: #fff;
+  width: 120%;
+  margin-left: -10%;
 }
 .head .content h1 {
   font-weight: 700;
   font-size: 3.2em;
 }
+@media only screen and (max-width: 1417px) {
+  .head .content h1 {
+    font-size: 3em;
+  }
+}
 .head .content h2 {
-  font-size: 3.5em;
+  font-size: 3.4em;
   font-weight: 300;
+}
+@media only screen and (max-width: 1417px) {
+  .head .content h2 {
+    font-size: 3.2em;
+  }
+}
+.form .form-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.form .form-wrapper:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.form .title {
+  display: block;
+  text-align: center;
+  background: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.form .form-elem {
+  border-bottom: 2px solid #000;
+  box-sizing: border-box;
+}
+.form .label {
+  margin-top: 20px;
+  display: block;
+  font-weight: 400;
+}
+.form input {
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: 0 none;
+  font-weight: 700;
+  font-size: 1em;
+}
+.form .left {
+  width: 50%;
+}
+.form .right {
+  width: 40%;
+  position: relative;
+}
+.form .right .file-upload-wrap {
+  margin-top: 25%;
+}
+.form .right .drop-container {
+  background: #e2e3e3;
+  text-align: center;
+  border: 2px dashed #464646;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.form .right .drop-container p {
+  display: block;
+  color: #575757;
+  font-size: 1.2em;
+  background: none;
+  padding: 0;
+}
+.form .right .drop-container img {
+  display: inline-block;
+  width: 90px;
+  margin: 20px 0;
+}
+.form .right a,
+.form .right .apply-button {
+  display: block;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.form .right .apply-button {
+  width: 100%;
+  border: 2px solid #464646;
+  background: #e2e3e3;
+}
+.form .right .apply-button:hover,
+.form .right .apply-button:active,
+.form .right .apply-button:focus {
+  border: 2px solid #464646;
+  background: #464646;
+  color: #e2e3e3;
+}
+.form .right .underline {
+  text-decoration: underline;
+}
+.form .right .underline:hover,
+.form .right .underline:active,
+.form .right .underline:focus {
+  text-decoration: none;
+}
+.form .error-message + label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f50020;
+  margin-bottom: 5px;
+}
+#dropzone.hover {
+  background: lawngreen;
 }
