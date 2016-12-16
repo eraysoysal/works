@@ -144,29 +144,24 @@ div.container p {margin: 0; padding: 0 !important;}
 
 .main-page {background: url(../img/bg-blue.png) top center; float: left; width: 100%; font-size: 18px; font-weight: normal; }
 .main-page .wrap .navbar {width: 100%; height: 75px; box-shadow : 0px 1px 0 rgba(255, 255, 255, 0.2); position: fixed; background: url(../img/bg-blue.png) top center; z-index: 1000; text-align: center; }
-
-.main-page .wrap .navbar .nb-left {position: absolute; top: 0; left: -250px; transition: 2s all ease;}
-.main-page .wrap .navbar .nb-left.animated {left: 10px;}
+.main-page .wrap .navbar .nb-left {position:absolute; top:0; left: 10px; }
 .main-page .wrap .navbar .nb-left h1 {color: #fff; padding: 10px; box-sizing: border-box;}
 .main-page .wrap .navbar .nb-left a {text-decoration: none; color: #fff; font-size: 24px;}
 
-.main-page .wrap .navbar .nb-center { width: 405px; height: 35px; margin: 20px auto; transition: 4s all ease; opacity: 0;}
-.main-page .wrap .navbar .nb-center.animated {opacity: 1;}
+.main-page .wrap .navbar .nb-center { width: 405px; height: 35px; margin: 20px auto;}
 .main-page .wrap .navbar .nb-center .mobil-icon { display: none; }
 .main-page .wrap .navbar .nb-center ul { float: left; width: 100%; height: 100%; padding-top: 5px; box-sizing: border-box; }
 .main-page .wrap .navbar .nb-center ul li { float: left; margin: 0 20px 0 20px; }
 .main-page .wrap .navbar .nb-center ul li a {color: #fff; }
 .main-page .wrap .navbar .nb-center ul li:hover{ border-bottom: 1px solid rgba(255, 255, 255, 0.4);}
 
-.main-page .wrap .navbar .nb-right {position: absolute; top: 0; right: -260px; height: 100%; width: 220px; transition: 2s all ease;}
-.main-page .wrap .navbar .nb-right.animated {right: 0;}
+.main-page .wrap .navbar .nb-right {position: absolute; top: 0; right: 0; height: 100%; width: 220px;}
 .main-page .wrap .navbar .nb-right a {float: right; position: relative; top: 20px; margin: 0 15px 0 15px; }
 
 .main-page .wrap { float: left; width: 100%; margin: 0 auto; }
 .main-page .wrap .content { width: 100%; height: 660px; margin: 0 auto; }
 .main-page .wrap .content .badge-wrap {float: left; width: 100%; height: 450px; text-align: center; }
-.main-page .wrap .content .badge-wrap img.badge {position: relative; top: 150px; transform:scale(0); transition: 2s all ease;}
-.main-page .wrap .content .badge-wrap img.badge.animated {transform: scale(1);}
+.main-page .wrap .content .badge-wrap img.badge {position: relative; top: 150px;}
 .main-page .wrap .content .title-wrap {float: left; width: 100%;}
 .main-page .wrap .content .title-wrap h1 {color: #18aade; width: 355px; display: block; margin: 0 auto; }
 
