@@ -187,16 +187,47 @@ div.container p {margin: 0; padding: 0 !important;}
 .contact h5.design {margin-top: 70px;}
 
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-@media only screen and (max-width: 960px;){
+@media (max-width: 960px){
+    .social-media img {
+        width: 70px;
+    }
+
+    .contact .contact-title {
+        padding-top: 30px;
+    }
+
+    .contact div.info {
+        margin-top: 20px;
+    }
+
+    .contact .contact-title h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .social-media {
+        margin-top: 35px;
+    }
+
+    .contact div.social-media a {
+        margin: 0 7px;
+    }
+
+
+    div.container p {
+        font-size: 20px;
+    }
+
+    .main-page .wrap .content .title-wrap h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .main-page .wrap .navbar .nb-right a {
+        margin: 0 7px;
+    }
 
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 .hidden {
     display: none !important;
@@ -241,83 +272,3 @@ div.container p {margin: 0; padding: 0 !important;}
 .clearfix {
     *zoom: 1;
 }
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
