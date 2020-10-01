@@ -1,0 +1,683 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.navbar{float: left; width: 100%;}
+.navbar .nb-left{float: left;}
+.navbar .nb-right {display: none;}
+.navbar .logo{margin: 25px 0 22px 12px; cursor: pointer;}
+.navbar .menu-icon{
+    float: right; 
+    width: 64px;
+    height: 64px;
+    margin: 20px 7px 32px 0;
+    cursor: pointer;
+    background: url(../img/menu-icon.png) top center no-repeat;
+    background-position-y: -64px;
+}
+
+.navbar i.selected {
+    background: url(../img/menu-icon.png) top center no-repeat;
+    width: 64px;
+    height: 64px;
+    margin: 20px 7px 32px 0;
+}
+
+.navbar .menu .menulist{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    background-color: #fff;
+    z-index: 20;
+    width: 95%;
+    border:1px solid #ddd;
+    border-radius: 10px;
+}
+.navbar .menu .menulist i { 
+    background: url(../img/menulist-icon.png) top right no-repeat;
+    float: right;
+    width: 50px;
+    height: 10px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+.navbar .menu .menulist ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar .menu .menulist ul li {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .menu .menulist ul li:last-child{ border-bottom: none;}
+
+.navbar .menu .menulist ul li a {
+    text-decoration: none;
+    color: #393939;
+    font-weight: bold;
+    padding: 20px 0 20px 20px;
+    display: block;
+    
+}
+
+.navbar .menu .menulist .mainlist .sublist{
+    display: none;
+}
+
+
+.navbar .menu .menulist .mainlist .sublist ul li{
+    background-color: #393939;
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-bottom: none;
+}
+.navbar .menu .menulist .mainlist .sublist ul li a{
+    color: #928c8c;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#slider {float: left; width: 100%; z-index: 10; margin-bottom: 25px;}
+#slider .item{text-align: center;}
+#slider .item img{cursor: pointer; width: 100%;}
+#slider .item a {text-decoration: none;}
+#slider .item h3 a { text-align: center; color: #393939; font-size: 36px; font-weight: bold; line-height: 1.2; 
+  letter-spacing: -2px;}
+#slider .item h4 { margin-bottom: 15px; }
+#slider .item h4 a { text-align: center; color: #b1b1b1; font-size: 16px; font-weight: normal;}
+#slider .item .button {background-color: #ff3f49; border-radius: 20px; color:#ebebeb; padding:10px 15px; display: inline-block;
+  text-align: center;}
+#slider .owl-buttons {display: none;}
+
+.smallslider-container #small-slider {   
+    width: 320px; margin: 0 auto;
+
+}
+
+.smallslider-container { float: left;
+    width: 100%; }
+
+#small-slider .item h4{ 
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+}
+#small-slider .item h3{ 
+    font-size: 13px;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+#small-slider .item{
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+#small-slider img{
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+}
+
+#small-slider .item a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+
+#small-slider .owl-item {width: 320px !important;}
+
+.select2-container {width: 100%; padding: 1px;}
+
+#selectbox{
+    float: left; 
+    width: 320px; 
+    height: 40px; 
+    margin: 45px 0 25px 0;
+    border-radius: 5px;
+    border-color: #ddd;
+}
+
+.selectbox {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.selectbox{ margin-top: 40px; margin-bottom: 20px; }
+.selectbox .sbox {width: 320px;}
+    .selectbox .sbox .defaultOption {display: none;}
+
+#controls-tabs {display: none;}
+#gmap {float: left; width: 100%; height: 375px; margin-top: 15px;}
+.gm-style-iw {width: 200px; height: 220px; }
+.customTooltip .title{ 
+    float: left; 
+    font-size: 20px; 
+    font-weight: normal; 
+    color: #505050; 
+    padding: 15px 0 15px 15px;
+    line-height: 1;
+}
+.customTooltip { overflow: hidden; padding-top: 15px; }
+.customTooltip span { padding-left: 15px; }
+
+.customTooltip .address { 
+    float: left; 
+    font-size: 13px; 
+    font-weight: normal; 
+    color: #505050; 
+    padding: 10px 0 15px 15px;
+}
+
+.customTooltip .phone { 
+    float: left; 
+    width: 100%; 
+    font-size: 13px; 
+    font-weight: bold; 
+    color: #505050; 
+}
+.footer {float: left; width: 100%;}
+ .footer h4 { text-align: center; font-size: 12px; font-weight: normal; margin-top: -5px;}
+ .footer img {margin: 0 auto; display: table; padding-top: 25px;}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 321px){
+    #small-slider {width: 640px !important;}
+    #slider .item h3 { top: 25% !important; }
+    #slider .item h4 { top: 45% !important; }
+}
+@media only screen and (min-width: 770px){
+    
+    .navbar .nb-left {float: left; width: 20%;}
+    .navbar .nb-center { 
+        width: 65%;
+        height: 103px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .navbar .nb-center .menu {
+        width: 100%;
+        height: 103px;
+        margin: 0 auto;
+    }
+    .navbar .nb-center .menu-icon{display: none;}
+    .navbar .nb-center .menu .menulist { 
+        display: block;
+        float: right;
+        border: none;
+        top: 20px;
+        background-color: transparent;
+    }
+    .navbar .nb-center .menu .menulist i {display: none;}
+    .navbar .nb-center .menu .menulist ul { padding: 0 0% 0 30%;}
+    .navbar .nb-center .menu .menulist ul li {width: 20%; border:none; text-align: center;}
+    .navbar .nb-center .menu .menulist ul .selected a {color:#ff3f49;} 
+    .navbar .nb-center .menu .menulist ul li a {padding: 20px;}
+    .navbar .nb-center .menu .menulist  ul li {
+        text-align: left;
+    }
+    .navbar .nb-center .menu .menulist .mainlist .sublist {
+        border: 1px solid rgb(221, 221, 221);
+        position: relative;
+        border-radius: 5px;
+        background-color: #fff;
+        float: left;
+    }
+    .navbar .nb-center .menu .menulist .mainlist .sublist i {
+        display: block;
+        float: left;
+        left: 15px;
+    }
+    .navbar .nb-center .menu .menulist .mainlist .sublist ul {
+        width: 235px; 
+        background-color: #fff;
+        padding: 0;
+    }
+    .navbar .nb-center .menu .menulist .mainlist .sublist ul li {
+       background-color: transparent;
+       text-align: left;
+    }
+    .navbar .nb-center .menu .menulist .mainlist .sublist ul li:hover{
+        background-color: #f3f3f3;
+    }
+
+    .navbar .nb-center .menu .menulist .mainlist .sublist ul li a {padding-top: 15px;}
+    .navbar .nb-right {
+        display: block;
+        float: right; 
+        width: 15%; 
+        position: relative;
+        top: 38px;
+        text-align: center;
+    }
+
+    .navbar .nb-right a {
+        float: left;
+        text-decoration: none;
+        color: #393939;
+        font-size: 12px;
+        font-weight: 900;
+        padding: 7px;
+        margin: 0 2.5px 0 2.5px;
+
+    }
+    .navbar .nb-right .selected {background-color: #ddd;}
+    #slider .item h3 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 210px;
+        text-align: left;
+    }
+    #slider .item h3 a {color: #fff;}
+    #slider .item h4 {  
+        position: absolute;
+        top: 47%;
+        left: 10%;
+    }
+    #slider .item .truck   {color: #000;}
+    #slider .item .button{
+      position: absolute;
+      top: 58%;
+      left: 9%;  
+    }      
+
+    .smallslider-container #small-slider {  width: 960px !important; margin: 0 auto;}
+    #small-slider .item {float: left;}
+
+
+
+    .select2-container--default .select2-selection--single {height: 40px;}
+    .select2-container--default .select2-selection--single .select2-selection__arrow {top: 8px;}
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        margin-left: -20px;
+    }
+    .select2-selection__rendered {
+        float: left;
+        padding-top: 5px;
+        padding-left: 15px !important;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .select2-results__option {
+        font-size: 15px !important;
+        padding-left: 15px !important;
+    }
+    .select2-results__option:first-child {display: none !important;}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ebebek | Bebelojik Fikirler Yarışması </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.scrollify.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.fileupload.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</head>
+<body>
+    <div id="mainPage" class="container">
+        <div id="section1" class="section head">
+            <div class="section-wrapper tac">
+                <img src="assets/img/ebebek-logo.png" alt="ebebek logo">
+                <div class="content">
+                    <h1>BEBEKOLOJİK <br> FİKİRLER</h1>
+                    <div class="mobile-seperator"><span></span></div>
+                    <h2>YARIŞMASI <br> BAŞLADI</h2>
+                </div>
+            </div>
+        </div>
+        <div id="section2" class="section">
+            <div class="section-wrapper left-side-text">
+                <div class="wrap">
+                    <div class="text">
+                        <h2 class="title">Nedir Bu <br> Bebekolojik Fikirler</h2>
+                        <p><strong>ebebek</strong>, geleceğin ebeveynlerinin fikirlerine<br>
+                        değer veriyor ve öğrencilere<br>
+                        bünyesinde staj imkanı sunduğu<br>
+                        bu yarışmayı düzenliyor: <strong>Bebekolojik Fikirler!</strong></p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/img/section-1.jpg" alt="Nedir Bu Bebekolojik Fikirler İmage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <div class="section-wrapper right-side-text">
+                <div class="text">
+                    <h2 class="title">Nasıl <br> Katılırım?</h2>
+                    <p><strong>Dijital pazarlamayla ilgili</strong> yenilikçi, yaratıcı
+                    fikirlerin ya da teknolojik girişim projelerin mi var?<br>
+                    O halde bu fikirlerinin/projelerinin <strong>ebebek</strong><br>
+                    <strong>mağazaları</strong> için nasıl kullanılabileceğini anlat,<br>
+                    <strong>kariyerinde önemli bir adım at!</strong></p>
+                </div>
+                <div class="img">
+                    <img src="assets/img/section-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="section">
+            <div class="section-wrapper left-side-text">
+                <div class="text">
+                    <h2 class="title">Nedir <br> Kazanacağım?</h2>
+                    <p>Jüri üyelerimiz tarafından gerçekleştirilecek<br>
+                    değerlendirme süreci sonunda <strong>ilk 3’e giren</strong> <br>
+                    <strong>yarışmacılar</strong>, sektörün önde gelen firması<br>
+                    <strong>ebebek’in pazarlama departmanında 2 aylık staj</strong><br> 
+                    <strong>imkanına sahip olacaklar.</strong></p>
+                </div>
+                <div class="img">
+                    <img src="assets/img/section-3.jpg" alt="Nedir Bu Bebekolojik Fikirler İmage">
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="section jury">
+            <div class="section-wrapper center-side-text tac nbg">
+                <div class="text full">
+                    <h2 class="title">Jüri Üyeleri</h2>
+                </div>
+            </div>
+        </div>
+        <div id="section6" class="section form">
+            <div class="section-wrapper ">
+                <div class="form-wrapper">
+                    <h3 class="title"><span>Başvuru Formu</span></h3>
+                    <form id="formApply" action="/main/createApplication" method="post">
+                        <div class="left">
+                            <label class="label">Ad Soyad</label>
+                            <div class="form-elem">
+                                <input type="text" name="name">
+                            </div>
+                            <label class="label">Doğum Tarihi</label>
+                            <div class="form-elem">
+                                <input type="text" name="date" placeholder="gg/aa/yyyy">
+                            </div>
+                            <label class="label">Cep Telefonu</label>
+                            <div class="form-elem">
+                                <input type="tel" name="tel">
+                            </div>
+                            <label class="label">E-posta</label>
+                            <div class="form-elem">
+                                <input type="email" name="email">
+                            </div>
+                            <label class="label">İl</label>
+                            <div class="form-elem">
+                                <input type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="file-upload-wrap">
+                                <div id="dropzone" class="drop-container">
+                                    <input id="inputFile" type="file" name="file">
+                                    <img src="assets/img/file-upload.png" alt="file upload icon">
+                                    <p>Projeni <br> Sürükle <br> Bırak</p>
+                                </div>
+                                <label for="inputFile" class="project-button">Projeni Yükle</label>
+                                <button class="apply-button" type="submit" name="submitButton">Başvuru Yap</button>
+                                <a class="underline" href="javascript:;">Katılım Koşulları</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="javascript:;">Nasıl Kullanılır?</a></li>
+                <li><a href="javascript:;">Katılım Koşulları</a></li>
+                <li><a href="javascript:;">Arkadaşıma Gönder</a></li>
+                <li><a href="javascript:;">Gizlilik</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

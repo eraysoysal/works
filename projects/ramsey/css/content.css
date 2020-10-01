@@ -1,0 +1,17 @@
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6, .bannerLeft, 
+.bannerRight, .bannerTop img, .content {
+	float: left;
+}
+
+.bannerTop img, .content, .banner1{
+	width: 100%;
+}
+
+.banner2 { width: 72.5%; padding: 2.5px 2.5px 2.5px 0; }
+.banner3 { width: 27%; padding: 2.5px 0 2.5px 2.5px; }
+.banner4 { width: 100%; padding: 2.5px 5px 0 2.5px; }
+.banner5 { width: 42%; padding: 2.5px 2.5px 0 0; }
+.banner6 { width: 57.7%; padding: 2.5px 2.5px 0 2.5px; }
+.bannerLeft { width: 65.8%; }
+.bannerRight { width: 34.2% }
+.content{ padding: 35px 0 0 165px; }

@@ -1,0 +1,271 @@
+@charset "iso-8859-9";
+
+
+#slide{
+	height:170px;
+	}
+#slide1{
+	height:482px;
+	}
+.randbg {
+background: url('../img/slide/img-1.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.randbg.bg1 {
+background-image: url('../img/slide/img-1.jpg');
+}
+
+.randbg.bg3 {
+background-image: url('../img/slide/img-3.jpg');
+}
+.randbg.bg4 {
+background-image: url('../img/slide/img-4.jpg');
+}
+
+#icerik-ust-sol{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	}
+
+.baslik {
+	background-image: url(../img/ikon-1.png);
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	background-position: 5px 15px;
+	padding-bottom: 15px;
+
+	
+}
+.baslik1 {
+	background-image: url(../img/ikon-10.png);
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	background-position: 5px 15px;
+	padding-bottom: 15px;}
+
+#icerik-alt {
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #6b6b6b;
+}
+#icerik-alt ul li {
+	display: block;
+	float: left;
+}
+
+
+.buton {
+	background-image: url(../img/ikon-3.png);
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+	
+}
+.buton a {
+	
+	color: #F00;	
+}
+
+.link{
+		border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	}
+
+.link1{
+		border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	}
+
+.link ul li {
+	float: left;
+}
+.link ul li a {
+	margin-right: 5px;
+	display: block;
+	width:85px;
+}
+
+.link ul li a:hover {
+color: #F00;
+}
+.link1 ul li a:hover {
+color: #F00;
+}
+
+#icerik-ust-sag .baslik1 {
+	background-image: url(../img/ikon-2.png);
+	background-repeat: no-repeat;
+		padding-top: 20px;
+	background-position: 5px 15px;
+	padding-bottom: 15px;
+}
+#footer {
+	background-color: #f1f1f1;
+}
+
+#menu ul li {
+	display: block;
+	float: left;
+	position: relative;
+	width:120px;
+}
+#menu ul li a {
+	font-size: 12px;
+	line-height: 40px;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	display: block;
+	color: #FFF;
+	font-weight: bold;	
+
+	
+
+}
+#menu ul li a:hover {
+	color: #ecefcf;
+	background: #333333;
+	
+	
+}
+
+#menu ul li  ul {
+	position: absolute;
+	left: 0;
+	display: none;
+	
+}
+#menu ul li  ul li {
+	width: 120px;
+	}
+#menu ul li:hover ul {display:block;}
+
+#menu ul li  ul li a {
+	background: #383b3c;
+	height: 30px;
+	line-height: 25px;
+	text-align: left;
+	font-family: tahoma;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	font-weight:normal !important;
+	padding-left:7px;
+	
+}
+#menu ul li  ul li a:hover { color: #ecefcf;
+
+}
+
+
+
+
+
+#Form2 input {
+	width: 240px !important;
+	margin-bottom: 2px;
+	padding: 4px;
+	border: 1px solid #bab9b9 !important;
+	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+#Form2 textarea {
+	width: 238px;
+	height: 75px;
+	padding: 5px;
+	border: 1px solid #bab9b9 !important;
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+#Form2 select {
+	background-color: #131313;
+	color: #656868;
+	font-size:12px;
+	
+}
+
+#Form2 #Gonder {
+	width: 100px !important;
+	background-color:#5a84d9 !important;
+	color:#FFF !important;
+	
+	margin-top: 20px;
+}
+
+
+#Form2 #Gonder:hover
+{
+	background-color:#779be5 !important;
+	color:#FFF !important;
+  
+}
+
+#Form2 input.error {
+                border: 1px solid #b31d26 !important;
+			
+}
+#Form2 textarea.error {
+                border: 1px solid #b31d26 !important;
+}
+#Form2 select.error {
+				border:1px solid #b31d26 !important;
+}
+
+#Form1 input {
+	width: 240px !important;
+	margin-bottom: 2px;
+	padding: 4px;
+	border: 1px solid #bab9b9 !important;
+	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+#Form1 textarea {
+	width: 238px;
+	height: 75px;
+	padding: 5px;
+	border: 1px solid #bab9b9 !important;
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+#Form1 select {
+	background-color: #131313;
+	color: #656868;
+	font-size:12px;
+	
+}
+
+#Form1 #Gonder {
+	width: 100px !important;
+	background-color:#5a84d9 !important;
+	color:#FFF !important;
+	
+	margin-top: 20px;
+}
+
+
+#Form1 #Gonder:hover
+{
+	background-color:#779be5 !important;
+	color:#FFF !important;
+  
+}
+
+#Form1 input.error {
+                border: 1px solid #b31d26 !important;
+			
+}
+#Form1 textarea.error {
+                border: 1px solid #b31d26 !important;
+}
+#Form1 select.error {
+				border:1px solid #b31d26 !important;
+}
