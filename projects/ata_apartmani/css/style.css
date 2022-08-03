@@ -1,0 +1,47 @@
+body {
+	background-color: #f6f5f5;
+}
+
+.main-title {
+	font-size: 32px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.main-description {
+	text-align: center;
+}
+
+.accordion {
+	 max-width: 940px;
+   margin: 40px auto;
+}
+
+.accordion-button:not(.collapsed) {
+	background: none;
+	color: initial;
+}
+
+.accordion-button:focus {
+	box-shadow: initial;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: var(--bs-accordion-btn-icon);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-title {
+  	font-size: 22px;
+  }
+
+  .main-description {
+  	font-size: 14px;
+  	padding: 0 50px;
+  }
+
+  .accordion {
+  	padding: 0 20px;
+  }
+}
